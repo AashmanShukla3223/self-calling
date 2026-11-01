@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF000000">
+
+    <SurfaceView
+        android:id="@+id/remoteView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|start"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingTop="40dp"
+        android:paddingRight="20dp">
+
+        <TextView
+            android:id="@+id/callTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:shadowColor="#99000000"
+            android:shadowDx="0"
+            android:shadowDy="1"
+            android:shadowRadius="4"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/callSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="@string/video_live"
+            android:textColor="#CCFFFFFF"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/callTimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/accent"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="108dp"
+        android:layout_height="144dp"
+        android:layout_gravity="top|end"
+        android:layout_marginTop="44dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/video_pip">
+
+        <TextureView
+            android:id="@+id/localView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/localPlaceholder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="@string/video_unavailable"
+            android:textColor="#B3FFFFFF"
+            android:textSize="11sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|start"
+            android:layout_margin="6dp"
+            android:text="@string/video_local_label"
+            android:textColor="@android:color/white"
+            android:textSize="11sp" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="12dp"
+        android:paddingBottom="28dp">
+
+        <LinearLayout
+            android:id="@+id/btnMute"
+            style="@style/VideoControl">
+
+            <ImageView
+                android:id="@+id/muteIcon"
+                style="@style/VideoControlIcon"
+                android:contentDescription="@string/video_mute"
+                android:src="@drawable/ic_mic" />
+
+            <TextView
+                android:id="@+id/muteLabel"
+                style="@style/VideoControlLabel"
+                android:text="@string/video_mute" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btnFlip"
+            style="@style/VideoControl">
+
+            <ImageView
+                android:id="@+id/flipIcon"
+                style="@style/VideoControlIcon"
+                android:contentDescription="@string/video_switch_camera"
+                android:src="@drawable/ic_swap_camera" />
+
+            <TextView
+                style="@style/VideoControlLabel"
+                android:text="@string/video_switch_camera" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btnVideo"
+            style="@style/VideoControl">
+
+            <ImageView
+                android:id="@+id/videoIcon"
+                style="@style/VideoControlIcon"
+                android:contentDescription="@string/video_camera"
+                android:src="@drawable/ic_videocam" />
+
+            <TextView
+                android:id="@+id/videoLabel"
+                style="@style/VideoControlLabel"
+                android:text="@string/video_camera" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btnEnd"
+            style="@style/VideoControl">
+
+            <ImageView
+                android:id="@+id/endIcon"
+                style="@style/VideoControlIcon"
+                android:backgroundTint="#E53935"
+                android:contentDescription="@string/video_hangup"
+                android:rotation="135"
+                android:src="@drawable/ic_call" />
+
+            <TextView
+                style="@style/VideoControlLabel"
+                android:text="@string/video_hangup" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

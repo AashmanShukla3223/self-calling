@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="●"
+        android:textColor="#E53935"
+        android:textSize="28sp" />
+
+    <TextView
+        android:id="@+id/recTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="00:00"
+        android:textColor="@color/text_primary"
+        android:textSize="28sp" />
+
+    <TextView
+        style="@style/RowSub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/record_hint" />
+
+    <Button
+        android:id="@+id/recordStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/btn_outline"
+        android:paddingStart="28dp"
+        android:paddingEnd="28dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="@string/record_stop"
+        android:textColor="#E53935"
+        android:textSize="14sp" />
+</LinearLayout>

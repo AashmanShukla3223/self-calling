@@ -1,0 +1,26 @@
+# Gradle / build outputs
+.gradle/
+build/
+.kotlin/
+*.apk
+*.idsig
+*.aab
+
+# IDE
+.idea/
+*.iml
+
+# Machine-specific
+local.properties
+gradle.properties.bak
+
+# Signing material
+*.keystore
+*.jks
+keystore.properties
+
+# Tool state
+.qoder/
+
+# OS
+.DS_Store
