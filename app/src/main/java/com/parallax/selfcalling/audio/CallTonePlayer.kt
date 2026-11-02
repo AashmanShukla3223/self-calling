@@ -55,7 +55,7 @@ object CallTonePlayer {
         am?.mode = AudioManager.MODE_IN_COMMUNICATION
         try {
             val tg = ToneGenerator(AudioManager.STREAM_VOICE_CALL, 100)
-            tg.startTone(ToneGenerator.TONE_PROP_ACK, 200)
+            tg.startTone(ToneGenerator.TONE_CDMA_CONFIRM, 200)
             h.postDelayed({
                 try { tg.stopTone() } catch (_: Exception) { }
                 try { tg.release() } catch (_: Exception) { }
@@ -71,7 +71,7 @@ object CallTonePlayer {
         am?.mode = AudioManager.MODE_NORMAL
         try {
             val tg = ToneGenerator(AudioManager.STREAM_VOICE_CALL, 100)
-            tg.startTone(ToneGenerator.TONE_PROP_NACK, 300)
+            tg.startTone(ToneGenerator.TONE_CDMA_CALLDROP_LITE, 300)
             h.postDelayed({
                 try { tg.stopTone() } catch (_: Exception) { }
                 try { tg.release() } catch (_: Exception) { }
