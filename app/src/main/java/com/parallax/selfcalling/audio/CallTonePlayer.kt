@@ -1,35 +1,33 @@
 package com.parallax.selfcalling.audio
 
 import android.content.Context
-import android.media.Ringtone
-import android.media.RingtoneManager
+import android.media.AudioManager
+import android.media.ToneGenerator
 import android.os.Handler
 import android.os.Looper
 
-/** Plays telecom-style tones: ringback while dialing, connect beep, end beep. Uses system
- *  ringtones/notifications so they are always audible. Kotlin. */
+/** Plays telecom-style tones using the system ToneGenerator, switching audio mode so they are
+ *  audible (MODE_IN_COMMUNICATION suppresses most tones). Kotlin. */
 object CallTonePlayer {
 
     private val h = Handler(Looper.getMainLooper())
     private var ringbackOn = false
     private var ringbackRunnable: Runnable? = null
-    private var ringbackRingtone: Ringtone? = null
+    private var ringbackTg: ToneGenerator? = null
+    private var am: AudioManager? = null
 
     @Synchronized
     @JvmStatic
     fun startRingback(ctx: Context) {
         stopRingback()
         ringbackOn = true
-        val uri = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_RINGTONE)
-        ringbackRingtone = RingtoneManager.getRingtone(ctx, uri)
+        am = ctx.getSystemService(Context.AUDIO_SERVICE) as? AudioManager
+        am?.mode = AudioManager.MODE_RINGTONE
+        ringbackTg = ToneGenerator(AudioManager.STREAM_RING, 100)
         val r = object : Runnable {
             override fun run() {
                 if (!ringbackOn) return
-                try {
-                    ringbackRingtone?.play()
-                    h.postDelayed({ try { ringbackRingtone?.stop() } catch (_: Exception) { } }, 1500)
-                } catch (_: Exception) {
-                }
+                try { ringbackTg?.startTone(ToneGenerator.TONE_SUP_RINGTONE, 1500) } catch (_: Exception) { }
                 h.postDelayed(this, 2000)
             }
         }
@@ -43,18 +41,25 @@ object CallTonePlayer {
         ringbackOn = false
         ringbackRunnable?.let { h.removeCallbacks(it) }
         ringbackRunnable = null
-        try { ringbackRingtone?.stop() } catch (_: Exception) { }
-        ringbackRingtone = null
+        try { ringbackTg?.stopTone() } catch (_: Exception) { }
+        try { ringbackTg?.release() } catch (_: Exception) { }
+        ringbackTg = null
+        am?.mode = AudioManager.MODE_IN_COMMUNICATION
+        am = null
     }
 
     @Synchronized
     @JvmStatic
     fun playConnect(ctx: Context) {
+        val am = ctx.getSystemService(Context.AUDIO_SERVICE) as? AudioManager
+        am?.mode = AudioManager.MODE_IN_COMMUNICATION
         try {
-            val uri = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION)
-            val r = RingtoneManager.getRingtone(ctx, uri)
-            r?.play()
-            h.postDelayed({ try { r?.stop() } catch (_: Exception) { } }, 500)
+            val tg = ToneGenerator(AudioManager.STREAM_VOICE_CALL, 100)
+            tg.startTone(ToneGenerator.TONE_PROP_ACK, 200)
+            h.postDelayed({
+                try { tg.stopTone() } catch (_: Exception) { }
+                try { tg.release() } catch (_: Exception) { }
+            }, 300)
         } catch (_: Exception) {
         }
     }
@@ -62,11 +67,15 @@ object CallTonePlayer {
     @Synchronized
     @JvmStatic
     fun playEnd(ctx: Context) {
+        val am = ctx.getSystemService(Context.AUDIO_SERVICE) as? AudioManager
+        am?.mode = AudioManager.MODE_NORMAL
         try {
-            val uri = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION)
-            val r = RingtoneManager.getRingtone(ctx, uri)
-            r?.play()
-            h.postDelayed({ try { r?.stop() } catch (_: Exception) { } }, 500)
+            val tg = ToneGenerator(AudioManager.STREAM_VOICE_CALL, 100)
+            tg.startTone(ToneGenerator.TONE_PROP_NACK, 300)
+            h.postDelayed({
+                try { tg.stopTone() } catch (_: Exception) { }
+                try { tg.release() } catch (_: Exception) { }
+            }, 400)
         } catch (_: Exception) {
         }
     }
