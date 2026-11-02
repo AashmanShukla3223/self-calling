@@ -44,18 +44,19 @@ class FgsIncomingService : Service() {
         val delayMs = intent?.getLongExtra(EXTRA_DELAY_MS, 0L) ?: 0L
         val fireAt = System.currentTimeMillis() + delayMs.coerceAtLeast(0L)
 
-        val runnable = Runnable {
+        val fireRunnable = Runnable {
             try {
                 TelecomHelper.simulateIncoming(this, preset)
             } catch (e: Exception) {
                 android.util.Log.w("SelfCall", "delayed incoming: ${e.message}")
             } finally {
                 if (id >= 0) CallScheduler.clearFired(this, id)
-                synchronized(entries) { entries.removeAll { it.runnable === runnable } }
+                synchronized(entries) { entries.removeAll { it.runnable === fireRunnable } }
                 updateNotification()
                 if (synchronized(entries) { entries.isEmpty() }) stopSelf()
             }
         }
+        val runnable = fireRunnable
         val entry = FireEntry(id, preset, delayMs, fireAt, runnable)
         synchronized(entries) { entries.add(entry) }
 
@@ -115,8 +116,6 @@ class FgsIncomingService : Service() {
             nm?.notify(2001, n)
         }
     }
-
-    private var foregroundStarted = false
 
     override fun onDestroy() {
         synchronized(entries) {
