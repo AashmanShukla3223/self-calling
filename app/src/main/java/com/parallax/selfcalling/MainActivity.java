@@ -153,12 +153,16 @@ public class MainActivity extends Activity {
 
     /** Shows/hides the "Incoming call in N min — tap to cancel" chip. */
     private void refreshPending() {
+        int count = CallScheduler.pendingCount(this);
         long at = CallScheduler.pendingAt(this);
         long now = System.currentTimeMillis();
-        if (at > now) {
+        if (count > 0 && at > now) {
+            String label = count > 1
+                    ? count + " incoming calls scheduled — tap to cancel all"
+                    : getString(R.string.pending_chip,
+                            CallScheduler.fmtLeft(at - now));
             b.txtPending.setVisibility(android.view.View.VISIBLE);
-            b.txtPending.setText(getString(R.string.pending_chip,
-                    CallScheduler.fmtLeft(at - now)));
+            b.txtPending.setText(label);
         } else {
             b.txtPending.setVisibility(android.view.View.GONE);
         }
