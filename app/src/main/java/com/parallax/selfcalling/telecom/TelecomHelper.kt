@@ -217,14 +217,19 @@ object TelecomHelper {
         }
     }
 
-    /** Rings a simulated incoming call from yourself through Telecom. */
+    /** Rings a simulated incoming call from yourself through Telecom, using the given preset index. */
     @JvmStatic
-    fun simulateIncoming(c: Context) {
+    @JvmOverloads
+    fun simulateIncoming(c: Context, presetIndex: Int = Prefs.activeIndex(c)) {
         val tm = c.getSystemService(TelecomManager::class.java) ?: return
         ensureRegistered(c)
-        val uri = telUri(Prefs.activePreset(c).number)
+        val presets = Prefs.presets(c)
+        val idx = presetIndex.coerceIn(0, presets.size - 1)
+        val p = presets[idx]
+        val uri = telUri(p.number)
         val extras = Bundle()
         extras.putParcelable(TelecomManager.EXTRA_INCOMING_CALL_ADDRESS, uri)
+        extras.putInt("preset_index", idx)
         try {
             tm.addNewIncomingCall(handle(c), extras)
         } catch (e: SecurityException) {

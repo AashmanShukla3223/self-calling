@@ -12,31 +12,61 @@ import com.parallax.selfcalling.R
 import com.parallax.selfcalling.telecom.CallAlarmReceiver
 import com.parallax.selfcalling.telecom.FgsIncomingService
 import com.parallax.selfcalling.telecom.TelecomHelper
+import org.json.JSONArray
+import org.json.JSONObject
 
 /**
- * Schedules "Simulate incoming call". Short waits use an exact Handler in a foreground
- * service so the ring is on-time; long waits use AlarmManager so they survive process death.
+ * Schedules "Simulate incoming call". Each call is independent: scheduling on one preset does
+ * not cancel pending calls on other presets. Waits survive process death via AlarmManager.
  */
 object CallScheduler {
 
-    /** Handler path stays exact; alarms cover waits longer than this. */
-    private const val FAST_MAX_SEC = 180
-    private const val KEY_AT = "incoming_at"
+    private const val KEY_PENDING = "incoming_pending"
+    private const val KEY_NEXT_ID = "incoming_next_id"
 
-    private fun sp(c: Context) =
-        c.getSharedPreferences("selfcall", Context.MODE_PRIVATE)
+    data class Pending(val id: Int, val at: Long, val presetIndex: Int)
 
-    private fun alarmOp(c: Context): PendingIntent = PendingIntent.getBroadcast(
-        c, 1001,
-        Intent(c, CallAlarmReceiver::class.java)
-            .setAction("com.parallax.selfcalling.FIRE_INCOMING"),
-        PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE)
+    private fun sp(c: Context) = c.getSharedPreferences("selfcall", Context.MODE_PRIVATE)
 
-    private fun startWaitService(c: Context, delayMs: Long) {
-        val s = Intent(c, FgsIncomingService::class.java)
-            .putExtra(FgsIncomingService.EXTRA_DELAY_MS, delayMs)
-        if (Build.VERSION.SDK_INT >= 26) c.startForegroundService(s) else c.startService(s)
+    private fun load(c: Context): MutableList<Pending> {
+        val out = mutableListOf<Pending>()
+        try {
+            val arr = JSONArray(sp(c).getString(KEY_PENDING, "[]"))
+            for (i in 0 until arr.length()) {
+                val o = arr.getJSONObject(i)
+                out.add(Pending(o.getInt("id"), o.getLong("at"), o.getInt("preset")))
+            }
+        } catch (_: Exception) {
+        }
+        return out
     }
+
+    private fun save(c: Context, list: List<Pending>) {
+        val arr = JSONArray()
+        for (p in list) {
+            val o = JSONObject()
+            o.put("id", p.id)
+            o.put("at", p.at)
+            o.put("preset", p.presetIndex)
+            arr.put(o)
+        }
+        sp(c).edit().putString(KEY_PENDING, arr.toString()).apply()
+    }
+
+    private fun nextId(c: Context): Int {
+        val n = sp(c).getInt(KEY_NEXT_ID, 1)
+        sp(c).edit().putInt(KEY_NEXT_ID, n + 1).apply()
+        return n
+    }
+
+    private fun alarmOp(c: Context, id: Int, presetIndex: Int): PendingIntent =
+        PendingIntent.getBroadcast(
+            c, id,
+            Intent(c, CallAlarmReceiver::class.java)
+                .setAction("com.parallax.selfcalling.FIRE_INCOMING")
+                .putExtra("id", id)
+                .putExtra("preset", presetIndex),
+            PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE)
 
     /** Opens system exact-alarm settings when a long delayed ring would miss the clock. */
     @JvmStatic
@@ -53,56 +83,96 @@ object CallScheduler {
         }
     }
 
-    /** 0 rings at once; short waits fire on a Handler; longer waits arm an exact alarm. */
+    /** Schedules a new independent incoming call; does not cancel other pending ones. */
     @JvmStatic
     fun fireIncoming(c: Context, delaySec: Int) {
-        cancel(c)
-        if (delaySec <= 0) {
-            TelecomHelper.simulateIncoming(c)
-            return
-        }
         val at = System.currentTimeMillis() + delaySec * 1000L
-        sp(c).edit().putLong(KEY_AT, at).apply()
-        if (delaySec <= FAST_MAX_SEC) {
-            startWaitService(c, delaySec * 1000L)
+        val presetIdx = Prefs.activeIndex(c)
+        val id = nextId(c)
+        val list = load(c)
+        list.add(Pending(id, at, presetIdx))
+        save(c, list)
+
+        if (delaySec <= 0) {
+            TelecomHelper.simulateIncoming(c, presetIdx)
+            save(c, load(c).filter { it.id != id })
             return
         }
+
+        if (delaySec <= 180) {
+            // short wait: use foreground service for on-time ring
+            val s = Intent(c, FgsIncomingService::class.java)
+                .putExtra(FgsIncomingService.EXTRA_DELAY_MS, delaySec * 1000L)
+                .putExtra(FgsIncomingService.EXTRA_PRESET_INDEX, presetIdx)
+                .putExtra("id", id)
+            if (Build.VERSION.SDK_INT >= 26) c.startForegroundService(s) else c.startService(s)
+            return
+        }
+
         ensureExactAlarms(c)
         val am = c.getSystemService(AlarmManager::class.java) ?: return
         val exact = Build.VERSION.SDK_INT < 31 || am.canScheduleExactAlarms()
+        val op = alarmOp(c, id, presetIdx)
         if (exact) {
-            am.setExactAndAllowWhileIdle(AlarmManager.RTC_WAKEUP, at, alarmOp(c))
+            am.setExactAndAllowWhileIdle(AlarmManager.RTC_WAKEUP, at, op)
         } else {
-            am.setWindow(AlarmManager.RTC_WAKEUP, at, 15_000, alarmOp(c))
+            am.setWindow(AlarmManager.RTC_WAKEUP, at, 15_000, op)
         }
     }
 
-    /** Cancels the pending wait (Handler service and/or alarm) and clears the marker. */
+    /** Cancels ALL pending incoming calls. */
     @JvmStatic
     fun cancel(c: Context) {
-        try {
-            c.getSystemService(AlarmManager::class.java)?.cancel(alarmOp(c))
-        } catch (_: Exception) {
+        for (p in load(c)) {
+            try {
+                c.getSystemService(AlarmManager::class.java)?.cancel(alarmOp(c, p.id, p.presetIndex))
+            } catch (_: Exception) {
+            }
         }
         try {
             c.stopService(Intent(c, FgsIncomingService::class.java)
                 .setAction(FgsIncomingService.ACTION_CANCEL))
         } catch (_: Exception) {
         }
-        clearMarker(c)
+        save(c, emptyList())
     }
 
-    /** Epoch ms the pending incoming call will fire at; 0 = none. */
+    /** Cancels one pending call by id. */
     @JvmStatic
-    fun pendingAt(c: Context): Long = sp(c).getLong(KEY_AT, 0)
-
-    /** Clears the stored marker without touching the alarm (receiver calls this at fire time). */
-    @JvmStatic
-    fun clearMarker(c: Context) {
-        sp(c).edit().remove(KEY_AT).apply()
+    fun cancelOne(c: Context, id: Int) {
+        val list = load(c)
+        val target = list.firstOrNull { it.id == id } ?: return
+        try {
+            c.getSystemService(AlarmManager::class.java)?.cancel(alarmOp(c, target.id, target.presetIndex))
+        } catch (_: Exception) {
+        }
+        save(c, list.filter { it.id != id })
     }
 
-    /** "in 3s" / "in 12min" / "in 2h 05min" — time left until the pending call fires. */
+    /** Epoch ms of the earliest pending call; 0 = none. */
+    @JvmStatic
+    fun pendingAt(c: Context): Long {
+        val list = load(c)
+        return list.minByOrNull { it.at }?.at ?: 0L
+    }
+
+    /** Number of pending calls. */
+    @JvmStatic
+    fun pendingCount(c: Context): Int = load(c).size
+
+    /** Returns the preset index of the earliest pending call. */
+    @JvmStatic
+    fun pendingPresetIndex(c: Context): Int =
+        load(c).minByOrNull { it.at }?.presetIndex ?: Prefs.activeIndex(c)
+
+    /** Removes a fired pending entry by id. */
+    @JvmStatic
+    fun clearFired(c: Context, id: Int) {
+        if (id < 0) return
+        save(c, load(c).filter { it.id != id })
+    }
+
+    /** "in 3s" / "in 12min" / "in 2h 05min" — time left until the earliest pending call. */
     @JvmStatic
     fun fmtLeft(ms: Long): String {
         val s = (ms.coerceAtLeast(0) + 999) / 1000

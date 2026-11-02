@@ -64,7 +64,25 @@ public class SelfCallConnection extends Connection {
     public SelfCallConnection(Context c, Kind k, ConnectionRequest req) {
         ctx = c;
         kind = k;
-        preset = Prefs.activePreset(c);
+        // For simulated incoming calls, honour the preset that was active when the call was
+        // scheduled, so switching presets later does not change the ringing identity.
+        int presetIdx = -1;
+        if (kind == Kind.INCOMING && req != null && req.getExtras() != null) {
+            try {
+                presetIdx = req.getExtras().getInt("preset_index", -1);
+            } catch (Exception ignored) {
+            }
+        }
+        if (presetIdx >= 0) {
+            java.util.List<Preset> all = Prefs.presets(c);
+            if (presetIdx >= 0 && presetIdx < all.size()) {
+                preset = all.get(presetIdx);
+            } else {
+                preset = Prefs.activePreset(c);
+            }
+        } else {
+            preset = Prefs.activePreset(c);
+        }
 
         // A number dialed in the phone app is re-placed as sip:<number>@dial.selfcall.local;
         // "Call Myself" uses sip:<number>@selfcall.local and keeps the preset identity.
