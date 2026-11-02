@@ -1,82 +1,141 @@
 package com.parallax.selfcalling.audio
 
 import android.content.Context
+import android.media.AudioAttributes
+import android.media.AudioFormat
 import android.media.AudioManager
-import android.media.ToneGenerator
+import android.media.AudioTrack
 import android.os.Handler
 import android.os.Looper
+import kotlin.math.sin
 
-/** Plays telecom-style tones using the system ToneGenerator, switching audio mode so they are
- *  audible (MODE_IN_COMMUNICATION suppresses most tones). Kotlin. */
+/** Plays Indian-telecom-style tones using AudioTrack (generated PCM), so they sound like real
+ *  calls instead of generic ToneGenerator beeps. Kotlin. */
 object CallTonePlayer {
 
     private val h = Handler(Looper.getMainLooper())
     private var ringbackOn = false
-    private var ringbackRunnable: Runnable? = null
-    private var ringbackTg: ToneGenerator? = null
-    private var am: AudioManager? = null
+    private var ringbackTrack: AudioTrack? = null
+    private var ringbackThread: Thread? = null
+
+    private const val SAMPLE_RATE = 8000
+
+    /** Generates a sine wave at [freq] Hz for [durationMs] ms, amplitude 0..1. */
+    private fun tone(freq: Double, durationMs: Int, amp: Double = 0.6): ShortArray {
+        val n = SAMPLE_RATE * durationMs / 1000
+        val out = ShortArray(n)
+        for (i in 0 until n) {
+            out[i] = (sin(2 * Math.PI * freq * i / SAMPLE_RATE) * amp * Short.MAX_VALUE).toInt().toShort()
+        }
+        return out
+    }
+
+    /** Silence for [durationMs] ms. */
+    private fun silence(durationMs: Int): ShortArray = ShortArray(SAMPLE_RATE * durationMs / 1000)
+
+    /** Builds one Indian ringback cycle: 400 Hz 0.4s, 0.2s gap, 400 Hz 0.4s, 2.0s gap. */
+    private fun ringbackCycle(): ShortArray {
+        val parts = listOf(tone(400.0, 400), silence(200), tone(400.0, 400), silence(2000))
+        val total = parts.sumOf { it.size }
+        val out = ShortArray(total)
+        var off = 0
+        for (p in parts) { System.arraycopy(p, 0, out, off, p.size); off += p.size }
+        return out
+    }
 
     @Synchronized
     @JvmStatic
     fun startRingback(ctx: Context) {
         stopRingback()
         ringbackOn = true
-        am = ctx.getSystemService(Context.AUDIO_SERVICE) as? AudioManager
+        val am = ctx.getSystemService(Context.AUDIO_SERVICE) as? AudioManager
         am?.mode = AudioManager.MODE_RINGTONE
-        ringbackTg = ToneGenerator(AudioManager.STREAM_RING, 100)
-        val r = object : Runnable {
-            override fun run() {
-                if (!ringbackOn) return
-                try { ringbackTg?.startTone(ToneGenerator.TONE_SUP_RINGTONE, 1500) } catch (_: Exception) { }
-                h.postDelayed(this, 2000)
+        val cycle = ringbackCycle()
+        val minBuf = AudioTrack.getMinBufferSize(SAMPLE_RATE,
+            AudioFormat.CHANNEL_OUT_MONO, AudioFormat.ENCODING_PCM_16BIT)
+        val bufSize = maxOf(minBuf, cycle.size * 2)
+        val track = AudioTrack.Builder()
+            .setAudioAttributes(AudioAttributes.Builder()
+                .setUsage(AudioAttributes.USAGE_VOICE_COMMUNICATION)
+                .setContentType(AudioAttributes.CONTENT_TYPE_SONIFICATION)
+                .build())
+            .setAudioFormat(AudioFormat.Builder()
+                .setEncoding(AudioFormat.ENCODING_PCM_16BIT)
+                .setSampleRate(SAMPLE_RATE)
+                .setChannelMask(AudioFormat.CHANNEL_OUT_MONO)
+                .build())
+            .setBufferSizeInBytes(bufSize)
+            .setTransferMode(AudioTrack.MODE_STATIC)
+            .build()
+        track.write(cycle, 0, cycle.size)
+        track.setLoopPoints(0, cycle.size, -1)
+        ringbackTrack = track
+        ringbackThread = Thread {
+            try {
+                track.play()
+                while (ringbackOn) {
+                    Thread.sleep(100)
+                }
+            } catch (_: Exception) {
+            } finally {
+                try { track.stop() } catch (_: Exception) { }
+                try { track.release() } catch (_: Exception) { }
             }
         }
-        ringbackRunnable = r
-        h.post(r)
+        ringbackThread?.start()
     }
 
     @Synchronized
     @JvmStatic
     fun stopRingback() {
         ringbackOn = false
-        ringbackRunnable?.let { h.removeCallbacks(it) }
-        ringbackRunnable = null
-        try { ringbackTg?.stopTone() } catch (_: Exception) { }
-        try { ringbackTg?.release() } catch (_: Exception) { }
-        ringbackTg = null
+        try { ringbackThread?.join(300) } catch (_: Exception) { }
+        ringbackThread = null
+        try { ringbackTrack?.stop() } catch (_: Exception) { }
+        try { ringbackTrack?.release() } catch (_: Exception) { }
+        ringbackTrack = null
+        val am = null
+    }
+
+    /** Plays a short generated tone at [freq] Hz for [durationMs] ms. */
+    private fun playTone(ctx: Context, freq: Double, durationMs: Int, stream: Int) {
+        val am = ctx.getSystemService(Context.AUDIO_SERVICE) as? AudioManager
         am?.mode = AudioManager.MODE_IN_COMMUNICATION
-        am = null
+        val samples = tone(freq, durationMs)
+        val minBuf = AudioTrack.getMinBufferSize(SAMPLE_RATE,
+            AudioFormat.CHANNEL_OUT_MONO, AudioFormat.ENCODING_PCM_16BIT)
+        val track = AudioTrack.Builder()
+            .setAudioAttributes(AudioAttributes.Builder()
+                .setUsage(AudioAttributes.USAGE_VOICE_COMMUNICATION)
+                .setContentType(AudioAttributes.CONTENT_TYPE_SONIFICATION)
+                .build())
+            .setAudioFormat(AudioFormat.Builder()
+                .setEncoding(AudioFormat.ENCODING_PCM_16BIT)
+                .setSampleRate(SAMPLE_RATE)
+                .setChannelMask(AudioFormat.CHANNEL_OUT_MONO)
+                .build())
+            .setBufferSizeInBytes(maxOf(minBuf, samples.size * 2))
+            .setTransferMode(AudioTrack.MODE_STATIC)
+            .build()
+        track.write(samples, 0, samples.size)
+        track.play()
+        Handler(Looper.getMainLooper()).postDelayed({
+            try { track.stop() } catch (_: Exception) { }
+            try { track.release() } catch (_: Exception) { }
+        }, durationMs.toLong() + 50)
     }
 
     @Synchronized
     @JvmStatic
     fun playConnect(ctx: Context) {
-        val am = ctx.getSystemService(Context.AUDIO_SERVICE) as? AudioManager
-        am?.mode = AudioManager.MODE_IN_COMMUNICATION
-        try {
-            val tg = ToneGenerator(AudioManager.STREAM_VOICE_CALL, 100)
-            tg.startTone(ToneGenerator.TONE_CDMA_CONFIRM, 200)
-            h.postDelayed({
-                try { tg.stopTone() } catch (_: Exception) { }
-                try { tg.release() } catch (_: Exception) { }
-            }, 300)
-        } catch (_: Exception) {
-        }
+        // short confirm beep: 880 Hz, 120 ms
+        playTone(ctx, 880.0, 120, AudioManager.STREAM_VOICE_CALL)
     }
 
     @Synchronized
     @JvmStatic
     fun playEnd(ctx: Context) {
-        val am = ctx.getSystemService(Context.AUDIO_SERVICE) as? AudioManager
-        am?.mode = AudioManager.MODE_NORMAL
-        try {
-            val tg = ToneGenerator(AudioManager.STREAM_VOICE_CALL, 100)
-            tg.startTone(ToneGenerator.TONE_CDMA_CALLDROP_LITE, 300)
-            h.postDelayed({
-                try { tg.stopTone() } catch (_: Exception) { }
-                try { tg.release() } catch (_: Exception) { }
-            }, 400)
-        } catch (_: Exception) {
-        }
+        // reorder-style drop: 480 Hz, 400 ms
+        playTone(ctx, 480.0, 400, AudioManager.STREAM_VOICE_CALL)
     }
 }
