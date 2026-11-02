@@ -16,6 +16,7 @@ import android.telecom.DisconnectCause;
 import android.telecom.TelecomManager;
 import android.telecom.VideoProfile;
 
+import com.parallax.selfcalling.audio.CallTonePlayer;
 import com.parallax.selfcalling.util.CallEntry;
 import com.parallax.selfcalling.util.CallLogStore;
 import com.parallax.selfcalling.util.Prefs;
@@ -145,6 +146,7 @@ public class SelfCallConnection extends Connection {
 
     void initOutgoing() {
         setDialing();
+        CallTonePlayer.startRingback(ctx);
         long delay = Math.max(500, Prefs.connectDelayMs(ctx));
         h.postDelayed(this::connectSelf, delay);
     }
@@ -253,6 +255,8 @@ public class SelfCallConnection extends Connection {
         if (ended) return;
         if (state == STATE_ACTIVE && activeAt == 0) {
             activeAt = SystemClock.elapsedRealtime();
+            CallTonePlayer.stopRingback();
+            CallTonePlayer.playConnect(ctx);
         }
         SelfCallRegistry.onConnectionStateChanged(this);
         if (state == STATE_ACTIVE) {
@@ -332,6 +336,8 @@ public class SelfCallConnection extends Connection {
     void end(DisconnectCause cause) {
         if (ended) return;
         ended = true;
+        CallTonePlayer.stopRingback();
+        CallTonePlayer.playEnd(ctx);
         h.removeCallbacksAndMessages(null);
         if (videoProvider != null) {
             videoProvider.release();
