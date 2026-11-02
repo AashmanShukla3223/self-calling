@@ -26,7 +26,6 @@ class FgsIncomingService : Service() {
         } catch (e: Exception) {
             android.util.Log.w("SelfCall", "delayed incoming: ${e.message}")
         } finally {
-            CallScheduler.clearMarker(this)
             stopSelf()
         }
     }
@@ -36,7 +35,7 @@ class FgsIncomingService : Service() {
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
         if (intent?.action == ACTION_CANCEL) {
             h.removeCallbacks(fire)
-            CallScheduler.clearMarker(this)
+            CallScheduler.cancel(this)
             stopSelf()
             return START_NOT_STICKY
         }

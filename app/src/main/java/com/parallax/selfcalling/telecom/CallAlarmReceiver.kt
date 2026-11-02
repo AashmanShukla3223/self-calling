@@ -10,7 +10,7 @@ import com.parallax.selfcalling.util.CallScheduler
 class CallAlarmReceiver : BroadcastReceiver() {
 
     override fun onReceive(c: Context, i: Intent) {
-        CallScheduler.clearMarker(c)
+        // marker cleared per-fired id below
         // Hand the actual Telecom request to a foreground service: Telecom is friendlier to
         // incoming calls placed by a foregrounded process, and this survives long waits.
         val s = Intent(c, FgsIncomingService::class.java)
