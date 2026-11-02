@@ -1,29 +1,35 @@
 package com.parallax.selfcalling.audio
 
 import android.content.Context
-import android.media.AudioManager
-import android.media.ToneGenerator
+import android.media.Ringtone
+import android.media.RingtoneManager
 import android.os.Handler
 import android.os.Looper
 
-/** Plays telecom-style tones: ringback while dialing, connect beep, end beep. Kotlin. */
+/** Plays telecom-style tones: ringback while dialing, connect beep, end beep. Uses system
+ *  ringtones/notifications so they are always audible. Kotlin. */
 object CallTonePlayer {
 
     private val h = Handler(Looper.getMainLooper())
-    private var ringback: ToneGenerator? = null
-    private var ringbackRunnable: Runnable? = null
     private var ringbackOn = false
+    private var ringbackRunnable: Runnable? = null
+    private var ringbackRingtone: Ringtone? = null
 
     @Synchronized
     @JvmStatic
     fun startRingback(ctx: Context) {
         stopRingback()
         ringbackOn = true
-        ringback = ToneGenerator(AudioManager.STREAM_RING, 80)
+        val uri = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_RINGTONE)
+        ringbackRingtone = RingtoneManager.getRingtone(ctx, uri)
         val r = object : Runnable {
             override fun run() {
                 if (!ringbackOn) return
-                try { ringback?.startTone(ToneGenerator.TONE_SUP_RINGTONE, 1500) } catch (_: Exception) { }
+                try {
+                    ringbackRingtone?.play()
+                    h.postDelayed({ try { ringbackRingtone?.stop() } catch (_: Exception) { } }, 1500)
+                } catch (_: Exception) {
+                }
                 h.postDelayed(this, 2000)
             }
         }
@@ -37,18 +43,18 @@ object CallTonePlayer {
         ringbackOn = false
         ringbackRunnable?.let { h.removeCallbacks(it) }
         ringbackRunnable = null
-        try { ringback?.stopTone() } catch (_: Exception) { }
-        try { ringback?.release() } catch (_: Exception) { }
-        ringback = null
+        try { ringbackRingtone?.stop() } catch (_: Exception) { }
+        ringbackRingtone = null
     }
 
     @Synchronized
     @JvmStatic
     fun playConnect(ctx: Context) {
         try {
-            val tg = ToneGenerator(AudioManager.STREAM_VOICE_CALL, 90)
-            tg.startTone(ToneGenerator.TONE_PROP_ACK, 200)
-            h.postDelayed({ try { tg.release() } catch (_: Exception) { } }, 300)
+            val uri = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION)
+            val r = RingtoneManager.getRingtone(ctx, uri)
+            r?.play()
+            h.postDelayed({ try { r?.stop() } catch (_: Exception) { } }, 500)
         } catch (_: Exception) {
         }
     }
@@ -57,9 +63,10 @@ object CallTonePlayer {
     @JvmStatic
     fun playEnd(ctx: Context) {
         try {
-            val tg = ToneGenerator(AudioManager.STREAM_VOICE_CALL, 90)
-            tg.startTone(ToneGenerator.TONE_PROP_NACK, 300)
-            h.postDelayed({ try { tg.release() } catch (_: Exception) { } }, 400)
+            val uri = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION)
+            val r = RingtoneManager.getRingtone(ctx, uri)
+            r?.play()
+            h.postDelayed({ try { r?.stop() } catch (_: Exception) { } }, 500)
         } catch (_: Exception) {
         }
     }
