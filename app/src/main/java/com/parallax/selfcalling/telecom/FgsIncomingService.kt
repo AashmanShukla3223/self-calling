@@ -44,19 +44,20 @@ class FgsIncomingService : Service() {
         val delayMs = intent?.getLongExtra(EXTRA_DELAY_MS, 0L) ?: 0L
         val fireAt = System.currentTimeMillis() + delayMs.coerceAtLeast(0L)
 
-        val fireRunnable = Runnable {
+        val holder = arrayOfNulls<Runnable>(1)
+        val runnable = Runnable {
             try {
                 TelecomHelper.simulateIncoming(this, preset)
             } catch (e: Exception) {
                 android.util.Log.w("SelfCall", "delayed incoming: ${e.message}")
             } finally {
                 if (id >= 0) CallScheduler.clearFired(this, id)
-                synchronized(entries) { entries.removeAll { it.runnable === fireRunnable } }
+                synchronized(entries) { entries.removeAll { it.runnable === holder[0] } }
                 updateNotification()
                 if (synchronized(entries) { entries.isEmpty() }) stopSelf()
             }
         }
-        val runnable = fireRunnable
+        holder[0] = runnable
         val entry = FireEntry(id, preset, delayMs, fireAt, runnable)
         synchronized(entries) { entries.add(entry) }
 
