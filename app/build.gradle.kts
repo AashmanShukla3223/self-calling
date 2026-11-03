@@ -50,4 +50,16 @@ android {
     buildFeatures {
         viewBinding = true
     }
+
+    // F-Droid builds with `gradle: [fdroid]`, which selects this flavor by name,
+    // so first-party variants need explicit flavors too.
+    flavorDimensions += "distribution"
+    productFlavors {
+        create("github") {
+            dimension = "distribution"
+        }
+        create("fdroid") {
+            dimension = "distribution"
+        }
+    }
 }

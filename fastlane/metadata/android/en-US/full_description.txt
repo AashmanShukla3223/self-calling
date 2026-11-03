@@ -1,0 +1,20 @@
+Self Calling places simulated incoming calls and outgoing self-calls through the system Telecom stack, so they render in the native dialer UI exactly like a real call. The app only places calls; it does not route them through a SIM.
+
+Shortcut Sets let you build ordered chains of simulated incoming calls, SMS messages and outgoing calls. One tap runs the whole chain, instead of selecting a contact, simulating incoming, switching to the next contact and repeating by hand.
+
+SMS Auto-Reply automatically replies to incoming SMS messages with a configured message, either for everyone or per contact, with optional keyword triggers.
+
+Home screen widgets run any shortcut set with a single tap.
+
+Features
+- Simulated incoming calls via Telecom, shown in the native dialer
+- Outgoing self-calls through Telecom
+- Shortcut Sets: mixed call, SMS and outgoing-call chains with per-step delays
+- SMS Auto-Reply with per-contact messages and keyword triggers
+- SMS log, backup and restore
+- Permission center that shows exactly what is granted and what is missing
+- Home screen widgets for one-tap shortcut runs
+- Caller identity presets, voice in call, video self-calls, auto-answer and auto-end
+- Available in 22 Indian languages plus Arabic, Korean, Nepali and Urdu
+
+The app is fully offline. It contains no ads, no trackers and no network permissions.

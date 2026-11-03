@@ -3,66 +3,40 @@ Name: Self Calling
 Summary: Call yourself through the native dialer with shortcut automation
 Description: |
   Self Calling places simulated incoming calls and outgoing self-calls through the
-  system Telecom stack so they render in the native dialer UI. The app only places
-  calls; it does not route them through a SIM.
+  system Telecom stack, so they render in the native dialer UI exactly like a real
+  call. The app only places calls; it does not route them through a SIM.
 
   Shortcut Sets let you build ordered chains of simulated incoming calls, SMS
-  messages, and outgoing calls — one tap runs the whole chain. Great for automating
-  repetitive simulate-incoming workflows (person a → b → c → …) without tapping
-  each one individually.
+  messages and outgoing calls. One tap runs the whole chain, instead of selecting a
+  contact, simulating incoming, switching to the next contact and repeating by hand.
 
   SMS Auto-Reply automatically replies to incoming SMS messages with a configured
-  message, per-contact or globally, with optional keyword triggers.
+  message, either for everyone or per contact, with optional keyword triggers.
 
   Home screen widgets run any shortcut set with a single tap.
 
-Features:
-- Simulated incoming calls via Telecom (native dialer UI)
-- Outgoing self-calls through Telecom
-- Shortcut Sets: mixed call / SMS / outgoing-call chains with per-step delays
-- SMS Auto-Reply with per-contact messages and keyword triggers
-- SMS log and backup/restore
-- Permission center
-- Home screen widgets for one-tap shortcut runs
+  The app is fully offline. It contains no ads, no trackers and no network
+  permissions.
 
 License: MIT
 AuthorName: Aashman Shukla
 AuthorEmail: AashmanShukla3223@users.noreply.github.com
-Homepage: https://github.com/AashmanShukla3223/self-calling
+WebSite: https://github.com/AashmanShukla3223/self-calling
 SourceCode: https://github.com/AashmanShukla3223/self-calling
 IssueTracker: https://github.com/AashmanShukla3223/self-calling/issues
 Changelog: https://github.com/AashmanShukla3223/self-calling/releases
+
 RepoType: git
 Repo: https://github.com/AashmanShukla3223/self-calling.git
-BinaryArchitecture:
-- armeabi-v7a
-- arm64-v8a
-- x86
-- x86_64
+
+Builds:
+  - versionName: '1.4'
+    versionCode: 5
+    commit: FULL_40_CHAR_COMMIT_HASH
+    gradle:
+      - fdroid
 
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
-CurrentVersion: 1.3.1
-CurrentVersionCode: 4
-Categories:
-- Communication
-- Utilities
-
-Builds:
-  - versionName: 1.3.1
-    versionCode: 4
-    commit: 33e517b
-    gradle:
-      - fdroid
-    buildArgs:
-      - assembleRelease
-    disable:
-      - check
-    gradleVersion: 9.6.0
-    sdk:
-      - 37
-    buildtools:
-      - 36.0.0
-    ndk: r25c
-    exclude:
-      - app/build/outputs/apk/release/app-release.apk
+CurrentVersion: '1.4'
+CurrentVersionCode: 5
