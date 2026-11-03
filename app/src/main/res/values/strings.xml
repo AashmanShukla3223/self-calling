@@ -213,4 +213,11 @@
 
     <string name="title_sms_log">SMS Log</string>
     <string name="sms_log_status">SMS log: %d messages</string>
+
+    <string name="widget_title">Shortcut set</string>
+    <string name="widget_sub_tap">Tap to run</string>
+    <string name="widget_sub_not_configured">Tap to configure</string>
+    <string name="widget_configure_title">Configure Widget</string>
+    <string name="widget_choose_set">Choose shortcut set to run</string>
+    <string name="widget_cancel">Cancel</string>
 </resources>
