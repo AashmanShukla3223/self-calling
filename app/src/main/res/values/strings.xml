@@ -200,4 +200,14 @@
     <string name="video_off">Video off</string>
     <string name="video_unavailable">Camera unavailable</string>
     <string name="perm_camera">Camera permission is needed for the local preview.</string>
+
+    <string name="title_sms_autoreply">SMS Auto-Reply</string>
+    <string name="sms_autoreply_title">SMS Auto-Reply</string>
+    <string name="sms_autoreply_hint">Automatically reply to every incoming SMS with your message.</string>
+    <string name="sms_autoreply_enabled">Enable auto-reply</string>
+    <string name="sms_autoreply_message_label">Reply message</string>
+    <string name="sms_autoreply_message_hint">e.g. Hello, I am busy - I will reply later.</string>
+    <string name="sms_autoreply_saved">Auto-reply saved</string>
+    <string name="perm_sms_receive">Receive SMS permission is needed for auto-reply</string>
+    <string name="perm_sms_send">Send SMS permission is needed for auto-reply</string>
 </resources>

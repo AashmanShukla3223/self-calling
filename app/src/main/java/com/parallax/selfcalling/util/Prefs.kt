@@ -150,4 +150,25 @@ object Prefs {
     fun setBranding(c: Context, value: String?) {
         sp(c).edit().putString("branding", value?.trim().orEmpty()).apply()
     }
+
+    // ---- SMS auto-reply ----
+
+    /** Whether incoming SMS gets an automatic reply. Default off. */
+    @JvmStatic
+    fun smsAutoReplyEnabled(c: Context): Boolean = sp(c).getBoolean("sms_auto_reply", false)
+
+    @JvmStatic
+    fun setSmsAutoReplyEnabled(c: Context, enabled: Boolean) {
+        sp(c).edit().putBoolean("sms_auto_reply", enabled).apply()
+    }
+
+    /** The reply message sent back for every incoming SMS. Default empty. */
+    @JvmStatic
+    fun smsAutoReplyMessage(c: Context): String =
+        sp(c).getString("sms_auto_reply_message", "") ?: ""
+
+    @JvmStatic
+    fun setSmsAutoReplyMessage(c: Context, message: String?) {
+        sp(c).edit().putString("sms_auto_reply_message", message?.trim().orEmpty()).apply()
+    }
 }

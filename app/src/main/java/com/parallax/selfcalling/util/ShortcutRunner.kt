@@ -22,7 +22,7 @@ object ShortcutRunner {
         return set.steps.any { it.type == ShortcutStep.TYPE_MESSAGE }
     }
 
-    /** Schedules every step of a set: calls via CallScheduler, messages via native Messages app intent. */
+    /** Schedules every step of a set: calls via CallScheduler, messages via native Messages app. */
     @JvmStatic
     fun run(c: Context, setId: Int): RunResult {
         val set = ShortcutSets.get(c, setId) ?: return RunResult.FAILED
@@ -39,18 +39,44 @@ object ShortcutRunner {
         return RunResult.OK
     }
 
-    /** Opens the native Messages app with recipient + body pre-filled (after optional delay). */
+    /** Cleans a number to digits/+ only for the SMS URI. */
+    private fun cleanNumber(raw: String?): String {
+        var n = raw?.replace(Regex("[^0-9+]"), "") ?: ""
+        return if (n.isEmpty()) "" else n
+    }
+
+    /** Opens the native Messages app with recipient + body pre-filled (after optional delay).
+     *  The user reviews and taps Send in the native Messages app. */
     private fun openNativeMessages(c: Context, delaySec: Int, number: String, text: String) {
+        val clean = cleanNumber(number)
         val send = {
+            var opened = false
+            // Try 1: ACTION_VIEW sms: (works on most Samsung)
             try {
                 val i = Intent(Intent.ACTION_VIEW)
-                i.data = Uri.parse("sms:" + number)
+                i.data = Uri.parse("sms:" + clean)
                 i.putExtra("sms_body", text)
                 i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TOP)
                 c.startActivity(i)
-                Toast.makeText(c, "Opening Messages to $number", Toast.LENGTH_SHORT).show()
+                opened = true
             } catch (e: Exception) {
-                Toast.makeText(c, "Could not open Messages: ${e.message}", Toast.LENGTH_LONG).show()
+                // fall through to next attempt
+            }
+            // Try 2: ACTION_SENDTO smsto:
+            if (!opened) {
+                try {
+                    val i = Intent(Intent.ACTION_SENDTO)
+                    i.data = Uri.parse("smsto:" + clean)
+                    i.putExtra("sms_body", text)
+                    i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TOP)
+                    c.startActivity(i)
+                    opened = true
+                } catch (e: Exception) {
+                    // fall through
+                }
+            }
+            if (!opened) {
+                Toast.makeText(c, "Could not open Messages app", Toast.LENGTH_LONG).show()
             }
         }
         if (delaySec <= 0) {

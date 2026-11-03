@@ -126,6 +126,10 @@ public class SettingsActivity extends Activity {
         b.btnManageAccounts.setOnClickListener(v -> TelecomHelper.openCallingAccounts(this));
 
         b.btnBranding.setOnClickListener(v -> showBrandingDialog());
+
+        // ---- SMS auto-reply ----
+        b.btnSmsAutoreply.setOnClickListener(v ->
+                startActivity(new Intent(this, SmsAutoReplyActivity.class)));
     }
 
     /** Edits the PhoneAccount label used by the dialer as "Calls via ...". */
@@ -192,6 +196,14 @@ public class SettingsActivity extends Activity {
         } else {
             b.accountStatus.setText(R.string.account_status_fail);
         }
+
+        // SMS auto-reply status
+        boolean smsEnabled = Prefs.smsAutoReplyEnabled(this);
+        String smsMsg = Prefs.smsAutoReplyMessage(this);
+        String status = smsEnabled
+                ? "Auto-reply ON: \"" + (smsMsg.isEmpty() ? "(no message set)" : smsMsg) + "\""
+                : "Auto-reply OFF";
+        b.smsAutoreplyStatus.setText(status);
     }
 
     @Override

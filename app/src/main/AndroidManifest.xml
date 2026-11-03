@@ -8,6 +8,8 @@
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
     <uses-permission android:name="android.permission.READ_PHONE_NUMBERS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
     <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
@@ -87,6 +89,12 @@
             android:theme="@android:style/Theme.NoDisplay" />
 
         <activity
+            android:name=".SmsAutoReplyActivity"
+            android:label="@string/title_sms_autoreply"
+            android:exported="false"
+            android:parentActivityName=".SettingsActivity" />
+
+        <activity
             android:name=".telecom.VideoCallActivity"
             android:exported="false"
             android:excludeFromRecents="true"
@@ -117,6 +125,14 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.NEW_OUTGOING_CALL" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name=".sms.SmsAutoReplyReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
             </intent-filter>
         </receiver>
     </application>

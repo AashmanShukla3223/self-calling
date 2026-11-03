@@ -3,6 +3,8 @@ package com.parallax.selfcalling;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
 import android.widget.Toast;
 
 import com.parallax.selfcalling.util.ShortcutRunner;
@@ -34,6 +36,11 @@ public class ShortcutRunActivity extends Activity {
         } else {
             Toast.makeText(this, "Shortcut set not found or empty", Toast.LENGTH_SHORT).show();
         }
-        finish();
+        // Give message intents time to launch before finishing
+        new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
+            @Override public void run() {
+                finish();
+            }
+        }, 500);
     }
 }

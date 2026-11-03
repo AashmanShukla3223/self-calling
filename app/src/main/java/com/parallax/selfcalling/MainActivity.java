@@ -27,20 +27,26 @@ public class MainActivity extends Activity {
             return new String[]{
                     Manifest.permission.CALL_PHONE,
                     Manifest.permission.ANSWER_PHONE_CALLS,
-                    Manifest.permission.READ_PHONE_NUMBERS
+                    Manifest.permission.READ_PHONE_NUMBERS,
+                    Manifest.permission.RECEIVE_SMS,
+                    Manifest.permission.SEND_SMS
             };
         } else if (Build.VERSION.SDK_INT >= 26) {
             return new String[]{
                     Manifest.permission.CALL_PHONE,
                     Manifest.permission.ANSWER_PHONE_CALLS,
-                    Manifest.permission.PROCESS_OUTGOING_CALLS
+                    Manifest.permission.PROCESS_OUTGOING_CALLS,
+                    Manifest.permission.RECEIVE_SMS,
+                    Manifest.permission.SEND_SMS
             };
         } else {
             // PROCESS_OUTGOING_CALLS lets DialedCallReceiver catch numbers dialed in the
             // phone app; the broadcast it guards is only sent before Android 10.
             return new String[]{
                     Manifest.permission.CALL_PHONE,
-                    Manifest.permission.PROCESS_OUTGOING_CALLS
+                    Manifest.permission.PROCESS_OUTGOING_CALLS,
+                    Manifest.permission.RECEIVE_SMS,
+                    Manifest.permission.SEND_SMS
             };
         }
     }

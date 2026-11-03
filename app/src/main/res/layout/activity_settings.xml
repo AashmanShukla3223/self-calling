@@ -610,6 +610,34 @@
                 android:textSize="14sp" />
 
             <TextView
+                style="@style/SectionLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:text="SMS AUTO-REPLY" />
+
+            <TextView
+                android:id="@+id/smsAutoreplyStatus"
+                style="@style/RowSub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp" />
+
+            <Button
+                android:id="@+id/btnSmsAutoreply"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/btn_outline"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="Configure auto-reply"
+                android:textColor="@color/accent"
+                android:textSize="14sp" />
+
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="32dp"
