@@ -85,7 +85,10 @@ public class ShortcutEditorActivity extends Activity {
         });
         b.btnRun.setOnClickListener(v -> {
             if (save()) {
-                runSetWithSmsCheck(setId);
+                if (com.parallax.selfcalling.util.ShortcutRunner.run(this, setId)
+                        == com.parallax.selfcalling.util.ShortcutRunner.RunResult.OK) {
+                    Toast.makeText(this, "Scheduled", Toast.LENGTH_SHORT).show();
+                }
             }
         });
         b.btnPin.setOnClickListener(v -> {
@@ -111,19 +114,6 @@ public class ShortcutEditorActivity extends Activity {
         ShortcutSets.upsert(this, set);
         name = n;
         return true;
-    }
-
-    private void runSetWithSmsCheck(int setId) {
-        if (com.parallax.selfcalling.util.ShortcutRunner.hasMessageSteps(this, setId)
-                && !com.parallax.selfcalling.util.ShortcutRunner.hasSmsPermission(this)) {
-            com.parallax.selfcalling.util.ShortcutRunner.requestSmsPermission(this);
-            return;
-        }
-        com.parallax.selfcalling.util.ShortcutRunner.RunResult res =
-                com.parallax.selfcalling.util.ShortcutRunner.run(this, setId);
-        if (res == com.parallax.selfcalling.util.ShortcutRunner.RunResult.OK) {
-            Toast.makeText(this, "Scheduled", Toast.LENGTH_SHORT).show();
-        }
     }
 
     private void refreshSteps() {
@@ -253,15 +243,5 @@ public class ShortcutEditorActivity extends Activity {
             return true;
         }
         return super.onOptionsItemSelected(item);
-    }
-
-    @Override
-    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
-        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
-        if (requestCode == com.parallax.selfcalling.util.ShortcutRunner.SMS_PERMISSION_REQUEST
-                && grantResults.length > 0
-                && grantResults[0] == android.content.pm.PackageManager.PERMISSION_GRANTED) {
-            Toast.makeText(this, R.string.perm_sms, Toast.LENGTH_SHORT).show();
-        }
     }
 }
