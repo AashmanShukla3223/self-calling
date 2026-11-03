@@ -39,10 +39,20 @@ public class ShortcutSetsActivity extends Activity {
         b.list.setOnItemClickListener((parent, view, position, id) -> {
             // tap runs
             int sid = items.get(position).id;
-            if (com.parallax.selfcalling.util.ShortcutRunner.run(this, sid)) {
-                Toast.makeText(this, "Scheduled", Toast.LENGTH_SHORT).show();
-            }
+            runSetWithSmsCheck(sid);
         });
+    }
+
+    private void runSetWithSmsCheck(int setId) {
+        if (com.parallax.selfcalling.util.ShortcutRunner.hasMessageSteps(this, setId)
+                && !com.parallax.selfcalling.util.ShortcutRunner.hasSmsPermission(this)) {
+            com.parallax.selfcalling.util.ShortcutRunner.requestSmsPermission(this);
+            return;
+        }
+        if (com.parallax.selfcalling.util.ShortcutRunner.run(this, setId)
+                == com.parallax.selfcalling.util.ShortcutRunner.RunResult.OK) {
+            Toast.makeText(this, "Scheduled", Toast.LENGTH_SHORT).show();
+        }
     }
 
     @Override
@@ -78,9 +88,7 @@ public class ShortcutSetsActivity extends Activity {
             row.rowTitle.setText(s.name);
             row.rowSub.setText(s.steps.size() + " steps");
             row.btnRun.setOnClickListener(v -> {
-                if (com.parallax.selfcalling.util.ShortcutRunner.run(ShortcutSetsActivity.this, s.id)) {
-                    Toast.makeText(ShortcutSetsActivity.this, "Scheduled", Toast.LENGTH_SHORT).show();
-                }
+                runSetWithSmsCheck(s.id);
             });
             row.btnEdit.setOnClickListener(v -> {
                 Intent i = new Intent(ShortcutSetsActivity.this, ShortcutEditorActivity.class);
@@ -103,5 +111,16 @@ public class ShortcutSetsActivity extends Activity {
             return true;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        if (requestCode == com.parallax.selfcalling.util.ShortcutRunner.SMS_PERMISSION_REQUEST
+                && grantResults.length > 0
+                && grantResults[0] == android.content.pm.PackageManager.PERMISSION_GRANTED) {
+            // re-run the last attempted set? user will tap run again; just confirm
+            Toast.makeText(this, R.string.perm_sms, Toast.LENGTH_SHORT).show();
+        }
     }
 }
