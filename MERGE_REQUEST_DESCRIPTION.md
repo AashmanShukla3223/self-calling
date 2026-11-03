@@ -1,67 +1,86 @@
-# New App: Self Calling (com.parallax.selfcalling)
+# New app: Self Calling
 
-## Summary
-Call yourself through the native dialer with shortcut automation.
+## Abstract for new app inclusion
 
-Self Calling places simulated incoming calls and outgoing self-calls through the system Telecom stack so they render in the native dialer UI. The app only places calls; it does not route them through a SIM.
+### Please introduce the functions and usage of your app in summary, and also attach some screenshots.
 
-## Package
-- **Package:** `com.parallax.selfcalling`
-- **Version:** 1.3.1
-- **Version Code:** 4
-- **License:** MIT
-- **Source:** https://github.com/AashmanShukla3223/self-calling
-- **Tag:** v1.3.1
+Self Calling places simulated incoming calls and outgoing self-calls through the system Telecom stack, so they render in the native dialer UI exactly like a real call. The app only places calls; it does not route them through a SIM.
 
-## Description
+Usage:
 
-Self Calling places simulated incoming calls and outgoing self-calls through the system Telecom stack so they render in the native dialer UI. The app only places calls; it does not route them through a SIM.
+1. Open the app. The home screen shows Telecom registration and permission status.
+2. Tap **Call Myself** to place an outgoing self-call, or **Simulate incoming call** to receive one. The call appears in the system dialer / call UI.
+3. Optionally configure a caller identity preset (name + number), the wait before an incoming call rings, auto-answer, auto-end, and the voice heard during the call.
+4. **Shortcut Sets** build ordered chains of simulated calls, SMS messages and outgoing calls; home screen widgets run a set with one tap.
+5. **SMS Auto-Reply** replies to incoming SMS automatically, globally or per contact, with optional keyword triggers.
 
-**Shortcut Sets** let you build ordered chains of simulated incoming calls, SMS messages, and outgoing calls — one tap runs the whole chain. Instead of selecting person a → simulate incoming → person b → simulate incoming → etc., build one set and run it once.
+Screenshots (also in the upstream repo under `fastlane/metadata/android/en-US/images/phoneScreenshots/`):
 
-**SMS Auto-Reply** automatically replies to incoming SMS messages with a configured message, per-contact or globally, with optional keyword triggers.
+| Home | Presets | Settings |
+| --- | --- | --- |
+| ![Home](https://raw.githubusercontent.com/AashmanShukla3223/self-calling/v1.4/shot_5_1_home.png) | ![Presets](https://raw.githubusercontent.com/AashmanShukla3223/self-calling/v1.4/shot_5_2_presets.png) | ![Settings](https://raw.githubusercontent.com/AashmanShukla3223/self-calling/v1.4/shot_5_3_settings.png) |
 
-**Home screen widgets** run any shortcut set with a single tap.
+| Call log | Shortcut sets |
+| --- | --- |
+| ![Log](https://raw.githubusercontent.com/AashmanShukla3223/self-calling/v1.4/shot_5_4_log.png) | ![Shortcuts](https://raw.githubusercontent.com/AashmanShukla3223/self-calling/v1.4/shot_5_5_shortcuts.png) |
 
-## Key Features
+### Please elaborate why you wrote this app. Please highlight the unique functions it provides over other similar apps in F-Droid.
 
-- Simulated incoming calls via Telecom (native dialer UI)
-- Outgoing self-calls through Telecom
-- Shortcut Sets: mixed call / SMS / outgoing-call chains with per-step delays
-- SMS Auto-Reply with per-contact messages and keyword triggers
-- SMS log and backup/restore
-- Permission center
-- Home screen widgets for one-tap shortcut runs
+I needed to test dialer and call-flow behaviour on devices without touching a real SIM, and to reproduce repetitive multi-contact "simulated incoming call" sequences. F-Droid has call utilities, but I could not find one that:
 
-## Build Information
+- places calls through the real Telecom framework so the stock dialer shows a genuine incoming screen, rather than an in-app fake overlay;
+- chains several calls, SMS messages and outgoing calls into a single Shortcut Set, run from a home screen widget;
+- pairs this with SMS auto-reply and a caller identity (name, number, voice, video) configurable per preset.
 
-- **Gradle version:** 9.6.0
-- **AGP version:** 9.4.1
-- **Compile SDK:** 37
-- **Build tools:** 36.0.0
-- **NDK:** r25c
-- **Min SDK:** 23 (Android 6.0)
-- **Target SDK:** 37
-- **Architectures:** armeabi-v7a, arm64-v8a, x86, x86_64
-- **Build variant:** release
-- **External libraries:** none
+The app is fully offline: no network permission, no ads, no trackers.
 
-## Metadata File
+## Checklist
 
-The F-Droid metadata file is `metadata/com.parallax.selfcalling.yml` in this merge request.
+### Policy
 
-## Screenshots
+* [x] The app complies with the [inclusion policy](https://f-droid.org/docs/Inclusion_Policy). _Pay special attention to Quality point 6._
+* [x] The original app author has been notified (and does not oppose the inclusion). If you are not the author, please paste the link of the reply from the author. — I am the author, submitting my own app.
+* [x] The upstream app source code repo contains the app metadata in a [Fastlane](https://gitlab.com/snippets/1895688) or [Triple-T](https://gitlab.com/snippets/1901490) folder structure. The summary and description must be included and images, icon, and changelog should also be provided for better user experience. The `en-US` locale must be included. — `fastlane/metadata/android/en-US/` with title, short and full description, icon, 5 phone screenshots and `changelogs/5.txt`.
 
-Available in the GitHub repo:
-- https://github.com/AashmanShukla3223/self-calling (root directory: shot_home.png, shot_presets.png, shot_settings.png)
+### Docs
 
-## Author
+* [x] Please read [the guide](https://gitlab.com/fdroid/fdroiddata/-/blob/master/CONTRIBUTING.md) first if this is your first contribution.
+* [x] Please make sure your metadata follows the best practice in [our templates](https://gitlab.com/fdroid/fdroiddata/tree/master/templates).
+* [x] Please read the [Build Metadata Reference](https://f-droid.org/docs/Build_Metadata_Reference/) and make sure your metadata is valid.
+* [x] Please read the [Quick Start Guide](https://f-droid.org/en/docs/Submitting_to_F-Droid_Quick_Start_Guide/).
 
-- **Name:** Aashman Shukla
-- **GitHub:** https://github.com/AashmanShukla3223/self-calling
+### Merge Request Setup
 
-## Notes
+* [x] The title of this merge request should follow "New app: app name" format.
+* [x] Please make sure your fdroiddata fork is public and your branch is not protected.
+* [x] Please read [our Git guide](https://gitlab.com/fdroid/wiki/-/wikis/Tips-for-fdroiddata-contributors/Git-Usage) if you don't know how to rebase your branch. Don't rebase your branch if there is no conflict.
+* [x] All related [fdroiddata](https://gitlab.com/fdroid/fdroiddata/issues) and [RFP issues](https://gitlab.com/fdroid/rfp/issues) have been referenced in this merge request
+* [x] Please only submit one app in one MR.
 
-- No external libraries or proprietary dependencies
-- Signed release APK built with `./gradlew assembleRelease`
-- Full build script included: `./build.sh`
+### Metadata
+
+* [x] Metadata must be put in `metadata/<applicationId>.yml`.
+* [x] Metadata must be a valid YAML file.
+* [x] Metadata must use LF as line ending.
+* [x] Don't add summary/description/changelog/images or anything that should be provided in upstream repo. Please check the Changes tab to make sure there is no other unrelated files added in the MR.
+* [x] Releases are tagged and auto update is enabled unless there is a special reason.
+* [x] There is an issue tracker and contact info of the author so that we can report bugs and contact the author.
+* [x] An AuthorName must be added. It doesn't need to be the real name.
+* [x] External repos are added as git submodules instead of srclibs.
+* [ ] Enable [Reproducible Builds](https://f-droid.org/docs/Reproducible_Builds). — Not enabled for this first build. Please sign with the F-Droid key for now.
+* [x] Setup abi split if the APK is large and the splitted ones can be much smaller. — The APK is ~1.2 MB with no native libraries, so ABI splits would not help.
+* [x] Only the latest versions should be kept in the metadata before it's merged.
+* [x] Don't add any disabled versions in the metadata.
+* [x] The `commit` field should be the full hash.
+
+### Pipeline
+
+* [ ] All pipelines should pass.
+* [ ] All warnings and errors in the Reports tab should be fixed or explained.
+* [x] F-Droid CI runners are under GitLab's FOSS program.
+
+---------------------
+
+Closes rfp#<RFP issue number>
+
+/label ~"New App"
