@@ -61,8 +61,20 @@ public class ShortcutEditorActivity extends Activity {
         b.presetList.setOnItemClickListener((parent, view, position, id) -> {
             Preset snap = presets.get(position);
             int delay = steps.isEmpty() ? 0 : steps.get(steps.size() - 1).delaySec + 60;
-            steps.add(new ShortcutStep(snap, delay, -1, -2));
-            refreshSteps();
+            new android.app.AlertDialog.Builder(this)
+                    .setTitle("Add step for " + snap.name)
+                    .setItems(new String[]{"Simulated incoming call", "Send SMS message"},
+                            (d, w) -> {
+                                if (w == 0) {
+                                    steps.add(new com.parallax.selfcalling.util.ShortcutStep(
+                                            snap, delay, "call", "", -1, -2));
+                                } else {
+                                    steps.add(new com.parallax.selfcalling.util.ShortcutStep(
+                                            snap, delay, "message", "", -1, -2));
+                                }
+                                refreshSteps();
+                            })
+                    .show();
         });
 
         b.btnSave.setOnClickListener(v -> {
@@ -113,13 +125,18 @@ public class ShortcutEditorActivity extends Activity {
             card.setBackgroundResource(R.drawable.card);
 
             TextView title = new TextView(this);
-            title.setText((i + 1) + ". " + st.snapshot.name + " (" + st.snapshot.number + ")");
+            String typeLabel = st.type.equals(com.parallax.selfcalling.util.ShortcutStep.TYPE_MESSAGE) ? "SMS" : "Call";
+            title.setText((i + 1) + ". [" + typeLabel + "] " + st.snapshot.name + " (" + st.snapshot.number + ")");
             title.setTextColor(getResources().getColor(R.color.text_primary));
             card.addView(title);
 
             TextView sub = new TextView(this);
-            String rt = st.ringTimeoutSec >= 0 ? (st.ringTimeoutSec + "s ring") : "global ring";
-            sub.setText("delay " + st.delaySec + "s · " + rt);
+            if (st.type.equals(com.parallax.selfcalling.util.ShortcutStep.TYPE_MESSAGE)) {
+                sub.setText("delay " + st.delaySec + "s · \"" + st.messageText + "\"");
+            } else {
+                String rt = st.ringTimeoutSec >= 0 ? (st.ringTimeoutSec + "s ring") : "global ring";
+                sub.setText("delay " + st.delaySec + "s · " + rt);
+            }
             sub.setTextColor(getResources().getColor(R.color.text_secondary));
             card.addView(sub);
 
@@ -152,21 +169,42 @@ public class ShortcutEditorActivity extends Activity {
         final EditText delay = new EditText(this);
         delay.setHint("Delay seconds from run start");
         delay.setText(String.valueOf(st.delaySec));
+        final EditText msg = new EditText(this);
+        msg.setHint("Message text (SMS steps only)");
+        msg.setText(st.messageText);
+        final android.widget.Spinner typeSpin = new android.widget.Spinner(this);
+        ArrayAdapter<String> ta = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item,
+                new String[]{"Call", "Message"});
+        ta.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        typeSpin.setAdapter(ta);
+        typeSpin.setSelection(st.type.equals(com.parallax.selfcalling.util.ShortcutStep.TYPE_MESSAGE) ? 1 : 0);
+        container.addView(new android.widget.TextView(this) {{
+            setText("Type");
+            setTextColor(getResources().getColor(R.color.text_primary));
+        }});
+        container.addView(typeSpin);
+        container.addView(delay);
         final EditText rt = new EditText(this);
         rt.setHint("Ring timeout seconds (-1 = global, 0 = never)");
         rt.setText(String.valueOf(st.ringTimeoutSec));
-        container.addView(delay);
         container.addView(rt);
+        container.addView(msg);
 
         new AlertDialog.Builder(this)
                 .setTitle("Edit step")
                 .setView(container)
                 .setPositiveButton("Save", (d, w) -> {
+                    String t = typeSpin.getSelectedItem().toString();
+                    String newType = t.equals("Message")
+                            ? com.parallax.selfcalling.util.ShortcutStep.TYPE_MESSAGE
+                            : com.parallax.selfcalling.util.ShortcutStep.TYPE_CALL;
                     int dVal = 0;
                     int rVal = st.ringTimeoutSec;
                     try { dVal = Integer.parseInt(delay.getText().toString().trim()); } catch (Exception ignored) {}
                     try { rVal = Integer.parseInt(rt.getText().toString().trim()); } catch (Exception ignored) {}
-                    steps.set(idx, new ShortcutStep(st.snapshot, Math.max(0, dVal), rVal, st.autoAnswerSec));
+                    String mText = msg.getText().toString().trim();
+                    steps.set(idx, new ShortcutStep(st.snapshot, Math.max(0, dVal),
+                            newType, mText, rVal, st.autoAnswerSec));
                     refreshSteps();
                 })
                 .setNegativeButton(android.R.string.cancel, null)

@@ -5,15 +5,31 @@ import android.content.SharedPreferences
 import org.json.JSONArray
 import org.json.JSONObject
 
-/** One step in a shortcut set: a snapshotted identity plus its own timing overrides. */
+/** One step in a shortcut set: call (simulated incoming) or message (SMS). */
 class ShortcutStep(
     @JvmField val snapshot: Preset,
     @JvmField val delaySec: Int = 0,
+    /** step type: TYPE_CALL or TYPE_MESSAGE */
+    @JvmField val type: String = TYPE_CALL,
+    /** message body for TYPE_MESSAGE steps */
+    @JvmField val messageText: String = "",
     @JvmField val ringTimeoutSec: Int = -1,   // -1 = use global
     @JvmField val autoAnswerSec: Int = -2      // -2 = use global, -1 = off
-)
+) {
+    companion object {
+        const val TYPE_CALL = "call"
+        const val TYPE_MESSAGE = "message"
+        @JvmOverloads
+        fun call(snapshot: Preset, delaySec: Int = 0,
+                 ringTimeoutSec: Int = -1, autoAnswerSec: Int = -2) =
+            ShortcutStep(snapshot, delaySec, TYPE_CALL, "", ringTimeoutSec, autoAnswerSec)
+        @JvmOverloads
+        fun message(snapshot: Preset, messageText: String, delaySec: Int = 0) =
+            ShortcutStep(snapshot, delaySec, TYPE_MESSAGE, messageText, -1, -2)
+    }
+}
 
-/** A reusable, ordered set of simulated-incoming calls. */
+/** A reusable, ordered set of shortcut steps (calls and/or messages). */
 class ShortcutSet(
     @JvmField val id: Int,
     @JvmField var name: String,
@@ -43,6 +59,8 @@ object ShortcutSets {
                         steps.add(ShortcutStep(
                             Preset.fromJson(so.getJSONObject("snapshot")),
                             so.optInt("delaySec", 0),
+                            so.optString("type", ShortcutStep.TYPE_CALL),
+                            so.optString("messageText", ""),
                             so.optInt("ringTimeoutSec", -1),
                             so.optInt("autoAnswerSec", -2)
                         ))
@@ -68,6 +86,8 @@ object ShortcutSets {
                     val so = JSONObject()
                     so.put("snapshot", st.snapshot.toJson())
                     so.put("delaySec", st.delaySec)
+                    so.put("type", st.type)
+                    so.put("messageText", st.messageText)
                     so.put("ringTimeoutSec", st.ringTimeoutSec)
                     so.put("autoAnswerSec", st.autoAnswerSec)
                     sa.put(so)

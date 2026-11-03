@@ -140,6 +140,12 @@
     <string name="toast_scheduled">Incoming call %s</string>
     <string name="pending_chip">Incoming call %s — tap to cancel</string>
     <string name="toast_canceled">Scheduled call canceled</string>
+    <string name="shortcut_step_call">Simulated incoming call</string>
+    <string name="shortcut_step_message">Send SMS message</string>
+    <string name="shortcut_step_type_call">Call</string>
+    <string name="shortcut_step_type_message">Message</string>
+    <string name="shortcut_step_msg_hint">Message text (SMS steps only)</string>
+    <string name="perm_sms">SMS permission is needed to send messages</string>
 
     <string name="settings_incoming">INCOMING CALL</string>
     <string name="incoming_wait_title">Waiting time</string>
