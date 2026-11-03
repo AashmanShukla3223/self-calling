@@ -32,7 +32,7 @@ Repo: https://github.com/AashmanShukla3223/self-calling.git
 Builds:
   - versionName: '1.4'
     versionCode: 5
-    commit: FULL_40_CHAR_COMMIT_HASH
+    commit: 804517376231f52716baa54cc80fa0070a7a8308
     gradle:
       - fdroid
 
