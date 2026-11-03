@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">स्व आह्वानम्</string>
+    <string name="tagline">मूलसङ्केतकेन स्वयमेव आह्वयतु</string>
+    <string name="account_desc">स्वस्मै आह्वानम्</string>
+    <string name="footer">आह्वानानि मूलसङ्केतक-दृश्ये दृश्यन्ते — एतत् अनुप्रयोगः केवलं तेषां स्थापनं करोति।</string>
+
+    <string name="title_settings">विन्यासाः</string>
+    <string name="title_log">स्व-आह्वान-अभिलेखः</string>
+    <string name="perm_granted">अनुज्ञा प्रदत्ता</string>
+
+    <string name="status_title">तन्त्र-स्थितिः</string>
+    <string name="status_account">दूरसञ्चार-खातम्</string>
+    <string name="status_account_ok">पञ्जीकृतम्</string>
+    <string name="status_account_fail">अपञ्जीकृतम् — अनुप्रयोगं पुनः उद्घाटयतु</string>
+    <string name="status_account_legacy">विन्यासेषु → दूरभाष-खाते सकृत् सक्रियं करोतु</string>
+    <string name="status_call">आह्वान-अनुज्ञा</string>
+    <string name="status_perm_ok">प्रदत्ता</string>
+    <string name="status_call_missing">अनुज्ञार्थम् आह्वान-बटनं नुदतु</string>
+    <string name="status_answer">आह्वान-उत्तर-अनुज्ञा</string>
+    <string name="status_answer_missing">स्वयमुत्तरार्थम् आवश्यकम्</string>
+    <string name="status_mic">ध्वनिग्राहकः</string>
+    <string name="status_mic_ok">प्रदत्तः</string>
+    <string name="status_mic_missing">स्वश्रवणार्थम् आवश्यकः</string>
+
+    <string name="action_call">स्वयमेव आह्वयतु</string>
+    <string name="action_incoming">आगमन-आह्वानं निर्वर्तयतु</string>
+    <string name="wait_home_now">तत्क्षणं वाद्यते — प्रतीक्षां परिवर्तितुं स्पृशतु</string>
+    <string name="wait_home">%s इति समये वाद्यते — प्रतीक्षां परिवर्तितुं स्पृशतु</string>
+
+    <string name="settings_identity">आह्वातुः परिचयः</string>
+    <string name="settings_name_label">आह्वान-पट्टे दृश्यमानं नाम</string>
+    <string name="preset_number_label">चलदूरभाष-सङ्ख्या</string>
+    <string name="preset_card_label">सक्रियः परिचयः</string>
+    <string name="preset_hint">पूर्वनिर्धारणानि प्रबन्धितुं स्पृशतु</string>
+    <string name="title_presets">पूर्वनिर्धारणानि</string>
+    <string name="preset_add">योजयतु</string>
+    <string name="preset_edit">सम्पादयतु</string>
+    <string name="preset_delete">लोपयतु</string>
+    <string name="preset_save">रक्षतु</string>
+    <string name="preset_need_one">न्यूनातिन्यूनम् एकं पूर्वनिर्धारणं रक्षतु</string>
+    <string name="preset_invalid">नाम सङ्ख्या च आवश्यकौ</string>
+    <string name="preset_empty">पूर्वनिर्धारणानि न सन्ति</string>
+    <string name="manage_presets">पूर्वनिर्धारणानि प्रबन्धयतु</string>
+    <string name="preset_voice">स्वरः</string>
+    <string name="preset_import">आनयतु</string>
+    <string name="preset_import_title">पूर्वनिर्धारणानि आनयतु</string>
+    <string name="preset_import_contacts">सम्पर्केभ्यः</string>
+    <string name="preset_import_vcf">.vcf सञ्चिकायाः</string>
+    <string name="preset_import_reading">आनयनं भवति…</string>
+    <string name="preset_import_failed">तां सञ्चिकां वा पत्तापुस्तकं पठितुं न शक्यते</string>
+    <string name="preset_import_empty">कोऽपि दूरभाष-सङ्ख्या न प्राप्ता</string>
+    <string name="preset_import_none">नूतनानि पूर्वनिर्धारणानि न सन्ति — ताः सङ्ख्याः पूर्वमेव सूच्यां सन्ति</string>
+    <string name="preset_import_contacts_denied">आनयनार्थं सम्पर्क-अनुज्ञा आवश्यका</string>
+    <plurals name="preset_imported">
+        <item quantity="one">%1$d पूर्वनिर्धारणम् आनीतम्</item>
+        <item quantity="other">%1$d पूर्वनिर्धारणानि आनीतानि</item>
+    </plurals>
+
+    <string name="title_voice">आह्वाने स्वरः</string>
+    <string name="voice_source">स्वर-स्रोतः</string>
+    <string name="voice_none">मौनम्</string>
+    <string name="voice_mic">सजीवः ध्वनिग्राहकः</string>
+    <string name="voice_file">श्रव्य-सञ्चिका</string>
+    <string name="voice_file_section">श्रव्य-सञ्चिका</string>
+    <string name="voice_no_file">सञ्चिका नास्ति — अधः आनयतु वा अङ्कयतु</string>
+    <string name="voice_file_hint">आह्वाने सम्बद्धे सति पुनःपुनः वाद्यते।</string>
+    <string name="voice_import">श्रव्य-सञ्चिकाम् आनयतु</string>
+    <string name="voice_record">ध्वनिग्राहकेण अङ्कयतु</string>
+    <string name="voice_need_file">प्रथमं श्रव्य-सञ्चिकाम् आनयतु वा अङ्कयतु</string>
+    <string name="voice_saved">स्वरः नवीकृतः</string>
+    <string name="voice_imported">श्रव्य-सञ्चिका आनीता</string>
+    <string name="voice_import_failed">तां सञ्चिकां आनेतुं न शक्यते</string>
+    <string name="voice_row_title">आह्वाने स्वरः</string>
+    <string name="voice_row_sub">आह्वान-काले यत् शृणोति (प्रत्येकस्मै परिचयाय)</string>
+    <string name="voice_configure">स्वरं विन्यस्यतु</string>
+    <string name="voice_video">दृश्य-आह्वानम्</string>
+    <string name="voice_video_hint">सजीवं दृश्यं योजयति; आह्वाने सम्बद्धे सति पूर्णपट्ट-दृश्यं उद्घाट्यते।</string>
+
+    <string name="title_record">अङ्कनम्</string>
+    <string name="record_hint">भवतः स्वरः अङ्क्यते — समाप्ते स्थगयतु नुदतु</string>
+    <string name="record_stop">स्थगयतु</string>
+    <string name="record_failed">अङ्कनं विफलम्</string>
+
+    <string name="settings_timing">आह्वान-समयः</string>
+    <string name="timing_hint">सम्बन्धात् पूर्वं वादनम् (निर्गामि स्व-आह्वानम्)</string>
+    <string name="radio_c2">2 क्षणानन्तरं सम्बध्नातु</string>
+    <string name="radio_c5">5 क्षणानन्तरं सम्बध्नातु</string>
+    <string name="radio_c10">10 क्षणानन्तरं सम्बध्नातु</string>
+
+    <string name="settings_autoend">स्वयम्-समाप्तिः</string>
+    <string name="autoend_hint">सम्बद्धे सति आह्वानं स्वयमेव समाप्यते।</string>
+    <string name="radio_e_off">कदापि न</string>
+    <string name="radio_e30">30 क्षणानन्तरम्</string>
+    <string name="radio_e60">1 निमेषानन्तरम्</string>
+    <string name="radio_e300">5 निमेषानन्तरम्</string>
+    <string name="settings_autoanswer">स्वयम्-उत्तरम्</string>
+    <string name="radio_off">निवृत्तम्</string>
+    <string name="radio_now">तत्क्षणम् उत्तरयतु</string>
+    <string name="radio_3">3 क्षणानन्तरम्</string>
+    <string name="radio_5">5 क्षणानन्तरम्</string>
+    <string name="radio_10">10 क्षणानन्तरम्</string>
+    <string name="autoanswer_hint">भवतः निर्वर्तितम् आगमन-आह्वानं स्वयमेव उत्तरयति (Android 8+)।</string>
+
+    <string name="settings_audio">श्रव्यम्</string>
+    <string name="switch_loopback">स्व-श्रवण-परिवर्तः</string>
+    <string name="loopback_hint">भवतः ध्वनिग्राहकम् आह्वाने प्रवेशयति येन स्वयं शृणुयात्</string>
+
+    <string name="settings_account">दूरभाष-खातम्</string>
+    <string name="settings_branding">सङ्केतक-ब्राण्डिङ्ग्</string>
+    <string name="branding_title">आह्वातृ-ब्राण्डिङ्ग्</string>
+    <string name="branding_preview">%1$s द्वारा आह्वानानि</string>
+    <string name="branding_hint">सङ्केतकः भवतः नाम्नः अधः यत् लेबलं दर्शयति। नवीन-आह्वानेषु प्रवर्तते।</string>
+    <string name="branding_change">ब्राण्डिङ्ग् परिवर्तयतु</string>
+    <string name="branding_dialog_title">आह्वान-ब्राण्डिङ्ग्</string>
+    <string name="branding_dialog_hint">एतत् पाठः सङ्केतके “Calls via” इत्यस्य अनन्तरं दृश्यते। अनुप्रयोग-नाम प्रयोक्तुं रिक्तं त्यजतु।</string>
+    <string name="branding_save">रक्षतु</string>
+    <string name="branding_reset_button">पुनःस्थापयतु</string>
+    <string name="branding_reset_toast">ब्राण्डिङ्ग् %1$s इत्यस्मै पुनःस्थापितम्</string>
+    <string name="branding_saved">नवीन-आह्वानानि “Calls via %1$s” दर्शयिष्यन्ति</string>
+    <string name="account_status_ready">पञ्जीकृतम् — आह्वानाय सज्जम्</string>
+    <string name="account_status_self">पञ्जीकृतम् (स्व-प्रबन्धितम्) — सज्जम्</string>
+    <string name="account_status_fail">अपञ्जीकृतम् — पुनः प्रयत्नाय अनुप्रयोगम् उद्घाटयतु</string>
+    <string name="account_status_legacy">न सक्रियम् — Manage calling accounts उद्घाट्य Self Calling सक्रियं करोतु</string>
+    <string name="manage_accounts">आह्वान-खातानि प्रबन्धयतु</string>
+
+    <string name="log_out">निर्गामि स्व-आह्वानम्</string>
+    <string name="log_in">आगमन स्व-आह्वानम्</string>
+    <string name="log_auto">स्वयमुत्तरितम्</string>
+    <string name="log_missed">विपन्नम्</string>
+    <string name="log_canceled">निरस्तम्</string>
+    <string name="log_empty">अद्यापि स्व-आह्वानानि न सन्ति</string>
+    <string name="log_clear">शोधयतु</string>
+    <string name="log_clear_confirm">सम्पूर्णं स्व-आह्वान-अभिलेखं शोधयामः?</string>
+<string name="log_video_out">निर्गामि दृश्य-स्व-आह्वानम्</string>
+<string name="log_video_in">आगमन दृश्य-स्व-आह्वानम्</string>
+
+    <string name="pending_firing">भवतः आगमन-आह्वानं स्थाप्यते…</string>
+    <string name="toast_scheduled_now">आगमन-आह्वानम् इदानीं वाद्यते</string>
+    <string name="toast_scheduled">आगमन-आह्वानम् %s</string>
+    <string name="pending_chip">आगमन-आह्वानम् %s — निरसितुं स्पृशतु</string>
+    <string name="toast_canceled">नियोजितम् आह्वानं निरस्तम्</string>
+    <string name="shortcut_step_call">निर्वर्तितम् आगमन-आह्वानम्</string>
+    <string name="shortcut_step_message">SMS सन्देशं प्रेषयतु</string>
+    <string name="shortcut_step_type_call">आह्वानम्</string>
+    <string name="shortcut_step_type_message">सन्देशः</string>
+    <string name="shortcut_step_msg_hint">सन्देश-पाठः (केवलं SMS पदानि)</string>
+    <string name="perm_sms">सन्देशं प्रेषयितुं SMS अनुज्ञा आवश्यका</string>
+
+    <string name="settings_incoming">आगमन-आह्वानम्</string>
+    <string name="incoming_wait_title">प्रतीक्षा-कालः</string>
+    <string name="incoming_wait_hint">आगमन-आह्वानं निर्वर्तयितुं स्पृष्टात् कियता कालेन वदितुं आरभते। तावत् दूरभाषः मौनः तिष्ठति।</string>
+    <string name="incoming_delay_now">तत्क्षणम्</string>
+    <string name="radio_w_now">तत्क्षणम्</string>
+    <string name="radio_w1">1 क्षणं प्रतीक्षस्व</string>
+    <string name="radio_w2">2 क्षणान् प्रतीक्षस्व</string>
+    <string name="radio_w3">3 क्षणान् प्रतीक्षस्व</string>
+    <string name="radio_w5">5 क्षणान् प्रतीक्षस्व</string>
+    <string name="radio_w10">10 क्षणान् प्रतीक्षस्व</string>
+    <string name="radio_w30">30 क्षणान् प्रतीक्षस्व</string>
+    <string name="radio_w60">1 निमेषं प्रतीक्षस्व</string>
+    <string name="radio_w300">5 निमेषान् प्रतीक्षस्व</string>
+    <string name="radio_w900">15 निमेषान् प्रतीक्षस्व</string>
+    <string name="radio_w1800">30 निमेषान् प्रतीक्षस्व</string>
+    <string name="radio_w3600">1 होरां प्रतीक्षस्व</string>
+    <string name="radio_w7200">2 होराः प्रतीक्षस्व</string>
+    <string name="radio_w10800">3 होराः प्रतीक्षस्व</string>
+    <string name="incoming_ring_title">वादन-समयसीमा</string>
+    <string name="ring_timeout_hint">यथार्थ-दूरसञ्चारवत् निर्वाचित-समयानन्तरं वादनं स्थगयति।</string>
+    <string name="exact_alarm_needed">दीर्घ-प्रतीक्षानन्तरम् आह्वानं वदेत् इति यथार्थ-अलार्म-अनुज्ञां ददातु।</string>
+    <string name="radio_r_never">उत्तर-पर्यन्तं वाद्यते (कदापि समयसीमा न)</string>
+    <string name="radio_r15">15 क्षणानन्तरं स्वयमेव निवर्तते</string>
+    <string name="radio_r30">30 क्षणानन्तरं स्वयमेव निवर्तते</string>
+    <string name="radio_r45">45 क्षणानन्तरं स्वयमेव निवर्तते</string>
+    <string name="radio_r60">1 निमेषानन्तरं स्वयमेव निवर्तते</string>
+
+    <string-array name="incoming_delay_labels">
+        <item>तत्क्षणम्</item>
+        <item>3 क्षणाः</item>
+        <item>5 क्षणाः</item>
+        <item>10 क्षणाः</item>
+        <item>30 क्षणाः</item>
+        <item>1 निमेषः</item>
+        <item>5 निमेषाः</item>
+        <item>15 निमेषाः</item>
+        <item>30 निमेषाः</item>
+        <item>1 होरा</item>
+        <item>2 होराः</item>
+        <item>3 होराः</item>
+    </string-array>
+
+    <string name="video_remote_label">दूर-दृश्यम्</string>
+    <string name="video_local_label">भवान्</string>
+    <string name="video_live">स्व-दृश्य-आह्वानम्</string>
+    <string name="video_mute">मूकयतु</string>
+    <string name="video_muted">मूकीकृतम्</string>
+    <string name="video_camera">दृश्यम्</string>
+    <string name="video_switch_camera">परिवर्तयतु</string>
+    <string name="video_hangup">आह्वानं विच्छिन्धि</string>
+    <string name="video_off">दृश्यं निवृत्तम्</string>
+    <string name="video_unavailable">कामेरा अनुपलब्धः</string>
+    <string name="perm_camera">स्थानीय-पूर्वदृश्यार्थं कामेरा-अनुज्ञा आवश्यका।</string>
+
+    <string name="title_sms_autoreply">SMS स्वयम्-उत्तरम्</string>
+    <string name="sms_autoreply_title">SMS स्वयम्-उत्तरम्</string>
+    <string name="sms_autoreply_hint">प्रत्येकस्मै आगमन-SMS सन्देशाय स्वसन्देशेन स्वयमेव उत्तरयतु।</string>
+    <string name="sms_autoreply_enabled">स्वयम्-उत्तरं सक्रियं करोतु</string>
+    <string name="sms_autoreply_message_label">उत्तर-सन्देशः</string>
+    <string name="sms_autoreply_message_hint">यथा: नमस्ते, अहं व्यस्तः अस्मि - पश्चात् उत्तरं दास्यामि।</string>
+    <string name="sms_autoreply_saved">स्वयम्-उत्तरं रक्षितम्</string>
+    <string name="perm_sms_receive">स्वयम्-उत्तरार्थं SMS-ग्रहण-अनुज्ञा आवश्यका</string>
+    <string name="perm_sms_send">स्वयम्-उत्तरार्थं SMS-प्रेषण-अनुज्ञा आवश्यका</string>
+
+    <string name="title_sms_log">SMS अभिलेखः</string>
+    <string name="sms_log_status">SMS अभिलेखः: %d सन्देशाः</string>
+
+    <string name="widget_title">लघुपथ-समूहः</string>
+    <string name="widget_sub_tap">चालयितुं स्पृशतु</string>
+    <string name="widget_sub_not_configured">विन्यस्यितुं स्पृशतु</string>
+    <string name="widget_configure_title">विजेट् विन्यस्यतु</string>
+    <string name="widget_choose_set">चालयितुं लघुपथ-समूहं चिनोतु</string>
+    <string name="widget_cancel">निरस्यतु</string>
+</resources>

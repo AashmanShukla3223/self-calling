@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">سيئل ڪالنگ</string>
+    <string name="tagline">اصل ڊائلر ذريعي پاڻ کي ڪال ڪريو</string>
+    <string name="account_desc">پاڻ کي ڪال</string>
+    <string name="footer">ڪالون اصل ڊائلر UI ۾ نظر اچن ٿيون — هي ايپ صرف انهن کي رکي ٿي.</string>
+
+    <string name="title_settings">سيٽنگون</string>
+    <string name="title_log">سيئل-ڪال لاگ</string>
+    <string name="perm_granted">اجازت ڏنل</string>
+
+    <string name="status_title">سسٽم حالت</string>
+    <string name="status_account">ٽيليڪام اڪائونٽ</string>
+    <string name="status_account_ok">رجسٽر ٿيل</string>
+    <string name="status_account_fail">رجسٽر نه ٿيل — ايپ ٻيهر کوليو</string>
+    <string name="status_account_legacy">سيٽنگون → فون اڪائونٽ ۾ هڪ ڀيرو فعال ڪريو</string>
+    <string name="status_call">ڪال ڪرڻ جي اجازت</string>
+    <string name="status_perm_ok">ڏنل</string>
+    <string name="status_call_missing">اجازت لاءِ ڪال بٽڻ دٻايو</string>
+    <string name="status_answer">ڪال جو جواب ڏيڻ جي اجازت</string>
+    <string name="status_answer_missing">خودڪار جواب لاءِ ضروري</string>
+    <string name="status_mic">مائڪروفون</string>
+    <string name="status_mic_ok">ڏنل</string>
+    <string name="status_mic_missing">پنهنجو پاڻ ٻڌڻ لاءِ ضروري</string>
+
+    <string name="action_call">پاڻ کي ڪال ڪريو</string>
+    <string name="action_incoming">ايندڙ ڪال سميوليٽ ڪريو</string>
+    <string name="wait_home_now">فوراً وڄندي — انتظار بدلائڻ لاءِ ٽيپ ڪريو</string>
+    <string name="wait_home">%s تي وڄندي — انتظار بدلائڻ لاءِ ٽيپ ڪريو</string>
+
+    <string name="settings_identity">ڪالر سڃاڻپ</string>
+    <string name="settings_name_label">ڪال اسڪرين تي ظاهر ٿيندڙ نالو</string>
+    <string name="preset_number_label">موبائل نمبر</string>
+    <string name="preset_card_label">فعال سڃاڻپ</string>
+    <string name="preset_hint">پريسٽ منظم ڪرڻ لاءِ ٽيپ ڪريو</string>
+    <string name="title_presets">پريسٽ</string>
+    <string name="preset_add">شامل ڪريو</string>
+    <string name="preset_edit">ايڊٽ ڪريو</string>
+    <string name="preset_delete">ڊاهيو</string>
+    <string name="preset_save">محفوظ ڪريو</string>
+    <string name="preset_need_one">گهٽ ۾ گهٽ هڪ پريسٽ رکجو</string>
+    <string name="preset_invalid">نالو ۽ نمبر ضروري آهن</string>
+    <string name="preset_empty">ڪوبه پريسٽ ناهي</string>
+    <string name="manage_presets">پريسٽ منظم ڪريو</string>
+    <string name="preset_voice">آواز</string>
+    <string name="preset_import">درآمد ڪريو</string>
+    <string name="preset_import_title">پريسٽ درآمد ڪريو</string>
+    <string name="preset_import_contacts">رابطن مان</string>
+    <string name="preset_import_vcf">.vcf فائل مان</string>
+    <string name="preset_import_reading">درآمد ٿي رهيو آهي…</string>
+    <string name="preset_import_failed">اهي فائل يا پتي ڪتاب پڙهي نه سگهيو</string>
+    <string name="preset_import_empty">ڪوبه فون نمبر نه مليو</string>
+    <string name="preset_import_none">ڪوبه نئون پريسٽ نه آهي — اهي نمبر اڳ ۾ ئي فهرست ۾ آهن</string>
+    <string name="preset_import_contacts_denied">درآمد لاءِ رابطا اجازت ضروري آهي</string>
+    <plurals name="preset_imported">
+        <item quantity="one">%1$d پريسٽ درآمد ٿيو</item>
+        <item quantity="other">%1$d پريسٽ درآمد ٿيا</item>
+    </plurals>
+
+    <string name="title_voice">ڪال ۾ آواز</string>
+    <string name="voice_source">آواز ذريعو</string>
+    <string name="voice_none">خاموشي</string>
+    <string name="voice_mic">لائيو مائڪروفون</string>
+    <string name="voice_file">آڊيو فائل</string>
+    <string name="voice_file_section">آڊيو فائل</string>
+    <string name="voice_no_file">ڪا فائل ناهي — هيٺ درآمد يا رڪارڊ ڪريو</string>
+    <string name="voice_file_hint">ڪال ڳنڍيل هجڻ دوران لوپ ۾ وڄندي.</string>
+    <string name="voice_import">آڊيو فائل درآمد ڪريو</string>
+    <string name="voice_record">مائڪروفون سان رڪارڊ ڪريو</string>
+    <string name="voice_need_file">پهرين آڊيو فائل درآمد ڪريو يا رڪارڊ ڪريو</string>
+    <string name="voice_saved">آواز اپڊيٽ ٿيو</string>
+    <string name="voice_imported">آڊيو فائل درآمد ٿي</string>
+    <string name="voice_import_failed">اهي فائل درآمد نه ٿي سگهي</string>
+    <string name="voice_row_title">ڪال ۾ آواز</string>
+    <string name="voice_row_sub">ڪال دوران جيڪو توهان ٻڌندا (هر سڃاڻپ لاءِ)</string>
+    <string name="voice_configure">آواز ڪنفيگ ڪريو</string>
+    <string name="voice_video">وڊيو ڪال</string>
+    <string name="voice_video_hint">لائيو وڊيو شامل ڪري ٿو؛ ڪال ڳنڍڻ تي مڪمل اسڪرين وڊيو کلي ٿي.</string>
+
+    <string name="title_record">رڪارڊنگ</string>
+    <string name="record_hint">توهان جو آواز رڪارڊ ٿي رهيو آهي — ختم ٿيڻ تي اسٽاپ دٻايو</string>
+    <string name="record_stop">اسٽاپ</string>
+    <string name="record_failed">رڪارڊنگ ناڪام ٿي</string>
+
+    <string name="settings_timing">ڪال وقت</string>
+    <string name="timing_hint">ڳنڍڻ کان اڳ وڄڻ (ٻاهر ويندڙ سيئل-ڪال)</string>
+    <string name="radio_c2">2 سيڪنڊن کان پوءِ ڳنڍيو</string>
+    <string name="radio_c5">5 سيڪنڊن کان پوءِ ڳنڍيو</string>
+    <string name="radio_c10">10 سيڪنڊن کان پوءِ ڳنڍيو</string>
+
+    <string name="settings_autoend">خودڪار ختمي</string>
+    <string name="autoend_hint">ڳنڍڻ کان پوءِ ڪال پاڻمرادو ختم ٿئي ٿي.</string>
+    <string name="radio_e_off">ڪڏهن به نه</string>
+    <string name="radio_e30">30 سيڪنڊن کان پوءِ</string>
+    <string name="radio_e60">1 منٽ کان پوءِ</string>
+    <string name="radio_e300">5 منٽن کان پوءِ</string>
+    <string name="settings_autoanswer">خودڪار جواب</string>
+    <string name="radio_off">بند</string>
+    <string name="radio_now">فوراً جواب ڏيو</string>
+    <string name="radio_3">3 سيڪنڊن کان پوءِ</string>
+    <string name="radio_5">5 سيڪنڊن کان پوءِ</string>
+    <string name="radio_10">10 سيڪنڊن کان پوءِ</string>
+    <string name="autoanswer_hint">توهان جي سميوليٽ ٿيل ايندڙ ڪال کي خودڪار جواب ڏئي ٿو (Android 8+).</string>
+
+    <string name="settings_audio">آڊيو</string>
+    <string name="switch_loopback">سيئل-ٻڌڻ لوپ بيڪ</string>
+    <string name="loopback_hint">توهان جو مائڪروفون ڪال ۾ وجهي ٿو ته جيئن توهان پاڻ کي ٻڌي سگهو</string>
+
+    <string name="settings_account">فون اڪائونٽ</string>
+    <string name="settings_branding">ڊائلر برانڊنگ</string>
+    <string name="branding_title">ڪالر برانڊنگ</string>
+    <string name="branding_preview">%1$s ذريعي ڪالون</string>
+    <string name="branding_hint">ڊائلر توهان جي نالي هيٺ ڏيکاريندڙ ليبل. نئين ڪالن تي لاڳو ٿئي ٿو.</string>
+    <string name="branding_change">برانڊنگ مٽايو</string>
+    <string name="branding_dialog_title">ڪال برانڊنگ</string>
+    <string name="branding_dialog_hint">هي متن ڊائلر ۾ “Calls via” کان پوءِ نظر اچي ٿو. ايپ جو نالو استعمال ڪرڻ لاءِ خالي ڇڏيو.</string>
+    <string name="branding_save">محفوظ ڪريو</string>
+    <string name="branding_reset_button">ريسيٽ</string>
+    <string name="branding_reset_toast">برانڊنگ %1$s تي ريسيٽ ٿي</string>
+    <string name="branding_saved">نئين ڪالون “Calls via %1$s” ڏيکارينديون</string>
+    <string name="account_status_ready">رجسٽر ٿيل — ڪال لاءِ تيار</string>
+    <string name="account_status_self">رجسٽر ٿيل (خود-منظم) — تيار</string>
+    <string name="account_status_fail">رجسٽر نه ٿيل — ٻيهر ڪوشش لاءِ ايپ ٻيهر کوليو</string>
+    <string name="account_status_legacy">فعال نه ٿيل — Manage calling accounts کوليو ۽ Self Calling فعال ڪريو</string>
+    <string name="manage_accounts">ڪالنگ اڪائونٽ منظم ڪريو</string>
+
+    <string name="log_out">ٻاهر ويندڙ سيئل-ڪال</string>
+    <string name="log_in">ايندڙ سيئل-ڪال</string>
+    <string name="log_auto">خودڪار جواب ڏنل</string>
+    <string name="log_missed">رهيل</string>
+    <string name="log_canceled">رد ٿيل</string>
+    <string name="log_empty">اڃان ڪا سيئل ڪال ناهي</string>
+    <string name="log_clear">صاف ڪريو</string>
+    <string name="log_clear_confirm">سڄو سيئل-ڪال لاگ صاف ڪجي؟</string>
+<string name="log_video_out">ٻاهر ويندڙ وڊيو سيئل-ڪال</string>
+<string name="log_video_in">ايندڙ وڊيو سيئل-ڪال</string>
+
+    <string name="pending_firing">توهان جي ايندڙ ڪال رکي پئي وڃي…</string>
+    <string name="toast_scheduled_now">ايندڙ ڪال هاڻي وڄي رهي آهي</string>
+    <string name="toast_scheduled">ايندڙ ڪال %s</string>
+    <string name="pending_chip">ايندڙ ڪال %s — رد ڪرڻ لاءِ ٽيپ ڪريو</string>
+    <string name="toast_canceled">شيڊول ٿيل ڪال رد ٿي</string>
+    <string name="shortcut_step_call">سميوليٽ ايندڙ ڪال</string>
+    <string name="shortcut_step_message">SMS پيغام موڪليو</string>
+    <string name="shortcut_step_type_call">ڪال</string>
+    <string name="shortcut_step_type_message">پيغام</string>
+    <string name="shortcut_step_msg_hint">پيغام متن (صرف SMS قدم)</string>
+    <string name="perm_sms">پيغام موڪلڻ لاءِ SMS اجازت ضروري آهي</string>
+
+    <string name="settings_incoming">ايندڙ ڪال</string>
+    <string name="incoming_wait_title">انتظار وقت</string>
+    <string name="incoming_wait_hint">ايندڙ ڪال سميوليٽ ڪريو ٽيپ ڪرڻ کان ڪيترو وقت پوءِ وڄڻ شروع ٿئي. تڏهن تائين فون خاموش رهي ٿو.</string>
+    <string name="incoming_delay_now">فوراً</string>
+    <string name="radio_w_now">فوراً</string>
+    <string name="radio_w1">1 سيڪنڊ انتظار ڪريو</string>
+    <string name="radio_w2">2 سيڪنڊ انتظار ڪريو</string>
+    <string name="radio_w3">3 سيڪنڊ انتظار ڪريو</string>
+    <string name="radio_w5">5 سيڪنڊ انتظار ڪريو</string>
+    <string name="radio_w10">10 سيڪنڊ انتظار ڪريو</string>
+    <string name="radio_w30">30 سيڪنڊ انتظار ڪريو</string>
+    <string name="radio_w60">1 منٽ انتظار ڪريو</string>
+    <string name="radio_w300">5 منٽ انتظار ڪريو</string>
+    <string name="radio_w900">15 منٽ انتظار ڪريو</string>
+    <string name="radio_w1800">30 منٽ انتظار ڪريو</string>
+    <string name="radio_w3600">1 ڪلاڪ انتظار ڪريو</string>
+    <string name="radio_w7200">2 ڪلاڪ انتظار ڪريو</string>
+    <string name="radio_w10800">3 ڪلاڪ انتظار ڪريو</string>
+    <string name="incoming_ring_title">وڄڻ جي مهلت</string>
+    <string name="ring_timeout_hint">حقيقي ٽيليڪام وانگر چونڊيل وقت کان پوءِ وڄڻ بند ڪري ٿي.</string>
+    <string name="exact_alarm_needed">ڊگهي انتظار کان پوءِ ڪال وڄڻ لاءِ درست الارم جي اجازت ڏيو.</string>
+    <string name="radio_r_never">جواب ڏيڻ تائين وڄي (ڪڏهن به مهلت نه)</string>
+    <string name="radio_r15">15 سيڪنڊن کان پوءِ خودڪار بند</string>
+    <string name="radio_r30">30 سيڪنڊن کان پوءِ خودڪار بند</string>
+    <string name="radio_r45">45 سيڪنڊن کان پوءِ خودڪار بند</string>
+    <string name="radio_r60">1 منٽ کان پوءِ خودڪار بند</string>
+
+    <string-array name="incoming_delay_labels">
+        <item>فوراً</item>
+        <item>3 سيڪنڊ</item>
+        <item>5 سيڪنڊ</item>
+        <item>10 سيڪنڊ</item>
+        <item>30 سيڪنڊ</item>
+        <item>1 منٽ</item>
+        <item>5 منٽ</item>
+        <item>15 منٽ</item>
+        <item>30 منٽ</item>
+        <item>1 ڪلاڪ</item>
+        <item>2 ڪلاڪ</item>
+        <item>3 ڪلاڪ</item>
+    </string-array>
+
+    <string name="video_remote_label">ڏورانهين وڊيو</string>
+    <string name="video_local_label">توهان</string>
+    <string name="video_live">سيئل وڊيو ڪال</string>
+    <string name="video_mute">ميوٽ</string>
+    <string name="video_muted">ميوٽ ٿيل</string>
+    <string name="video_camera">وڊيو</string>
+    <string name="video_switch_camera">فلپ</string>
+    <string name="video_hangup">ڪال ڪٽيو</string>
+    <string name="video_off">وڊيو بند</string>
+    <string name="video_unavailable">ڪئميرا دستياب ناهي</string>
+    <string name="perm_camera">لوڪل پريويو لاءِ ڪئميرا اجازت ضروري آهي.</string>
+
+    <string name="title_sms_autoreply">SMS خودڪار جواب</string>
+    <string name="sms_autoreply_title">SMS خودڪار جواب</string>
+    <string name="sms_autoreply_hint">هر ايندڙ SMS کي پنهنجي پيغام سان خودڪار جواب ڏيو.</string>
+    <string name="sms_autoreply_enabled">خودڪار جواب فعال ڪريو</string>
+    <string name="sms_autoreply_message_label">جواب پيغام</string>
+    <string name="sms_autoreply_message_hint">مثال: اسلام عليڪم، مان مصروف آهيان - بعد ۾ جواب ڏيندس.</string>
+    <string name="sms_autoreply_saved">خودڪار جواب محفوظ ٿيو</string>
+    <string name="perm_sms_receive">خودڪار جواب لاءِ SMS وصولي اجازت ضروري آهي</string>
+    <string name="perm_sms_send">خودڪار جواب لاءِ SMS موڪلڻ اجازت ضروري آهي</string>
+
+    <string name="title_sms_log">SMS لاگ</string>
+    <string name="sms_log_status">SMS لاگ: %d پيغام</string>
+
+    <string name="widget_title">شارٽ ڪٽ سيٽ</string>
+    <string name="widget_sub_tap">هلائڻ لاءِ ٽيپ ڪريو</string>
+    <string name="widget_sub_not_configured">ڪنفيگ ڪرڻ لاءِ ٽيپ ڪريو</string>
+    <string name="widget_configure_title">وڊجيٽ ڪنفيگ ڪريو</string>
+    <string name="widget_choose_set">هلائڻ لاءِ شارٽ ڪٽ سيٽ چونڊيو</string>
+    <string name="widget_cancel">رد ڪريو</string>
+</resources>

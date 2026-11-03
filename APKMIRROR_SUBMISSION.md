@@ -1,9 +1,9 @@
 
-# SELF CALLING v1.3.1 — APKMirror Submission Package
+# SELF CALLING v1.4 — APKMirror Submission Package
 
 APK FILE TO UPLOAD:
   /home/aashmanshukla323/Self Calling/app/build/outputs/apk/release/app-release.apk
-  Size: ~830 KB
+  Size: ~1.2 MB
   SHA-256: (compute with `sha256sum app-release.apk`)
 
 # SUBMISSION DETAILS (fill in on APKMirror website)
@@ -11,8 +11,8 @@ APK FILE TO UPLOAD:
 
 App Name: Self Calling
 Package Name: com.parallax.selfcalling
-Version: 1.3.1
-Version Code: 4
+Version: 1.4
+Version Code: 5
 Android Requirement: Android 6.0 (API 23) and up
 Developer: Aashman Shukla
 Developer Website: https://github.com/AashmanShukla3223/self-calling
@@ -62,7 +62,7 @@ License: MIT (https://github.com/AashmanShukla3223/self-calling/blob/main/LICENS
 2. Click "Submit APK" (you may need to create an account first)
 3. Fill in the details above
 4. Upload the signed APK from app/build/outputs/apk/release/app-release.apk
-5. Add screenshots (shot_home.png, shot_presets.png, shot_settings.png)
+5. Add screenshots (shot_5_1_home.png, shot_5_2_presets.png, shot_5_3_settings.png, shot_5_4_log.png, shot_5_5_shortcuts.png)
 6. Submit for review — APKMirror team verifies and publishes
 
 
@@ -72,7 +72,7 @@ Submit via their GitLab data repo: https://gitlab.com/fdroid/fdroiddata
 Create an issue/merge request adding the metadata for com.parallax.selfcalling.
 
 F-Droid builds from source — they do not accept pre-built APKs directly.
-They will compile from the GitHub repo tag v1.3.1.
+They will compile from the GitHub repo tag v1.4.
 
 # IMPORTANT
 - This is a SIGNED RELEASE APK only — NO DEBUG APK anywhere in the project.

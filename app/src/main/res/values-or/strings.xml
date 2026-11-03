@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ସେଲ୍ଫ କଲିଂ</string>
+    <string name="tagline">ମୂଳ ଡାଏଲର ଦ୍ୱାରା ନିଜକୁ କଲ୍ କରନ୍ତୁ</string>
+    <string name="account_desc">ନିଜକୁ କଲ୍</string>
+    <string name="footer">କଲ୍ ଗୁଡ଼ିକ ମୂଳ ଡାଏଲର UI ରେ ଦେଖାଯାଏ — ଏହି ଆପ୍ କେବଳ ସେଗୁଡ଼ିକୁ ରଖେ।</string>
+
+    <string name="title_settings">ସେଟିଂସ୍</string>
+    <string name="title_log">ସେଲ୍ଫ-କଲ୍ ଲଗ୍</string>
+    <string name="perm_granted">ଅନୁମତି ଦିଆଯାଇଛି</string>
+
+    <string name="status_title">ସିଷ୍ଟମ ସ୍ଥିତି</string>
+    <string name="status_account">ଟେଲିକମ୍ ଖାତା</string>
+    <string name="status_account_ok">ପଞ୍ଜୀକୃତ</string>
+    <string name="status_account_fail">ପଞ୍ଜୀକୃତ ନୁହେଁ — ଆପ୍ ପୁନଃ ଖୋଲନ୍ତୁ</string>
+    <string name="status_account_legacy">ସେଟିଂସ୍ → ଫୋନ୍ ଖାତାରେ ଥରେ ସକ୍ଷମ କରନ୍ତୁ</string>
+    <string name="status_call">କଲ୍ କରିବା ଅନୁମତି</string>
+    <string name="status_perm_ok">ଦିଆଯାଇଛି</string>
+    <string name="status_call_missing">ଅନୁମତି ପାଇଁ କଲ୍ ବଟନ୍ ଦବାନ୍ତୁ</string>
+    <string name="status_answer">କଲ୍ ଉତ୍ତର ଦେବା ଅନୁମତି</string>
+    <string name="status_answer_missing">ସ୍ୱଚାଳିତ ଉତ୍ତର ପାଇଁ ଆବଶ୍ୟକ</string>
+    <string name="status_mic">ମାଇକ୍ରୋଫୋନ୍</string>
+    <string name="status_mic_ok">ଦିଆଯାଇଛି</string>
+    <string name="status_mic_missing">ସେଲ୍ଫ-ଶୁଣିବା ପାଇଁ ଆବଶ୍ୟକ</string>
+
+    <string name="action_call">ନିଜକୁ କଲ୍ କରନ୍ତୁ</string>
+    <string name="action_incoming">ଇନକମିଂ କଲ୍ ସିମୁଲେଟ୍ କରନ୍ତୁ</string>
+    <string name="wait_home_now">ତୁରନ୍ତ ରିଙ୍ଗ୍ ହୁଏ — ଅପେକ୍ଷା ସମୟ ବଦଳାଇବାକୁ ଟ୍ୟାପ୍ କରନ୍ତୁ</string>
+    <string name="wait_home">%s ରେ ରିଙ୍ଗ୍ ହେବ — ଅପେକ୍ଷା ସମୟ ବଦଳାଇବାକୁ ଟ୍ୟାପ୍ କରନ୍ତୁ</string>
+
+    <string name="settings_identity">କଲର୍ ପରିଚୟ</string>
+    <string name="settings_name_label">କଲ୍ ସ୍କ୍ରିନରେ ଦେଖାଯିବା ନାମ</string>
+    <string name="preset_number_label">ମୋବାଇଲ୍ ନମ୍ବର</string>
+    <string name="preset_card_label">ସକ୍ରିୟ ପରିଚୟ</string>
+    <string name="preset_hint">ପ୍ରିସେଟ୍ ପରିଚାଳନା କରିବାକୁ ଟ୍ୟାପ୍ କରନ୍ତୁ</string>
+    <string name="title_presets">ପ୍ରିସେଟ୍</string>
+    <string name="preset_add">ଯୋଡ଼ନ୍ତୁ</string>
+    <string name="preset_edit">ସମ୍ପାଦନ କରନ୍ତୁ</string>
+    <string name="preset_delete">ବିଲୋପ କରନ୍ତୁ</string>
+    <string name="preset_save">ସଞ୍ଚିତ କରନ୍ତୁ</string>
+    <string name="preset_need_one">ଅତି କମରେ ଏକ ପ୍ରିସେଟ୍ ରଖନ୍ତୁ</string>
+    <string name="preset_invalid">ନାମ ଏବଂ ନମ୍ବର ଆବଶ୍ୟକ</string>
+    <string name="preset_empty">କୌଣସି ପ୍ରିସେଟ୍ ନାହିଁ</string>
+    <string name="manage_presets">ପ୍ରିସେଟ୍ ପରିଚାଳନା କରନ୍ତୁ</string>
+    <string name="preset_voice">ସ୍ୱର</string>
+    <string name="preset_import">ଆମଦାନୀ କରନ୍ତୁ</string>
+    <string name="preset_import_title">ପ୍ରିସେଟ୍ ଆମଦାନୀ କରନ୍ତୁ</string>
+    <string name="preset_import_contacts">ସମ୍ପର୍କ ତାଲିକାରୁ</string>
+    <string name="preset_import_vcf">.vcf ଫାଇଲରୁ</string>
+    <string name="preset_import_reading">ଆମଦାନୀ ହେଉଛି…</string>
+    <string name="preset_import_failed">ସେହି ଫାଇଲ କିମ୍ବା ଠିକଣା ପୁସ୍ତକ ପଢ଼ାଯାଇପାରିଲା ନାହିଁ</string>
+    <string name="preset_import_empty">କୌଣସି ଫୋନ୍ ନମ୍ବର ମିଳିଲା ନାହିଁ</string>
+    <string name="preset_import_none">କୌଣସି ନୂଆ ପ୍ରିସେଟ୍ ନାହିଁ — ସେହି ନମ୍ବରଗୁଡ଼ିକ ପୂର୍ବରୁ ତାଲିକାରେ ଅଛି</string>
+    <string name="preset_import_contacts_denied">ଆମଦାନୀ କରିବାକୁ ସମ୍ପର୍କ ଅନୁମତି ଆବଶ୍ୟକ</string>
+    <plurals name="preset_imported">
+        <item quantity="one">%1$d ପ୍ରିସେଟ୍ ଆମଦାନୀ ହୋଇଛି</item>
+        <item quantity="other">%1$d ପ୍ରିସେଟ୍ ଆମଦାନୀ ହୋଇଛି</item>
+    </plurals>
+
+    <string name="title_voice">କଲ୍‌ରେ ସ୍ୱର</string>
+    <string name="voice_source">ସ୍ୱର ଉତ୍ସ</string>
+    <string name="voice_none">ନୀରବତା</string>
+    <string name="voice_mic">ଲାଇଭ୍ ମାଇକ୍ରୋଫୋନ୍</string>
+    <string name="voice_file">ଅଡିଓ ଫାଇଲ</string>
+    <string name="voice_file_section">ଅଡିଓ ଫାଇଲ</string>
+    <string name="voice_no_file">କୌଣସି ଫାଇଲ ନାହିଁ — ତଳେ ଆମଦାନୀ କରନ୍ତୁ କିମ୍ବା ରେକର୍ଡ କରନ୍ତୁ</string>
+    <string name="voice_file_hint">କଲ୍ ସଂଯୁକ୍ତ ଥିବା ସମୟରେ ଲୁପ୍‌ରେ ବାଜେ।</string>
+    <string name="voice_import">ଅଡିଓ ଫାଇଲ ଆମଦାନୀ କରନ୍ତୁ</string>
+    <string name="voice_record">ମାଇକ୍ରୋଫୋନ୍ ସହିତ ରେକର୍ଡ କରନ୍ତୁ</string>
+    <string name="voice_need_file">ପ୍ରଥମେ ଏକ ଅଡିଓ ଫାଇଲ ଆମଦାନୀ କରନ୍ତୁ କିମ୍ବା ରେକର୍ଡ କରନ୍ତୁ</string>
+    <string name="voice_saved">ସ୍ୱର ଅଦ୍ୟତନ ହୋଇଛି</string>
+    <string name="voice_imported">ଅଡିଓ ଫାଇଲ ଆମଦାନୀ ହୋଇଛି</string>
+    <string name="voice_import_failed">ସେହି ଫାଇଲ ଆମଦାନୀ କରାଯାଇପାରିଲା ନାହିଁ</string>
+    <string name="voice_row_title">କଲ୍‌ରେ ସ୍ୱର</string>
+    <string name="voice_row_sub">କଲ୍ ସମୟରେ ଆପଣ ଯାହା ଶୁଣିବେ (ପ୍ରତି ପରିଚୟ ପାଇଁ)</string>
+    <string name="voice_configure">ସ୍ୱର କନଫିଗର୍ କରନ୍ତୁ</string>
+    <string name="voice_video">ଭିଡିଓ କଲ୍</string>
+    <string name="voice_video_hint">ଲାଇଭ୍ ଭିଡିଓ ଯୋଡେ; କଲ୍ ସଂଯୁକ୍ତ ହେଲେ ଏକ ପୂର୍ଣ୍ଣ ସ୍କ୍ରିନ ଭିଡିଓ ସ୍କ୍ରିନ ଖୋଲେ।</string>
+
+    <string name="title_record">ରେକର୍ଡିଂ</string>
+    <string name="record_hint">ଆପଣଙ୍କ ସ୍ୱର ରେକର୍ଡ ହେଉଛି — ଶେଷ ହେଲେ ଷ୍ଟପ୍ ଦବାନ୍ତୁ</string>
+    <string name="record_stop">ଷ୍ଟପ୍</string>
+    <string name="record_failed">ରେକର୍ଡିଂ ବିଫଳ ହେଲା</string>
+
+    <string name="settings_timing">କଲ୍ ସମୟ</string>
+    <string name="timing_hint">ସଂଯୁକ୍ତ ହେବା ପୂର୍ବରୁ ରିଙ୍ଗ୍ (ଆଉଟଗୋଇଂ ସେଲ୍ଫ-କଲ୍)</string>
+    <string name="radio_c2">2 ସେକେଣ୍ଡ ପରେ ସଂଯୁକ୍ତ କରନ୍ତୁ</string>
+    <string name="radio_c5">5 ସେକେଣ୍ଡ ପରେ ସଂଯୁକ୍ତ କରନ୍ତୁ</string>
+    <string name="radio_c10">10 ସେକେଣ୍ଡ ପରେ ସଂଯୁକ୍ତ କରନ୍ତୁ</string>
+
+    <string name="settings_autoend">ସ୍ୱୟଂ-ସମାପ୍ତି</string>
+    <string name="autoend_hint">ସଂଯୁକ୍ତ ହେବା ପରେ କଲ୍ ସ୍ୱଚାଳିତ ଭାବେ ଶେଷ ହୁଏ।</string>
+    <string name="radio_e_off">କେବେ ନୁହେଁ</string>
+    <string name="radio_e30">30 ସେକେଣ୍ଡ ପରେ</string>
+    <string name="radio_e60">1 ମିନିଟ୍ ପରେ</string>
+    <string name="radio_e300">5 ମିନିଟ୍ ପରେ</string>
+    <string name="settings_autoanswer">ସ୍ୱଚାଳିତ ଉତ୍ତର</string>
+    <string name="radio_off">ବନ୍ଦ</string>
+    <string name="radio_now">ତୁରନ୍ତ ଉତ୍ତର ଦିଅନ୍ତୁ</string>
+    <string name="radio_3">3 ସେକେଣ୍ଡ ପରେ</string>
+    <string name="radio_5">5 ସେକେଣ୍ଡ ପରେ</string>
+    <string name="radio_10">10 ସେକେଣ୍ଡ ପରେ</string>
+    <string name="autoanswer_hint">ଆପଣଙ୍କ ସିମୁଲେଟେଡ୍ ଇନକମିଂ କଲ୍ ସ୍ୱଚାଳିତ ଭାବେ ଉତ୍ତର ଦିଏ (Android 8+)।</string>
+
+    <string name="settings_audio">ଅଡିଓ</string>
+    <string name="switch_loopback">ସେଲ୍ଫ-ଶ୍ରବଣ ଲୁପବ୍ୟାକ୍</string>
+    <string name="loopback_hint">ଆପଣଙ୍କ ମାଇକ୍ରୋଫୋନ୍ କଲ୍‌ରେ ପ୍ରବେଶ କରାଏ ଯାହା ଦ୍ୱାରା ଆପଣ ନିଜକୁ ଶୁଣିପାରିବେ</string>
+
+    <string name="settings_account">ଫୋନ୍ ଖାତା</string>
+    <string name="settings_branding">ଡାଏଲର ବ୍ରାଣ୍ଡିଂ</string>
+    <string name="branding_title">କଲର୍ ବ୍ରାଣ୍ଡିଂ</string>
+    <string name="branding_preview">%1$s ମାଧ୍ୟମରେ କଲ୍</string>
+    <string name="branding_hint">ଡାଏଲର ଆପଣଙ୍କ ନାମ ତଳେ ଦେଖାଉଥିବା ଲେବଲ୍। ନୂଆ କଲ୍‌ରେ ପ୍ରଯୁଜ୍ୟ।</string>
+    <string name="branding_change">ବ୍ରାଣ୍ଡିଂ ବଦଳାନ୍ତୁ</string>
+    <string name="branding_dialog_title">କଲ୍ ବ୍ରାଣ୍ଡିଂ</string>
+    <string name="branding_dialog_hint">ଏହି ପାଠ୍ୟ ଡାଏଲରରେ “Calls via” ପରେ ଦେଖାଯାଏ। ଆପ୍ ନାମ ବ୍ୟବହାର କରିବାକୁ ଖାଲି ରଖନ୍ତୁ।</string>
+    <string name="branding_save">ସଞ୍ଚିତ କରନ୍ତୁ</string>
+    <string name="branding_reset_button">ରିସେଟ୍</string>
+    <string name="branding_reset_toast">ବ୍ରାଣ୍ଡିଂ %1$s କୁ ରିସେଟ୍ ହୋଇଛି</string>
+    <string name="branding_saved">ନୂଆ କଲ୍ “Calls via %1$s” ଦେଖାଇବ</string>
+    <string name="account_status_ready">ପଞ୍ଜୀକୃତ — କଲ୍ କରିବାକୁ ପ୍ରସ୍ତୁତ</string>
+    <string name="account_status_self">ପଞ୍ଜୀକୃତ (ସ୍ୱ-ପରିଚାଳିତ) — ପ୍ରସ୍ତୁତ</string>
+    <string name="account_status_fail">ପଞ୍ଜୀକୃତ ନୁହେଁ — ପୁନଃ ଚେଷ୍ଟା ପାଇଁ ଆପ୍ ପୁନଃ ଖୋଲନ୍ତୁ</string>
+    <string name="account_status_legacy">ସକ୍ଷମ ହୋଇନାହିଁ — Manage calling accounts ଖୋଲି Self Calling ସକ୍ଷମ କରନ୍ତୁ</string>
+    <string name="manage_accounts">କଲିଂ ଖାତା ପରିଚାଳନା କରନ୍ତୁ</string>
+
+    <string name="log_out">ଆଉଟଗୋଇଂ ସେଲ୍ଫ-କଲ୍</string>
+    <string name="log_in">ଇନକମିଂ ସେଲ୍ଫ-କଲ୍</string>
+    <string name="log_auto">ସ୍ୱଚାଳିତ ଉତ୍ତରିତ</string>
+    <string name="log_missed">ମିସ୍ ହୋଇଛି</string>
+    <string name="log_canceled">ବାତିଲ୍ ହୋଇଛି</string>
+    <string name="log_empty">ଏପର୍ଯ୍ୟନ୍ତ କୌଣସି ସେଲ୍ଫ କଲ୍ ନାହିଁ</string>
+    <string name="log_clear">ସଫା କରନ୍ତୁ</string>
+    <string name="log_clear_confirm">ସମସ୍ତ ସେଲ୍ଫ-କଲ୍ ଲଗ୍ ସଫା କରିବେ?</string>
+<string name="log_video_out">ଆଉଟଗୋଇଂ ଭିଡିଓ ସେଲ୍ଫ-କଲ୍</string>
+<string name="log_video_in">ଇନକମିଂ ଭିଡିଓ ସେଲ୍ଫ-କଲ୍</string>
+
+    <string name="pending_firing">ଆପଣଙ୍କ ଇନକମିଂ କଲ୍ ରଖାଯାଉଛି…</string>
+    <string name="toast_scheduled_now">ଇନକମିଂ କଲ୍ ଏବେ ରିଙ୍ଗ୍ ହେଉଛି</string>
+    <string name="toast_scheduled">ଇନକମିଂ କଲ୍ %s</string>
+    <string name="pending_chip">ଇନକମିଂ କଲ୍ %s — ବାତିଲ୍ କରିବାକୁ ଟ୍ୟାପ୍ କରନ୍ତୁ</string>
+    <string name="toast_canceled">ଅନୁସୂଚିତ କଲ୍ ବାତିଲ୍ ହୋଇଛି</string>
+    <string name="shortcut_step_call">ସିମୁଲେଟେଡ୍ ଇନକମିଂ କଲ୍</string>
+    <string name="shortcut_step_message">SMS ସନ୍ଦେଶ ପଠାନ୍ତୁ</string>
+    <string name="shortcut_step_type_call">କଲ୍</string>
+    <string name="shortcut_step_type_message">ସନ୍ଦେଶ</string>
+    <string name="shortcut_step_msg_hint">ସନ୍ଦେଶ ପାଠ୍ୟ (କେବଳ SMS ପଦକ୍ଷେପ)</string>
+    <string name="perm_sms">ସନ୍ଦେଶ ପଠାଇବାକୁ SMS ଅନୁମତି ଆବଶ୍ୟକ</string>
+
+    <string name="settings_incoming">ଇନକମିଂ କଲ୍</string>
+    <string name="incoming_wait_title">ଅପେକ୍ଷା ସମୟ</string>
+    <string name="incoming_wait_hint">ଆପଣ ଇନକମିଂ କଲ୍ ସିମୁଲେଟ୍ କରନ୍ତୁ ବଟନ୍ ଦବାଇବା ପରେ କେତେ ସମୟ ପରେ ରିଙ୍ଗ୍ ହେବ। ସେ ପର୍ଯ୍ୟନ୍ତ ଫୋନ୍ ନୀରବ ରହେ।</string>
+    <string name="incoming_delay_now">ତୁରନ୍ତ</string>
+    <string name="radio_w_now">ତୁରନ୍ତ</string>
+    <string name="radio_w1">1 ସେକେଣ୍ଡ ଅପେକ୍ଷା କରନ୍ତୁ</string>
+    <string name="radio_w2">2 ସେକେଣ୍ଡ ଅପେକ୍ଷା କରନ୍ତୁ</string>
+    <string name="radio_w3">3 ସେକେଣ୍ଡ ଅପେକ୍ଷା କରନ୍ତୁ</string>
+    <string name="radio_w5">5 ସେକେଣ୍ଡ ଅପେକ୍ଷା କରନ୍ତୁ</string>
+    <string name="radio_w10">10 ସେକେଣ୍ଡ ଅପେକ୍ଷା କରନ୍ତୁ</string>
+    <string name="radio_w30">30 ସେକେଣ୍ଡ ଅପେକ୍ଷା କରନ୍ତୁ</string>
+    <string name="radio_w60">1 ମିନିଟ୍ ଅପେକ୍ଷା କରନ୍ତୁ</string>
+    <string name="radio_w300">5 ମିନିଟ୍ ଅପେକ୍ଷା କରନ୍ତୁ</string>
+    <string name="radio_w900">15 ମିନିଟ୍ ଅପେକ୍ଷା କରନ୍ତୁ</string>
+    <string name="radio_w1800">30 ମିନିଟ୍ ଅପେକ୍ଷା କରନ୍ତୁ</string>
+    <string name="radio_w3600">1 ଘଣ୍ଟା ଅପେକ୍ଷା କରନ୍ତୁ</string>
+    <string name="radio_w7200">2 ଘଣ୍ଟା ଅପେକ୍ଷା କରନ୍ତୁ</string>
+    <string name="radio_w10800">3 ଘଣ୍ଟା ଅପେକ୍ଷା କରନ୍ତୁ</string>
+    <string name="incoming_ring_title">ରିଙ୍ଗ୍ ସମୟସୀମା</string>
+    <string name="ring_timeout_hint">ପ୍ରକୃତ ଟେଲିକମ୍ ପରି ଚୟନିତ ସମୟ ପରେ ରିଙ୍ଗ୍ ବନ୍ଦ କରେ।</string>
+    <string name="exact_alarm_needed">ଦୀର୍ଘ ଅପେକ୍ଷା ପରେ କଲ୍ ରିଙ୍ଗ୍ ହେବାକୁ ସଠିକ୍ ଆଲାର୍ମ ଅନୁମତି ଦିଅନ୍ତୁ।</string>
+    <string name="radio_r_never">ଉତ୍ତର ଦେବା ପର୍ଯ୍ୟନ୍ତ ରିଙ୍ଗ୍ କରନ୍ତୁ (କେବେ ସମୟସୀମା ନୁହେଁ)</string>
+    <string name="radio_r15">15 ସେକେଣ୍ଡ ପରେ ସ୍ୱଚାଳିତ ଭାବେ ବନ୍ଦ</string>
+    <string name="radio_r30">30 ସେକେଣ୍ଡ ପରେ ସ୍ୱଚାଳିତ ଭାବେ ବନ୍ଦ</string>
+    <string name="radio_r45">45 ସେକେଣ୍ଡ ପରେ ସ୍ୱଚାଳିତ ଭାବେ ବନ୍ଦ</string>
+    <string name="radio_r60">1 ମିନିଟ୍ ପରେ ସ୍ୱଚାଳିତ ଭାବେ ବନ୍ଦ</string>
+
+    <string-array name="incoming_delay_labels">
+        <item>ତୁରନ୍ତ</item>
+        <item>3 ସେକେଣ୍ଡ</item>
+        <item>5 ସେକେଣ୍ଡ</item>
+        <item>10 ସେକେଣ୍ଡ</item>
+        <item>30 ସେକେଣ୍ଡ</item>
+        <item>1 ମିନିଟ୍</item>
+        <item>5 ମିନିଟ୍</item>
+        <item>15 ମିନିଟ୍</item>
+        <item>30 ମିନିଟ୍</item>
+        <item>1 ଘଣ୍ଟା</item>
+        <item>2 ଘଣ୍ଟା</item>
+        <item>3 ଘଣ୍ଟା</item>
+    </string-array>
+
+    <string name="video_remote_label">ଦୂର ଭିଡିଓ</string>
+    <string name="video_local_label">ଆପଣ</string>
+    <string name="video_live">ସେଲ୍ଫ ଭିଡିଓ କଲ୍</string>
+    <string name="video_mute">ମ୍ୟୁଟ୍</string>
+    <string name="video_muted">ମ୍ୟୁଟ୍ ହୋଇଛି</string>
+    <string name="video_camera">ଭିଡିଓ</string>
+    <string name="video_switch_camera">ଫ୍ଲିପ୍</string>
+    <string name="video_hangup">କଲ୍ କାଟନ୍ତୁ</string>
+    <string name="video_off">ଭିଡିଓ ବନ୍ଦ</string>
+    <string name="video_unavailable">କ୍ୟାମେରା ଉପଲବ୍ଧ ନାହିଁ</string>
+    <string name="perm_camera">ସ୍ଥାନୀୟ ପ୍ରିଭ୍ୟୁ ପାଇଁ କ୍ୟାମେରା ଅନୁମତି ଆବଶ୍ୟକ।</string>
+
+    <string name="title_sms_autoreply">SMS ସ୍ୱଚାଳିତ ଉତ୍ତର</string>
+    <string name="sms_autoreply_title">SMS ସ୍ୱଚାଳିତ ଉତ୍ତର</string>
+    <string name="sms_autoreply_hint">ପ୍ରତ୍ୟେକ ଇନକମିଂ SMS କୁ ଆପଣଙ୍କ ସନ୍ଦେଶ ସହିତ ସ୍ୱଚାଳିତ ଭାବେ ଉତ୍ତର ଦିଅନ୍ତୁ।</string>
+    <string name="sms_autoreply_enabled">ସ୍ୱଚାଳିତ ଉତ୍ତର ସକ୍ଷମ କରନ୍ତୁ</string>
+    <string name="sms_autoreply_message_label">ଉତ୍ତର ସନ୍ଦେଶ</string>
+    <string name="sms_autoreply_message_hint">ଯଥା: ନମସ୍କାର, ମୁଁ ବ୍ୟସ୍ତ ଅଛି - ପରେ ଉତ୍ତର ଦେବି।</string>
+    <string name="sms_autoreply_saved">ସ୍ୱଚାଳିତ ଉତ୍ତର ସଞ୍ଚିତ ହୋଇଛି</string>
+    <string name="perm_sms_receive">ସ୍ୱଚାଳିତ ଉତ୍ତର ପାଇଁ SMS ଗ୍ରହଣ ଅନୁମତି ଆବଶ୍ୟକ</string>
+    <string name="perm_sms_send">ସ୍ୱଚାଳିତ ଉତ୍ତର ପାଇଁ SMS ପଠାଇବା ଅନୁମତି ଆବଶ୍ୟକ</string>
+
+    <string name="title_sms_log">SMS ଲଗ୍</string>
+    <string name="sms_log_status">SMS ଲଗ୍: %d ସନ୍ଦେଶ</string>
+
+    <string name="widget_title">ସର୍ଟକଟ୍ ସେଟ୍</string>
+    <string name="widget_sub_tap">ଚଲାଇବାକୁ ଟ୍ୟାପ୍ କରନ୍ତୁ</string>
+    <string name="widget_sub_not_configured">କନଫିଗର୍ କରିବାକୁ ଟ୍ୟାପ୍ କରନ୍ତୁ</string>
+    <string name="widget_configure_title">ୱିଜେଟ୍ କନଫିଗର୍ କରନ୍ତୁ</string>
+    <string name="widget_choose_set">ଚଲାଇବାକୁ ସର୍ଟକଟ୍ ସେଟ୍ ବାଛନ୍ତୁ</string>
+    <string name="widget_cancel">ବାତିଲ୍</string>
+</resources>

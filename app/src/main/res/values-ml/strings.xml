@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">സ്വയം കോളിംഗ്</string>
+    <string name="tagline">നേറ്റീവ് ഡയലർ വഴി സ്വയം വിളിക്കുക</string>
+    <string name="account_desc">സ്വयं വിളിക്കുക</string>
+    <string name="footer">കോളുകൾ നാട്ടുവായ ഡയലർ യുഐയിലാണ് ദൃശ്യമാകുന്നത് — ഈ ആപ്പ് അവ മാത്രമാണ് സൂക്ഷിക്കുന്നത്.</string>
+
+    <string name="title_settings">സെറ്റിംഗ്‌സ്</string>
+    <string name="title_log">സ്വയം-കോള് ലോഗ്</string>
+    <string name="perm_granted">അനുമതി നൽകി</string>
+
+    <string name="status_title">സിസ്റ്റം സ്റ്റാറ്റസ്</string>
+    <string name="status_account">ടെലിക്കോം അക്കൗണ്ട്</string>
+    <string name="status_account_ok">രജിസ്റ്റർ ചെയ്തിട്ടുണ്ട്</string>
+    <string name="status_account_fail">രജിസ്റ്റർ ചെയ്തിട്ടില്ല — ആപ്പ് വീണ്ടും തുറക്കുക</string>
+    <string name="status_account_legacy">സെറ്റിംഗ്സിൽ ഒന്ന് എനേബിൾ ചെയ്യുക → ഫോൺ അക്കൗണ്ട്</string>
+    <string name="status_call">കോൾ ചെയ്യാനുള്ള അനുമതി</string>
+    <string name="status_perm_ok">നൽകിയിട്ടുണ്ട്</string>
+    <string name="status_call_missing">അനുമതി നൽകാൻ കോൾ ബട്ടണും ക്ലിക്ക് ചെയ്യുക</string>
+    <string name="status_answer">കോള్క് ഉത്തരം നൽകാനുള്ള അനുമതി</string>
+    <string name="status_answer_missing">ഓട്ടോമാറ്റിക് ഉത്തരത്തിന് ആവശ്യമാണ്</string>
+    <string name="status_mic">മൈക്രോഫോൺ</string>
+    <string name="status_mic_ok">നൽകിയിട്ടുണ്ട്</string>
+    <string name="status_mic_missing">സ്വयं കേൾക്കാനുള്ള ആവശ്യമാണ്</string>
+
+    <string name="action_call">स्वयं കോൾ ചെയ്യുക</string>
+    <string name="action_incoming">ഇൻകമിംഗ് കോൾ സിമുലേറ്റ് ചെയ്യുക</string>
+    <string name="wait_home_now">ത selben വേഗത്തിൽ റിംഗ് — വെയ്‍റ്റിംഗ് മാറ്റാൻ ക്ലിക്ക് ചെയ്യുക</string>
+    <string name="wait_home">%s റിംഗ് — വെയ്‍റ്റിംഗ് മാറ്റാൻ ക്ലിക്ക് ചെയ്യുക</string>
+
+    <string name="settings_identity">കോളർ ഐഡന്റിറ്റി</string>
+    <string name="settings_name_label">കോൾ സ്‌ക്രീനിൽ ദൃശ്യമാകുന്ന പേര്</string>
+    <string name="preset_number_label">മൊബൈൽ നമ്പർ</string>
+    <string name="preset_card_label">സജീവ ഐഡന്റിറ്റി</string>
+    <string name="preset_hint">പ്രിസെറ്റുകൾ മാനേജ് ചെയ്യാൻ ക്ലിക്ക് ചെയ്യുക</string>
+    <string name="title_presets">പ്രിസെറ്റുകൾ</string>
+    <string name="preset_add">ചേർക്കുക</string>
+    <string name="preset_edit">എഡിറ്റ് ചെയ്യുക</string>
+    <string name="preset_delete">ഡിലീറ്റ് ചെയ്യുക</string>
+    <string name="preset_save">സേവ് ചെയ്യുക</string>
+    <string name="preset_need_one">കുറഞ്ഞത് ഒരു പ്രിസെറ്റ് സൂക്ഷിക്കുക</string>
+    <string name="preset_invalid">പേരും നമ്പറും ആവശ്യമാണ്</string>
+    <string name="preset_empty">പ്രിസെറ്റുകളൊന്നുമില്ല</string>
+    <string name="manage_presets">പ്രിസെറ്റുകൾ മാനേജ് ചെയ്യുക</string>
+    <string name="preset_voice">വോയ്സ്</string>
+    <string name="preset_import">ഇമ്പോർട്ട് ചെയ്യുക</string>
+    <string name="preset_import_title">പ്രിസെറ്റുകൾ ഇമ്പോർട്ട് ചെയ്യുക</string>
+    <string name="preset_import_contacts">കോൺടാക്റ്റുകളിൽ നിന്നും</string>
+    <string name="preset_import_vcf">വിസിസി എഫ് ഫയൽ ലிருந்து</string>
+    <string name="preset_import_reading">ഇമ്പോർട്ട് ചെയ്യുന്നു…</string>
+    <string name="preset_import_failed">ഈ ഫയൽ അല്ലെങ്കിൽ അഡ്രസ്സ് ബുക്ക് വായിക്കാൻ കഴിയില്ല</string>
+    <string name="preset_import_empty">ഫോൺ നമ്പറുകൾ ഒന്നുമില്ല</string>
+    <string name="preset_import_none">പുതിയ പ്രിസെറ്റുകളൊന്നുമില്ല — ഈ നമ്പറുകൾ നേരത്തേക്ക് ലിസ്റ്റിലുണ്ട്</string>
+    <string name="preset_import_contacts_denied">ഇമ്പോർട്ട് ചെയ്യാൻ കോൺടാക്റ്റ് അനുമതി ആവശ്യമാണ്</string>
+    <plurals name="preset_imported">
+        <item quantity="one">%1$d പ്രിസെറ്റ് ഇമ്പോർട്ട് ചെയ്തു</item>
+        <item quantity="other">%1$d പ്രിസെറ്റുകൾ ഇമ്പോർട്ട് ചെയ്തു</item>
+    </plurals>
+
+    <string name="title_voice">കോളില്‍ വോയ്സ്</string>
+    <string name="voice_source">വോയ്സ് സോഴ്സ്</string>
+    <string name="voice_none">മൗനം</string>
+    <string name="voice_mic">ലൈവ് മൈക്രോഫോൺ</string>
+    <string name="voice_file">ഓഡിയോ ഫയൽ</string>
+    <string name="voice_file_section">ഓഡിയോ ഫയൽ</string>
+    <string name="voice_no_file">ഫയൽ ഒന്നുമില്ല — താഴെ ഇമ്പോർട്ട് ചെയ്യുക അല്ലെങ്കിൽ റെക്കോർഡ് ചെയ്യുക</string>
+    <string name="voice_file_hint">കണക്റ്റ് ആകുമ്പോൾ ലൂപ്പിൽ കേൾക്കും</string>
+    <string name="voice_import">ഓഡിയോ ഫയൽ ഇമ്പോർട്ട് ചെയ്യുക</string>
+    <string name="voice_record">മൈക്രോഫോൺ വഴി റെക്കോർഡ് ചെയ്യുക</string>
+    <string name="voice_need_file">ആദ്യം ഓഡിയോ ഫയൽ ഇമ്പോർട്ട് ചെയ്യുക അല്ലെങ്കിൽ റെക്കോർഡ് ചെയ്യുക</string>
+    <string name="voice_saved">വോയ്സ് അപ്‌ഡേറ്റ് ചെയ്തു</string>
+    <string name="voice_imported">ഓഡിയോ ഫയൽ ഇമ്പോർട്ട് ചെയ്തു</string>
+    <string name="voice_import_failed">ഈ ഫയൽ ഇമ്പോർട്ട് ചെയ്യാൻ കഴിയില്ല</string>
+    <string name="voice_row_title">കോളില്‍ വോയ്സ്</string>
+    <string name="voice_row_sub">കോൾ സമയത്ത് കേൾക്കുന്ന വോയ്സ് (ഓരോ ഐഡന്റിറ്റിക്ക്)</string>
+    <string name="voice_configure">വോയ്സ് കോൺഫിഗർ ചെയ്യുക</string>
+    <string name="voice_video">വീഡിയോ കോൾ</string>
+    <string name="voice_video_hint">ലൈവ് വീഡിയോ ചേർക്കുന്നു; കോൾ കണക്റ്റ് ആയാൽ പൂർണ്ണ സ്ക്രീൻ വീഡിയോ തുറക്കും</string>
+
+    <string name="title_record">റെക്കോർഡ്‌സ്</string>
+    <string name="record_hint">നിങ്ങളുടെ വോയ്സ് റെക്കോർഡ് ചെയ്യുന്നു — പൂർത്തിയായാൽസ്റ്റോപ്പ് ക്ലിക്ക് ചെയ്യുക</string>
+    <string name="record_stop">സ്റ്റോപ്പ്</string>
+    <string name="record_failed">റെക്കോർഡ് വിഫലം</string>
+
+    <string name="settings_timing">കോൾ ടൈമിംഗ്</string>
+    <string name="timing_hint">കണക്റ്റ് ആകുന്നതിന് മുമ്പ് റിംഗ് (ബഹിര്‌ഗത സ്‌വ കോൾ)</string>
+    <string name="radio_c2">2 സെക്കൻഡിൽ ക്കൂണക്റ്റ് ചെയ്യുക</string>
+    <string name="radio_c5">5 സെക്കൻഡിൽ കണക്റ്റ് ചെയ്യുക</string>
+    <string name="radio_c10">10 സെക്കൻഡിൽ കണക്റ്റ് ചെയ്യുക</string>
+
+    <string name="settings_autoend">ഓട്ടോമാറ്റിക് അവസാനിപ്പിക്കുക</string>
+    <string name="autoend_hint">കണക്റ്റ് ആകുമ്പോൾ കോൾ ഓട്ടോമാറ്റിക് ആയി അവസാനിക്കും</string>
+    <string name="radio_e_off">എప్పോഴും അല്ല</string>
+    <string name="radio_e30">30 സെക്കൻഡിന് ശേഷം</string>
+    <string name="radio_e60">1 മിനിറ്റിന് ശേഷം</string>
+    <string name="radio_e300">5 മിനിറ്റിന് ശേഷം</string>
+
+    <string name="settings_autoanswer">ഓട്ടോമാറ്റിക് ഉത്തരം</string>
+    <string name="radio_off">ഓഫ്</string>
+    <string name="radio_now">തൽച്ചേരൻ ഉത്തരം നൽകുക</string>
+    <string name="radio_3">3 സെക്കൻഡിന് ശേഷം</string>
+    <string name="radio_5">5 സെക്കൻഡിന് ശേഷം</string>
+    <string name="radio_10">10 സെക്കൻഡിന് ശേഷം</string>
+    <string name="autoanswer_hint">നിങ്ങളുടെ സിമുലേറ്റ് ചെയ്ത ഇൻകമിംഗ് കോളിന് ഓട്ടോമാറ്റിക് ആയി ഉത്തരം നൽകുക (ആൻഡ്രോയിഡ് 8+)</string>
+
+    <string name="settings_audio">ഓഡിയോ</string>
+    <string name="switch_loopback">സ്വयं കേൾക്കുന്ന ലൂപ്പ്‌ബാക്ക്</string>
+    <string name="loopback_hint">നിങ്ങളുടെ മൈക്രോഫോൺ കോളിലേക്ക് പൈപ്പ് ചെയ്യുക, നിങ്ങൾക്ക് സ്വയം കേൾക്കാൻ കഴിയും</string>
+
+    <string name="settings_account">ഫോൺ അക്കൗണ്ട്</string>
+    <string name="settings_branding">കോളർ ബ്രാൻഡിംഗ്</string>
+    <string name="branding_title">കോളർ ബ്രാൻഡിംഗ്</string>
+    <string name="branding_preview">%1$s വഴി കോളുകൾ</string>
+    <string name="branding_hint">ഡയലർ നിങ്ങളുടെ പേരിന്റെ കീഴെ ലേബൽ കാട്ടും. പുതിയ കോളുകൾക്ക് ബാധകമാണ്</string>
+    <string name="branding_change">ബ്രാൻഡിംഗ് മാറ്റുക</string>
+    <string name="branding_dialog_title">കോൾ ബ്രാൻഡിംഗ്</string>
+    <string name="branding_dialog_hint">ഡയലറിൽ “കോൾസ് വഴി” ശേഷം കാണുന്ന ടെക്സ്റ്റ്. ശൂന്യമായിága അപ്പ് പേരു വഴി ഉപയോഗിക്കും</string>
+    <string name="branding_save">സേവ് ചെയ്യുക</string>
+    <string name="branding_reset_button">റീസെറ്റ് ചെയ്യുക</string>
+    <string name="branding_reset_toast">ബ്രാൻഡിംഗ് %1$s റീസെറ്റ് ചെയ്തു</string>
+    <string name="branding_saved">പുതിയ കോളുകൾ “കോൾസ് വഴി %1$s” കാണിക്കും</string>
+    <string name="account_status_ready">രജിസ്റ്റർ ചെയ്തിട്ടുണ്ട് — കോളിന് തയ്യാറെടുക്കുക</string>
+    <string name="account_status_self">രജിസ്റ്റർ ചെയ്തിട്ടുണ്ട് (സ്വയം മാനേജ് ചെയ്യുന്ന) — തയ്യാറെടുക്കുക</string>
+    <string name="account_status_fail">രജിസ്റ്റർ ചെയ്തിട്ടില്ല — വീണ്ടും ശ്രമിക്കാൻ ആപ്പ് തുറക്കുക</string>
+    <string name="account_status_legacy">എനേബിൾ ചെയ്തിട്ടില്ല — കോൾ അക്കൗണ്ടുകൾ മാനേജ് ചെയ്യുക اور സ്വയം കോളിംഗ് ചालू ചെയ്യുക</string>
+    <string name="manage_accounts">കോൾ അക്കൗണ്ടുകൾ മാനേജ് ചെയ്യുക</string>
+
+    <string name="log_out">ബാഹിര്‌ഗത സ്വयं കോൾ</string>
+    <string name="log_in">വരുന്നത് സ്വयं കോൾ</string>
+    <string name="log_auto">ഓട്ടോമാറ്റിക് ആയി ഉത്തരം നൽകി</string>
+    <string name="log_missed">കടന്നുപോയി</string>
+    <string name="log_canceled">റദ്ദ് ചെയ്തു</string>
+    <string name="log_empty">അവസാനിപ്പിച്ചിരിക്കുന്നस्वयं കോൾ ഒന്നുമില്ല</string>
+    <string name="log_clear">ശുദ്ധീകരിക്കുക</string>
+    <string name="log_clear_confirm">മுழുവൻ സ്വयं-കോള് ലോഗ് ശുദ്ധീകരിക്കണോ?</string>
+    <string name="log_video_out">ബാഹിര്‌ഗത സ്വयं വീഡിയോ കോൾ</string>
+    <string name="log_video_in">വരുന്നത് സ്വयं വീഡിയോ കോൾ</string>
+
+    <string name="pending_firing">നിങ്ങളുടെ വരുന്നത് കോൾ സുരക്ഷിതമാക്കുന്നു…</string>
+    <string name="toast_scheduled_now">വരുന്നത് കോൾ ഇപ്പോൾ കേൾക്കാം</string>
+    <string name="toast_scheduled">വരുന്നത് കോൾ %s</string>
+    <string name="pending_chip">വരുന്നത് കോൾ %s — റദ്ദ് ചെയ്യാൻ ക്ലിക്ക് ചെയ്യുക</string>
+    <string name="toast_canceled">നിശ്ചയിച്ച കോൾ റദ്ദ് ചെയ്തു</string>
+    <string name="shortcut_step_call">സിമുലേറ്റ് ചെയ്ത വരുന്നത് കോൾ</string>
+    <string name="shortcut_step_message">SMS സന്ദേശം അയക്കുക</string>
+    <string name="shortcut_step_type_call">കോൾ</string>
+    <string name="shortcut_step_type_message">സന്ദേശം</string>
+    <string name="shortcut_step_msg_hint">സന്ദേശം ടെക്സ്റ്റ് (ഏഴ് SMS ഘട്ടങ്ങൾക്ക് മാത്രം)</string>
+    <string name="perm_sms">സന്ദേശം അയക്കാൻ SMS അനുമതി ആവശ്യമാണ്</string>
+
+    <string name="settings_incoming">വരുന്നത് കോൾ</string>
+    <string name="incoming_wait_title">വെയ്‍റ്റിംഗ് സമയം</string>
+    <string name="incoming_wait_hint">വരുന്നത് കോൾ ക്ലിക്ക് ചെയ്തതിന് ശേഷം എത്ര സമയത്തിനുള്ളിൽ റിംഗ് വajarെ. ഫോൺ അക്ക distânciaിശം직وظ 걱정</string>
+    <string name="incoming_delay_now">തൽച്ചേരൻ</string>
+    <string name="radio_w_now">തൽച്ചേരൻ</string>
+    <string name="radio_w1">1 സെക്കൻഡ് വെയ്‍റ്റ് ചെയ്യുക</string>
+    <string name="radio_w2">2 സെക്കൻഡ് വെയ്‍റ്റ് ചെയ്യുക</string>
+    <string name="radio_w3">3 സെക്കൻഡ് വെയ്‍റ്റ് ചെയ്യുക</string>
+    <string name="radio_w5">5 സെക്കൻഡ് വെയ്‍റ്റ് ചെയ്യുക</string>
+    <string name="radio_w10">10 സെക്കൻഡ് വെയ്‍റ്റ് ചെയ്യുക</string>
+    <string name="radio_w30">30 സെക്കൻഡ് വെയ്‍റ്റ് ചെയ്യുക</string>
+    <string name="radio_w60">1 മിനിറ്റ് വെയ്‍റ്റ് ചെയ്യുക</string>
+    <string name="radio_w300">5 മിനിറ്റ് വെയ്‍റ്റ് ചെയ്യുക</string>
+    <string name="radio_w900">15 മിനിറ്റ് വെയ്‍റ്റ് ചെയ്യുക</string>
+    <string name="radio_w1800">30 മിനിറ്റ് വെയ്‍റ്റ് ചെയ്യുക</string>
+    <string name="radio_w3600">1 മണിക്കൂർ വെയ്‍റ്റ് ചെയ്യുക</string>
+    <string name="radio_w7200">2 മണിക്കൂർ വെയ്‍റ്റ് ചെയ്യുക</string>
+    <string name="radio_w10800">3 മണിക്കൂർ വെയ്‍റ്റ് ചെയ്യുക</string>
+    <string name="incoming_ring_title">റിംഗ് ടൈംഔട്ട്</string>
+    <string name="ring_timeout_hint">തിരഞ്ഞെടുത്ത സമയത്തിന് ശേഷം റിംഗ് നിര്‍വrier്, യഥാർത്ഥ ടെലിക്കോംപോലെ</string>
+    <string name="exact_alarm_needed">ദീർഘമായ വെയ്‍റ്റിംഗിന് ശേഷവും കോൾ റിംഗ് താനാകും, കൃത്യമായ അലർം അനുമതി നൽകുക</string>
+    <string name="radio_r_never">ഉത്തരം ലഭിക്കുന്നത് വരെ റിംഗ് qilish (ടൈംഔട്ട് ഒന്നുമില്ല)</string>
+    <string name="radio_r15">15 സെക്കൻഡിന് ശേഷം ഓട്ടോമാറ്റിക് റദ്ദ് ചെയ്യുക</string>
+    <string name="radio_r30">30 സെക്കൻഡിന് ശേഷം ഓട്ടോമാറ്റിക് റദ്ദ് ചെയ്യുക</string>
+    <string name="radio_r45">45 സെക്കൻഡിന് ശേഷം ഓട്ടോമാറ്റിക് റദ്ദ് ചെയ്യുക</string>
+    <string name="radio_r60">1 മിനിറ്റിന് ശേഷം ഓട്ടോമാറ്റിക് റദ്ദ് ചെയ്യുക</string>
+
+    <string-array name="incoming_delay_labels">
+        <item>തൽച്ചേരൻ</item>
+        <item>3 സെക്കൻഡ്</item>
+        <item>5 സെക്കൻഡ്</item>
+        <item>10 സെക്കൻഡ്</item>
+        <item>30 സെക്കൻഡ്</item>
+        <item>1 മിനിറ്റ്</item>
+        <item>5 മിനിറ്റ്</item>
+        <item>15 മിനിറ്റ്</item>
+        <item>30 മിനിറ്റ്</item>
+        <item>1 മണിക്കൂർ</item>
+        <item>2 മണിക്കൂർ</item>
+        <item>3 മണിക്കൂർ</item>
+    </string-array>
+
+    <string name="video_remote_label">റിയിമോട്ട് വീഡിയോ</string>
+    <string name="video_local_label">നിങ്ങൾ</string>
+    <string name="video_live">സ്വयं വീഡിയോ കോൾ</string>
+    <string name="video_mute">മ്യൂട്ട് ചെയ്യുക</string>
+    <string name="video_muted">മ്യൂട്ട് ചെയ്തിട്ടുണ്ട്</string>
+    <string name="video_camera">വീഡിയോ</string>
+    <string name="video_switch_camera">ഫ്ലിപ്പ് ചെയ്യുക</string>
+    <string name="video_hangup">കോൾ അവസാനിപ്പിക്കുക</string>
+    <string name="video_off">വീഡിയോ ഓഫ്</string>
+    <string name="video_unavailable">ക്യാമറ വിതരണം ഇല്ല</string>
+    <string name="perm_camera">സ്ഥാനിക മുൻകാഴ്ചയ്ക്ക് ക്യാമറ അനുമതി ആവശ്യമാണ്</string>
+
+    <string name="title_sms_autoreply">SMS ഓട്ടോ-റിപ്ലൈ</string>
+    <string name="sms_autoreply_title">SMS ഓട്ടോ-റിപ്ലൈ</string>
+    <string name="sms_autoreply_hint">എല്ലാ ഇൻകമിംഗ് SMS wonつടെ നിങ്ങളുടെ സന്ദേശത്തിലൂടെ ഓട്ടോമാറ്റിക് ഉത്തരം നൽകുക</string>
+    <string name="sms_autoreply_enabled">ഓട്ടോമാറ്റിക് ഉത്തരം എനേബിൾ ചെയ്യുക</string>
+    <string name="sms_autoreply_message_label">ഉത്തരം സന്ദേശം</string>
+    <string name="sms_autoreply_message_hint">ഉദാ.ഹലോ, ഞാൻ ബിസി ആണ് - പിന്നെ ഉത്തരം നൽകും</string>
+    <string name="sms_autoreply_saved">ഓട്ടോ-റിപ്ലൈ സേവ് ചെയ്തു</string>
+    <string name="perm_sms_receive">ഓട്ടോമാറ്റിക് ഉത്തരത്തിന് SMS സ്വീകരിക്കാനുള്ള അനുമതി ആവശ്യമാണ്</string>
+    <string name="perm_sms_send">ഓട്ടോമാറ്റിക് ഉത്തരത്തിന് SMS അയക്കാനുള്ള അനുമതി ആവശ്യമാണ്</string>
+
+    <string name="title_sms_log">SMS ലോഗ്</string>
+    <string name="sms_log_status">SMS ലോഗ്: %d സന്ദേശങ്ങൾ</string>
+
+    <string name="widget_title">ഷോർട്ടകറ്റ് സെറ്റ്</string>
+    <string name="widget_sub_tap">രൻ ചെയ്തു克 축제</string>
+    <string name="widget_sub_not_configured">കോൺഫിഗർ ചെയ്യാൻ ക്ലിക്ക് ചെയ്യുക</string>
+    <string name="widget_configure_title">വിഡ്ജെറ്റ് കോൺഫിഗർ ചെയ്യുക</string>
+    <string name="widget_choose_set">രൻ ചെയ്യാൻ ഷോർട്ടകറ്റ് സെറ്റ് തിരഞ്ഞെടുക്കുക</string>
+    <string name="widget_cancel">റദ്ദ് ചെയ്യുക</string>
+</resources>

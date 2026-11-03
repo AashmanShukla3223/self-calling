@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ᱥᱮᱞᱯᱷ ᱠᱚᱞᱤᱸᱜᱽ</string>
+    <string name="tagline">ᱢᱩᱞ ᱰᱟᱭᱞᱟᱨ ᱛᱮ ᱱᱚᱶᱟ ᱟᱡ ᱛᱮ ᱠᱚᱞ ᱢᱮ</string>
+    <string name="account_desc">ᱟᱡ ᱛᱮ ᱠᱚᱞ</string>
+    <string name="footer">ᱠᱚᱞ ᱠᱚ ᱢᱩᱞ ᱰᱟᱭᱞᱟᱨ ᱵᱮᱵᱷᱟᱨ ᱡᱚᱱᱚᱲ ᱨᱮ ᱧᱮᱞᱚᱜᱼᱟ — ᱱᱚᱶᱟ ᱮᱯ ᱫᱚ ᱠᱷᱟᱹᱞᱤ ᱚᱱᱟ ᱠᱚ ᱫᱚᱦᱚᱭᱟ᱾</string>
+
+    <string name="title_settings">ᱥᱮᱴᱤᱸᱜᱽ ᱠᱚ</string>
+    <string name="title_log">ᱟᱡ ᱠᱚᱞ ᱞᱚᱜᱽ</string>
+    <string name="perm_granted">ᱟᱱᱩᱢᱟᱛᱤ ᱮᱢ ᱠᱟᱱᱟ</string>
+
+    <string name="status_title">ᱥᱤᱥᱴᱚᱢ ᱟᱵᱚᱥᱛᱟ</string>
+    <string name="status_account">ᱴᱮᱞᱤᱠᱚᱢ ᱠᱷᱟᱛᱟ</string>
+    <string name="status_account_ok">ᱨᱮᱡᱤᱥᱴᱟᱨ ᱟᱠᱟᱱᱟ</string>
+    <string name="status_account_fail">ᱨᱮᱡᱤᱥᱴᱟᱨ ᱵᱟᱹᱱᱩᱜᱼᱟ — ᱮᱯ ᱟᱨᱦᱚᱸ ᱡᱷᱤᱡ ᱢᱮ</string>
+    <string name="status_account_legacy">ᱥᱮᱴᱤᱸᱜᱽ ᱨᱮ → ᱯᱷᱚᱱ ᱠᱷᱟᱛᱟ ᱨᱮ ᱢᱤᱫ ᱫᱷᱟᱣ ᱮᱢ ᱪᱟᱹᱞᱩ ᱢᱮ</string>
+    <string name="status_call">ᱠᱚᱞ ᱨᱮᱭᱟᱜ ᱟᱱᱩᱢᱟᱛᱤ</string>
+    <string name="status_perm_ok">ᱮᱢ ᱟᱠᱟᱱᱟ</string>
+    <string name="status_call_missing">ᱟᱱᱩᱢᱟᱛᱤ ᱞᱟᱹᱜᱤᱫ ᱠᱚᱞ ᱵᱩᱛᱟᱹᱢ ᱥᱟᱯᱷᱟ ᱢᱮ</string>
+    <string name="status_answer">ᱠᱚᱞ ᱛᱮᱞᱟ ᱮᱢ ᱨᱮᱭᱟᱜ ᱟᱱᱩᱢᱟᱛᱤ</string>
+    <string name="status_answer_missing">ᱚᱡ ᱛᱮ ᱛᱮᱞᱟ ᱮᱢ ᱞᱟᱹᱜᱤᱫ ᱞᱟᱹᱠᱛᱤᱭᱟ</string>
+    <string name="status_mic">ᱢᱟᱭᱠᱨᱚᱯᱷᱚᱱ</string>
+    <string name="status_mic_ok">ᱮᱢ ᱟᱠᱟᱱᱟ</string>
+    <string name="status_mic_missing">ᱟᱡ ᱟᱸᱡᱚᱢ ᱞᱟᱹᱜᱤᱫ ᱞᱟᱹᱠᱛᱤᱭᱟ</string>
+
+    <string name="action_call">ᱟᱡ ᱛᱮ ᱠᱚᱞ ᱢᱮ</string>
+    <string name="action_incoming">ᱟᱺᱛᱮ ᱠᱚᱞ ᱥᱤᱢᱩᱞᱮᱴ ᱢᱮ</string>
+    <string name="wait_home_now">ᱱᱟᱶᱟ ᱜᱮ ᱨᱤᱸᱜᱽ ᱜᱚᱫᱚᱜᱼᱟ — ᱛᱟᱺᱜᱤ ᱵᱚᱫᱚᱞ ᱞᱟᱹᱜᱤᱫ ᱥᱟᱯᱷᱟ ᱢᱮ</string>
+    <string name="wait_home">%s ᱨᱮ ᱨᱤᱸᱜᱽ ᱜᱚᱫᱚᱜᱼᱟ — ᱛᱟᱺᱜᱤ ᱵᱚᱫᱚᱞ ᱞᱟᱹᱜᱤᱫ ᱥᱟᱯᱷᱟ ᱢᱮ</string>
+
+    <string name="settings_identity">ᱠᱚᱞᱟᱨ ᱩᱨᱩᱢ</string>
+    <string name="settings_name_label">ᱠᱚᱞ ᱥᱠᱨᱤᱱ ᱨᱮ ᱧᱮᱞᱚᱜ ᱧᱩᱛᱩᱢ</string>
+    <string name="preset_number_label">ᱢᱳᱵᱟᱭᱤᱞ ᱱᱚᱢᱵᱚᱨ</string>
+    <string name="preset_card_label">ᱪᱟᱹᱞᱩ ᱩᱨᱩᱢ</string>
+    <string name="preset_hint">ᱯᱨᱤᱥᱮᱴ ᱵᱮᱵᱷᱟᱨ ᱞᱟᱹᱜᱤᱫ ᱥᱟᱯᱷᱟ ᱢᱮ</string>
+    <string name="title_presets">ᱯᱨᱤᱥᱮᱴ ᱠᱚ</string>
+    <string name="preset_add">ᱥᱮᱞᱮᱫ ᱢᱮ</string>
+    <string name="preset_edit">ᱥᱟᱯᱲᱟᱣ ᱢᱮ</string>
+    <string name="preset_delete">ᱢᱟᱨᱥᱟᱞ ᱢᱮ</string>
+    <string name="preset_save">ᱥᱟᱺᱪᱟᱣ ᱢᱮ</string>
+    <string name="preset_need_one">ᱠᱚᱢ ᱠᱷᱚᱱ ᱠᱚᱢ ᱢᱤᱫ ᱯᱨᱤᱥᱮᱴ ᱫᱚᱦᱚᱭ ᱢᱮ</string>
+    <string name="preset_invalid">ᱧᱩᱛᱩᱢ ᱟᱨ ᱱᱚᱢᱵᱚᱨ ᱞᱟᱹᱠᱛᱤᱭᱟ</string>
+    <string name="preset_empty">ᱯᱨᱤᱥᱮᱴ ᱵᱟᱹᱱᱩᱜᱼᱟ</string>
+    <string name="manage_presets">ᱯᱨᱤᱥᱮᱴ ᱵᱮᱵᱷᱟᱨ ᱢᱮ</string>
+    <string name="preset_voice">ᱨᱟᱦᱟ</string>
+    <string name="preset_import">ᱤᱢᱯᱳᱨᱴ ᱢᱮ</string>
+    <string name="preset_import_title">ᱯᱨᱤᱥᱮᱴ ᱤᱢᱯᱳᱨᱴ ᱢᱮ</string>
+    <string name="preset_import_contacts">ᱥᱟᱢᱯᱚᱨᱠ ᱠᱷᱚᱱ</string>
+    <string name="preset_import_vcf">.vcf ᱯᱷᱟᱭᱤᱞ ᱠᱷᱚᱱ</string>
+    <string name="preset_import_reading">ᱤᱢᱯᱳᱨᱴ ᱜᱚᱫᱚᱜ ᱠᱟᱱᱟ…</string>
+    <string name="preset_import_failed">ᱚᱱᱟ ᱯᱷᱟᱭᱤᱞ ᱥᱮ ᱴᱷᱤᱠᱟᱱᱟ ᱯᱚᱛᱚᱵ ᱯᱟᱲᱦᱟᱣ ᱵᱟᱝ ᱜᱟᱱᱚᱜᱼᱟ</string>
+    <string name="preset_import_empty">ᱡᱮᱞᱮᱠᱟ ᱯᱷᱚᱱ ᱱᱚᱢᱵᱚᱨ ᱵᱟᱝ ᱧᱟᱢ ᱞᱮᱱᱟ</string>
+    <string name="preset_import_none">ᱱᱟᱶᱟ ᱯᱨᱤᱥᱮᱴ ᱵᱟᱹᱱᱩᱜᱼᱟ — ᱚᱱᱟ ᱱᱚᱢᱵᱚᱨ ᱠᱚ ᱢᱟᱬᱟᱝ ᱠᱷᱚᱱ ᱛᱟᱹᱞᱠᱟᱹ ᱨᱮ ᱢᱮᱱᱟᱜᱼᱟ</string>
+    <string name="preset_import_contacts_denied">ᱤᱢᱯᱳᱨᱴ ᱞᱟᱹᱜᱤᱫ ᱥᱟᱢᱯᱚᱨᱠ ᱟᱱᱩᱢᱟᱛᱤ ᱞᱟᱹᱠᱛᱤᱭᱟ</string>
+    <plurals name="preset_imported">
+        <item quantity="one">%1$d ᱯᱨᱤᱥᱮᱴ ᱤᱢᱯᱳᱨᱴ ᱮᱱᱟ</item>
+        <item quantity="other">%1$d ᱯᱨᱤᱥᱮᱴ ᱠᱚ ᱤᱢᱯᱳᱨᱴ ᱮᱱᱟ</item>
+    </plurals>
+
+    <string name="title_voice">ᱠᱚᱞ ᱨᱮ ᱨᱟᱦᱟ</string>
+    <string name="voice_source">ᱨᱟᱦᱟ ᱯᱷᱮᱰᱟᱛ</string>
+    <string name="voice_none">ᱠᱷᱟᱹᱞᱤ</string>
+    <string name="voice_mic">ᱡᱤᱣᱤ ᱢᱟᱭᱠᱨᱚᱯᱷᱚᱱ</string>
+    <string name="voice_file">ᱚᱰᱤᱭᱳ ᱯᱷᱟᱭᱤᱞ</string>
+    <string name="voice_file_section">ᱚᱰᱤᱭᱳ ᱯᱷᱟᱭᱤᱞ</string>
+    <string name="voice_no_file">ᱯᱷᱟᱭᱤᱞ ᱵᱟᱹᱱᱩᱜᱼᱟ — ᱞᱟᱛᱟᱨ ᱨᱮ ᱤᱢᱯᱳᱨᱴ ᱥᱮ ᱨᱮᱠᱚᱨᱰ ᱢᱮ</string>
+    <string name="voice_file_hint">ᱠᱚᱞ ᱡᱚᱱᱚᱲ ᱛᱟᱦᱮᱸᱱ ᱡᱷᱚᱜ ᱞᱩᱯ ᱨᱮ ᱨᱚᱲᱚᱜᱼᱟ᱾</string>
+    <string name="voice_import">ᱚᱰᱤᱭᱳ ᱯᱷᱟᱭᱤᱞ ᱤᱢᱯᱳᱨᱴ ᱢᱮ</string>
+    <string name="voice_record">ᱢᱟᱭᱠᱨᱚᱯᱷᱚᱱ ᱛᱮ ᱨᱮᱠᱚᱨᱰ ᱢᱮ</string>
+    <string name="voice_need_file">ᱯᱟᱹᱦᱤᱞ ᱢᱤᱫ ᱚᱰᱤᱭᱳ ᱯᱷᱟᱭᱤᱞ ᱤᱢᱯᱳᱨᱴ ᱥᱮ ᱨᱮᱠᱚᱨᱰ ᱢᱮ</string>
+    <string name="voice_saved">ᱨᱟᱦᱟ ᱱᱟᱶᱟ ᱟᱠᱟᱱᱟ</string>
+    <string name="voice_imported">ᱚᱰᱤᱭᱳ ᱯᱷᱟᱭᱤᱞ ᱤᱢᱯᱳᱨᱴ ᱮᱱᱟ</string>
+    <string name="voice_import_failed">ᱚᱱᱟ ᱯᱷᱟᱭᱤᱞ ᱤᱢᱯᱳᱨᱴ ᱵᱟᱝ ᱜᱟᱱᱚᱜᱼᱟ</string>
+    <string name="voice_row_title">ᱠᱚᱞ ᱨᱮ ᱨᱟᱦᱟ</string>
+    <string name="voice_row_sub">ᱠᱚᱞ ᱚᱠᱛᱚ ᱨᱮ ᱟᱸᱡᱚᱢᱚᱜ ᱡᱤᱱᱤᱥ (ᱡᱚᱛᱚ ᱩᱨᱩᱢ ᱞᱟᱹᱜᱤᱫ)</string>
+    <string name="voice_configure">ᱨᱟᱦᱟ ᱠᱚᱱᱯᱷᱤᱜᱟᱨ ᱢᱮ</string>
+    <string name="voice_video">ᱵᱷᱤᱰᱤᱭᱳ ᱠᱚᱞ</string>
+    <string name="voice_video_hint">ᱡᱤᱣᱤ ᱵᱷᱤᱰᱤᱭᱳ ᱥᱮᱞᱮᱫᱟ; ᱠᱚᱞ ᱡᱚᱱᱚᱲ ᱞᱮᱱ ᱠᱷᱟᱱ ᱯᱩᱨᱟᱹ ᱥᱠᱨᱤᱱ ᱵᱷᱤᱰᱤᱭᱳ ᱡᱷᱤᱡᱚᱜᱼᱟ᱾</string>
+
+    <string name="title_record">ᱨᱮᱠᱚᱨᱰᱤᱸᱜᱽ</string>
+    <string name="record_hint">ᱟᱢᱟᱜ ᱨᱟᱦᱟ ᱨᱮᱠᱚᱨᱰ ᱜᱚᱫᱚᱜ ᱠᱟᱱᱟ — ᱯᱩᱨᱟᱹᱣ ᱞᱮᱱ ᱠᱷᱟᱱ ᱛᱷᱩᱢ ᱢᱮ</string>
+    <string name="record_stop">ᱛᱷᱩᱢ ᱢᱮ</string>
+    <string name="record_failed">ᱨᱮᱠᱚᱨᱰᱤᱸᱜᱽ ᱵᱟᱝ ᱦᱩᱭᱮᱱᱟ</string>
+
+    <string name="settings_timing">ᱠᱚᱞ ᱚᱠᱛᱚ</string>
+    <string name="timing_hint">ᱡᱚᱱᱚᱲ ᱞᱟᱦᱟ ᱨᱤᱸᱜᱽ (ᱵᱟᱦᱨᱮ ᱥᱮᱱ ᱟᱡ ᱠᱚᱞ)</string>
+    <string name="radio_c2">2 ᱥᱮᱠᱮᱸᱰ ᱛᱟᱭᱚᱢ ᱡᱚᱱᱚᱲ ᱢᱮ</string>
+    <string name="radio_c5">5 ᱥᱮᱠᱮᱸᱰ ᱛᱟᱭᱚᱢ ᱡᱚᱱᱚᱲ ᱢᱮ</string>
+    <string name="radio_c10">10 ᱥᱮᱠᱮᱸᱰ ᱛᱟᱭᱚᱢ ᱡᱚᱱᱚᱲ ᱢᱮ</string>
+
+    <string name="settings_autoend">ᱚᱡ ᱛᱮ ᱢᱩᱪᱟᱹᱫ</string>
+    <string name="autoend_hint">ᱡᱚᱱᱚᱲ ᱞᱮᱱ ᱛᱟᱭᱚᱢ ᱠᱚᱞ ᱟᱡ ᱛᱮ ᱢᱩᱪᱟᱹᱫᱚᱜᱼᱟ᱾</string>
+    <string name="radio_e_off">ᱛᱤᱥᱦᱚᱸ ᱵᱟᱝ</string>
+    <string name="radio_e30">30 ᱥᱮᱠᱮᱸᱰ ᱛᱟᱭᱚᱢ</string>
+    <string name="radio_e60">1 ᱢᱤᱱᱤᱴ ᱛᱟᱭᱚᱢ</string>
+    <string name="radio_e300">5 ᱢᱤᱱᱤᱴ ᱛᱟᱭᱚᱢ</string>
+    <string name="settings_autoanswer">ᱚᱡ ᱛᱮ ᱛᱮᱞᱟ</string>
+    <string name="radio_off">ᱵᱚᱸᱫᱽ</string>
+    <string name="radio_now">ᱱᱟᱶᱟ ᱜᱮ ᱛᱮᱞᱟ ᱮᱢ ᱢᱮ</string>
+    <string name="radio_3">3 ᱥᱮᱠᱮᱸᱰ ᱛᱟᱭᱚᱢ</string>
+    <string name="radio_5">5 ᱥᱮᱠᱮᱸᱰ ᱛᱟᱭᱚᱢ</string>
+    <string name="radio_10">10 ᱥᱮᱠᱮᱸᱰ ᱛᱟᱭᱚᱢ</string>
+    <string name="autoanswer_hint">ᱟᱢᱟᱜ ᱥᱤᱢᱩᱞᱮᱴ ᱟᱺᱛᱮ ᱠᱚᱞ ᱟᱡ ᱛᱮ ᱛᱮᱞᱟ ᱮᱢᱚᱜᱼᱟ (Android 8+)᱾</string>
+
+    <string name="settings_audio">ᱚᱰᱤᱭᱳ</string>
+    <string name="switch_loopback">ᱟᱡ ᱟᱸᱡᱚᱢ ᱞᱩᱯᱵᱮᱠ</string>
+    <string name="loopback_hint">ᱟᱢᱟᱜ ᱢᱟᱭᱠᱨᱚᱯᱷᱚᱱ ᱠᱚᱞ ᱨᱮ ᱥᱮᱞᱮᱫᱼᱟ ᱡᱟᱦᱟᱸ ᱛᱮ ᱟᱢ ᱟᱡ ᱟᱸᱡᱚᱢ ᱫᱟᱲᱮᱭᱟᱜᱼᱟ</string>
+
+    <string name="settings_account">ᱯᱷᱚᱱ ᱠᱷᱟᱛᱟ</string>
+    <string name="settings_branding">ᱰᱟᱭᱞᱟᱨ ᱵᱨᱟᱸᱰᱤᱸᱜᱽ</string>
+    <string name="branding_title">ᱠᱚᱞᱟᱨ ᱵᱨᱟᱸᱰᱤᱸᱜᱽ</string>
+    <string name="branding_preview">%1$s ᱛᱮ ᱠᱚᱞ ᱠᱚ</string>
+    <string name="branding_hint">ᱰᱟᱭᱞᱟᱨ ᱟᱢᱟᱜ ᱧᱩᱛᱩᱢ ᱞᱟᱛᱟᱨ ᱨᱮ ᱫᱮᱠᱷᱟᱣᱟᱜ ᱞᱮᱵᱮᱞ᱾ ᱱᱟᱶᱟ ᱠᱚᱞ ᱠᱚ ᱞᱟᱹᱜᱤᱫ ᱠᱟᱹᱢᱤᱭᱟ᱾</string>
+    <string name="branding_change">ᱵᱨᱟᱸᱰᱤᱸᱜᱽ ᱵᱚᱫᱚᱞ ᱢᱮ</string>
+    <string name="branding_dialog_title">ᱠᱚᱞ ᱵᱨᱟᱸᱰᱤᱸᱜᱽ</string>
+    <string name="branding_dialog_hint">ᱱᱚᱶᱟ ᱚᱞ ᱰᱟᱭᱞᱟᱨ ᱨᱮ “Calls via” ᱛᱟᱭᱚᱢ ᱧᱮᱞᱚᱜᱼᱟ᱾ ᱮᱯ ᱧᱩᱛᱩᱢ ᱵᱮᱵᱷᱟᱨ ᱞᱟᱹᱜᱤᱫ ᱠᱷᱟᱹᱞᱤ ᱫᱚᱦᱚᱭ ᱢᱮ᱾</string>
+    <string name="branding_save">ᱥᱟᱺᱪᱟᱣ ᱢᱮ</string>
+    <string name="branding_reset_button">ᱨᱤᱥᱮᱴ</string>
+    <string name="branding_reset_toast">ᱵᱨᱟᱸᱰᱤᱸᱜᱽ %1$s ᱛᱮ ᱨᱤᱥᱮᱴ ᱮᱱᱟ</string>
+    <string name="branding_saved">ᱱᱟᱶᱟ ᱠᱚᱞ ᱠᱚ “Calls via %1$s” ᱫᱮᱠᱷᱟᱣᱟ</string>
+    <string name="account_status_ready">ᱨᱮᱡᱤᱥᱴᱟᱨ ᱟᱠᱟᱱᱟ — ᱠᱚᱞ ᱞᱟᱹᱜᱤᱫ ᱛᱮᱭᱟᱨ</string>
+    <string name="account_status_self">ᱨᱮᱡᱤᱥᱴᱟᱨ ᱟᱠᱟᱱᱟ (ᱟᱡ ᱵᱮᱵᱷᱟᱨ) — ᱛᱮᱭᱟᱨ</string>
+    <string name="account_status_fail">ᱨᱮᱡᱤᱥᱴᱟᱨ ᱵᱟᱹᱱᱩᱜᱼᱟ — ᱟᱨᱦᱚᱸ ᱠᱩᱨᱩᱢᱩᱴᱩ ᱞᱟᱹᱜᱤᱫ ᱮᱯ ᱟᱨᱦᱚᱸ ᱡᱷᱤᱡ ᱢᱮ</string>
+    <string name="account_status_legacy">ᱵᱟᱝ ᱮᱢ ᱟᱠᱟᱱᱟ — Manage calling accounts ᱡᱷᱤᱡ ᱠᱟᱛᱮ Self Calling ᱮᱢ ᱪᱟᱹᱞᱩ ᱢᱮ</string>
+    <string name="manage_accounts">ᱠᱚᱞᱤᱸᱜᱽ ᱠᱷᱟᱛᱟ ᱵᱮᱵᱷᱟᱨ ᱢᱮ</string>
+
+    <string name="log_out">ᱵᱟᱦᱨᱮ ᱥᱮᱱ ᱟᱡ ᱠᱚᱞ</string>
+    <string name="log_in">ᱟᱺᱛᱮ ᱥᱮᱱ ᱟᱡ ᱠᱚᱞ</string>
+    <string name="log_auto">ᱚᱡ ᱛᱮ ᱛᱮᱞᱟ ᱟᱠᱟᱱ</string>
+    <string name="log_missed">ᱵᱟᱝ ᱥᱮᱴᱮᱨ</string>
+    <string name="log_canceled">ᱵᱟᱹᱛᱤᱞ ᱟᱠᱟᱱ</string>
+    <string name="log_empty">ᱱᱤᱛ ᱦᱟᱹᱵᱤᱡ ᱟᱡ ᱠᱚᱞ ᱵᱟᱹᱱᱩᱜᱼᱟ</string>
+    <string name="log_clear">ᱥᱟᱯᱷᱟ ᱢᱮ</string>
+    <string name="log_clear_confirm">ᱯᱩᱨᱟᱹ ᱟᱡ ᱠᱚᱞ ᱞᱚᱜᱽ ᱥᱟᱯᱷᱟ ᱟᱵᱚᱭᱟ?</string>
+<string name="log_video_out">ᱵᱟᱦᱨᱮ ᱥᱮᱱ ᱵᱷᱤᱰᱤᱭᱳ ᱟᱡ ᱠᱚᱞ</string>
+<string name="log_video_in">ᱟᱺᱛᱮ ᱥᱮᱱ ᱵᱷᱤᱰᱤᱭᱳ ᱟᱡ ᱠᱚᱞ</string>
+
+    <string name="pending_firing">ᱟᱢᱟᱜ ᱟᱺᱛᱮ ᱠᱚᱞ ᱠᱚ ᱫᱚᱦᱚᱭ ᱠᱟᱱᱟ…</string>
+    <string name="toast_scheduled_now">ᱟᱺᱛᱮ ᱠᱚᱞ ᱱᱟᱶᱟ ᱨᱤᱸᱜᱽ ᱜᱚᱫᱚᱜ ᱠᱟᱱᱟ</string>
+    <string name="toast_scheduled">ᱟᱺᱛᱮ ᱠᱚᱞ %s</string>
+    <string name="pending_chip">ᱟᱺᱛᱮ ᱠᱚᱞ %s — ᱵᱟᱹᱛᱤᱞ ᱞᱟᱹᱜᱤᱫ ᱥᱟᱯᱷᱟ ᱢᱮ</string>
+    <string name="toast_canceled">ᱱᱤᱭᱳᱡᱤᱛ ᱠᱚᱞ ᱵᱟᱹᱛᱤᱞ ᱮᱱᱟ</string>
+    <string name="shortcut_step_call">ᱥᱤᱢᱩᱞᱮᱴ ᱟᱺᱛᱮ ᱠᱚᱞ</string>
+    <string name="shortcut_step_message">SMS ᱠᱷᱚᱵᱚᱨ ᱠᱩᱞ ᱢᱮ</string>
+    <string name="shortcut_step_type_call">ᱠᱚᱞ</string>
+    <string name="shortcut_step_type_message">ᱠᱷᱚᱵᱚᱨ</string>
+    <string name="shortcut_step_msg_hint">ᱠᱷᱚᱵᱚᱨ ᱚᱞ (ᱠᱷᱟᱹᱞᱤ SMS ᱛᱟᱹᱯᱩᱜ ᱠᱚ)</string>
+    <string name="perm_sms">ᱠᱷᱚᱵᱚᱨ ᱠᱩᱞ ᱞᱟᱹᱜᱤᱫ SMS ᱟᱱᱩᱢᱟᱛᱤ ᱞᱟᱹᱠᱛᱤᱭᱟ</string>
+
+    <string name="settings_incoming">ᱟᱺᱛᱮ ᱠᱚᱞ</string>
+    <string name="incoming_wait_title">ᱛᱟᱺᱜᱤ ᱚᱠᱛᱚ</string>
+    <string name="incoming_wait_hint">ᱟᱺᱛᱮ ᱠᱚᱞ ᱥᱤᱢᱩᱞᱮᱴ ᱥᱟᱯᱷᱟ ᱠᱮᱫ ᱛᱟᱭᱚᱢ ᱛᱤᱱᱟᱹᱜ ᱚᱠᱛᱚ ᱛᱟᱭᱚᱢ ᱨᱤᱸᱜᱽ ᱮᱦᱚᱵᱚᱜᱼᱟ᱾ ᱚᱱᱟ ᱫᱷᱟᱹᱵᱤᱡ ᱯᱷᱚᱱ ᱠᱷᱟᱹᱞᱤ ᱛᱟᱦᱮᱸᱱᱟ᱾</string>
+    <string name="incoming_delay_now">ᱱᱟᱶᱟ ᱜᱮ</string>
+    <string name="radio_w_now">ᱱᱟᱶᱟ ᱜᱮ</string>
+    <string name="radio_w1">1 ᱥᱮᱠᱮᱸᱰ ᱛᱟᱺᱜᱤ ᱢᱮ</string>
+    <string name="radio_w2">2 ᱥᱮᱠᱮᱸᱰ ᱛᱟᱺᱜᱤ ᱢᱮ</string>
+    <string name="radio_w3">3 ᱥᱮᱠᱮᱸᱰ ᱛᱟᱺᱜᱤ ᱢᱮ</string>
+    <string name="radio_w5">5 ᱥᱮᱠᱮᱸᱰ ᱛᱟᱺᱜᱤ ᱢᱮ</string>
+    <string name="radio_w10">10 ᱥᱮᱠᱮᱸᱰ ᱛᱟᱺᱜᱤ ᱢᱮ</string>
+    <string name="radio_w30">30 ᱥᱮᱠᱮᱸᱰ ᱛᱟᱺᱜᱤ ᱢᱮ</string>
+    <string name="radio_w60">1 ᱢᱤᱱᱤᱴ ᱛᱟᱺᱜᱤ ᱢᱮ</string>
+    <string name="radio_w300">5 ᱢᱤᱱᱤᱴ ᱛᱟᱺᱜᱤ ᱢᱮ</string>
+    <string name="radio_w900">15 ᱢᱤᱱᱤᱴ ᱛᱟᱺᱜᱤ ᱢᱮ</string>
+    <string name="radio_w1800">30 ᱢᱤᱱᱤᱴ ᱛᱟᱺᱜᱤ ᱢᱮ</string>
+    <string name="radio_w3600">1 ᱴᱟᱲᱟᱝ ᱛᱟᱺᱜᱤ ᱢᱮ</string>
+    <string name="radio_w7200">2 ᱴᱟᱲᱟᱝ ᱛᱟᱺᱜᱤ ᱢᱮ</string>
+    <string name="radio_w10800">3 ᱴᱟᱲᱟᱝ ᱛᱟᱺᱜᱤ ᱢᱮ</string>
+    <string name="incoming_ring_title">ᱨᱤᱸᱜᱽ ᱚᱠᱛᱚ ᱥᱤᱢᱟᱹ</string>
+    <string name="ring_timeout_hint">ᱥᱟᱹᱨᱤ ᱴᱮᱞᱤᱠᱚᱢ ᱞᱮᱠᱟ ᱵᱟᱪᱷᱟᱣ ᱚᱠᱛᱚ ᱛᱟᱭᱚᱢ ᱨᱤᱸᱜᱽ ᱛᱷᱩᱢ ᱮᱫᱟ᱾</string>
+    <string name="exact_alarm_needed">ᱞᱮᱸᱜᱟ ᱛᱟᱺᱜᱤ ᱛᱟᱭᱚᱢ ᱠᱚᱞ ᱨᱤᱸᱜᱽ ᱞᱟᱹᱜᱤᱫ ᱥᱟᱹᱨᱤ ᱟᱞᱟᱨᱢ ᱟᱱᱩᱢᱟᱛᱤ ᱮᱢ ᱢᱮ᱾</string>
+    <string name="radio_r_never">ᱛᱮᱞᱟ ᱦᱟᱹᱵᱤᱡ ᱨᱤᱸᱜᱽ ᱢᱮ (ᱛᱤᱥᱦᱚᱸ ᱚᱠᱛᱚ ᱥᱤᱢᱟᱹ ᱵᱟᱝ)</string>
+    <string name="radio_r15">15 ᱥᱮᱠᱮᱸᱰ ᱛᱟᱭᱚᱢ ᱟᱡ ᱛᱮ ᱵᱚᱸᱫᱽ</string>
+    <string name="radio_r30">30 ᱥᱮᱠᱮᱸᱰ ᱛᱟᱭᱚᱢ ᱟᱡ ᱛᱮ ᱵᱚᱸᱫᱽ</string>
+    <string name="radio_r45">45 ᱥᱮᱠᱮᱸᱰ ᱛᱟᱭᱚᱢ ᱟᱡ ᱛᱮ ᱵᱚᱸᱫᱽ</string>
+    <string name="radio_r60">1 ᱢᱤᱱᱤᱴ ᱛᱟᱭᱚᱢ ᱟᱡ ᱛᱮ ᱵᱚᱸᱫᱽ</string>
+
+    <string-array name="incoming_delay_labels">
+        <item>ᱱᱟᱶᱟ ᱜᱮ</item>
+        <item>3 ᱥᱮᱠᱮᱸᱰ</item>
+        <item>5 ᱥᱮᱠᱮᱸᱰ</item>
+        <item>10 ᱥᱮᱠᱮᱸᱰ</item>
+        <item>30 ᱥᱮᱠᱮᱸᱰ</item>
+        <item>1 ᱢᱤᱱᱤᱴ</item>
+        <item>5 ᱢᱤᱱᱤᱴ</item>
+        <item>15 ᱢᱤᱱᱤᱴ</item>
+        <item>30 ᱢᱤᱱᱤᱴ</item>
+        <item>1 ᱴᱟᱲᱟᱝ</item>
+        <item>2 ᱴᱟᱲᱟᱝ</item>
+        <item>3 ᱴᱟᱲᱟᱝ</item>
+    </string-array>
+
+    <string name="video_remote_label">ᱥᱟᱺᱜᱤᱧ ᱵᱷᱤᱰᱤᱭᱳ</string>
+    <string name="video_local_label">ᱟᱢ</string>
+    <string name="video_live">ᱟᱡ ᱵᱷᱤᱰᱤᱭᱳ ᱠᱚᱞ</string>
+    <string name="video_mute">ᱢᱤᱭᱩᱴ</string>
+    <string name="video_muted">ᱢᱤᱭᱩᱴ ᱟᱠᱟᱱ</string>
+    <string name="video_camera">ᱵᱷᱤᱰᱤᱭᱳ</string>
+    <string name="video_switch_camera">ᱯᱷᱞᱤᱯ</string>
+    <string name="video_hangup">ᱠᱚᱞ ᱛᱟᱹᱠᱤᱡ ᱢᱮ</string>
+    <string name="video_off">ᱵᱷᱤᱰᱤᱭᱳ ᱵᱚᱸᱫᱽ</string>
+    <string name="video_unavailable">ᱠᱮᱢᱮᱨᱟ ᱵᱟᱝ ᱧᱟᱢᱚᱜᱼᱟ</string>
+    <string name="perm_camera">ᱞᱳᱠᱟᱞ ᱯᱨᱤᱵᱷᱭᱩ ᱞᱟᱹᱜᱤᱫ ᱠᱮᱢᱮᱨᱟ ᱟᱱᱩᱢᱟᱛᱤ ᱞᱟᱹᱠᱛᱤᱭᱟ᱾</string>
+
+    <string name="title_sms_autoreply">SMS ᱚᱡ ᱛᱮ ᱛᱮᱞᱟ</string>
+    <string name="sms_autoreply_title">SMS ᱚᱡ ᱛᱮ ᱛᱮᱞᱟ</string>
+    <string name="sms_autoreply_hint">ᱡᱚᱛᱚ ᱟᱺᱛᱮ SMS ᱠᱷᱚᱵᱚᱨ ᱨᱮ ᱟᱢᱟᱜ ᱠᱷᱚᱵᱚᱨ ᱛᱮ ᱚᱡ ᱛᱮ ᱛᱮᱞᱟ ᱮᱢ ᱢᱮ᱾</string>
+    <string name="sms_autoreply_enabled">ᱚᱡ ᱛᱮ ᱛᱮᱞᱟ ᱮᱢ ᱪᱟᱹᱞᱩ ᱢᱮ</string>
+    <string name="sms_autoreply_message_label">ᱛᱮᱞᱟ ᱠᱷᱚᱵᱚᱨ</string>
+    <string name="sms_autoreply_message_hint">ᱫᱟᱹᱭᱟᱹ: ᱡᱚᱦᱟᱨ, ᱤᱧ ᱠᱟᱹᱢᱤ ᱨᱮ ᱢᱮᱱᱟᱜᱼᱮᱧ - ᱛᱟᱭᱚᱢ ᱛᱮ ᱛᱮᱞᱟ ᱮᱢᱟᱭᱢᱟ᱾</string>
+    <string name="sms_autoreply_saved">ᱚᱡ ᱛᱮ ᱛᱮᱞᱟ ᱥᱟᱺᱪᱟᱣ ᱮᱱᱟ</string>
+    <string name="perm_sms_receive">ᱚᱡ ᱛᱮ ᱛᱮᱞᱟ ᱞᱟᱹᱜᱤᱫ SMS ᱧᱟᱢ ᱟᱱᱩᱢᱟᱛᱤ ᱞᱟᱹᱠᱛᱤᱭᱟ</string>
+    <string name="perm_sms_send">ᱚᱡ ᱛᱮ ᱛᱮᱞᱟ ᱞᱟᱹᱜᱤᱫ SMS ᱠᱩᱞ ᱟᱱᱩᱢᱟᱛᱤ ᱞᱟᱹᱠᱛᱤᱭᱟ</string>
+
+    <string name="title_sms_log">SMS ᱞᱚᱜᱽ</string>
+    <string name="sms_log_status">SMS ᱞᱚᱜᱽ: %d ᱠᱷᱚᱵᱚᱨ</string>
+
+    <string name="widget_title">ᱥᱚᱨᱴᱠᱟᱴ ᱥᱮᱴ</string>
+    <string name="widget_sub_tap">ᱪᱟᱹᱞᱩ ᱞᱟᱹᱜᱤᱫ ᱥᱟᱯᱷᱟ ᱢᱮ</string>
+    <string name="widget_sub_not_configured">ᱠᱚᱱᱯᱷᱤᱜᱟᱨ ᱞᱟᱹᱜᱤᱫ ᱥᱟᱯᱷᱟ ᱢᱮ</string>
+    <string name="widget_configure_title">ᱣᱤᱡᱮᱴ ᱠᱚᱱᱯᱷᱤᱜᱟᱨ ᱢᱮ</string>
+    <string name="widget_choose_set">ᱪᱟᱹᱞᱩ ᱞᱟᱹᱜᱤᱫ ᱥᱚᱨᱴᱠᱟᱴ ᱥᱮᱴ ᱵᱟᱪᱷᱟᱣ ᱢᱮ</string>
+    <string name="widget_cancel">ᱵᱟᱹᱛᱤᱞ</string>
+</resources>

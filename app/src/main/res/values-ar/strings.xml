@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">اتصال ذاتي</string>
+    <string name="tagline">اتصل بنفسك عبر الاتصال الأصلي</string>
+    <string name="account_desc">مكالمات إلى نفسك</string>
+    <string name="footer">تظهر المكالمات في واجهة الاتصال الأصلية — هذا التطبيق فقط ينشئها.</string>
+
+    <string name="title_settings">الإعدادات</string>
+    <string name="title_log">سجل المكالمات الذاتية</string>
+    <string name="perm_granted">تم منح الإذن</string>
+
+    <string name="status_title">حالة النظام</string>
+    <string name="status_account">حساب الاتصال الهاتفي</string>
+    <string name="status_account_ok">مسجل</string>
+    <string name="status_account_fail">غير مسجل — أعد فتح التطبيق</string>
+    <string name="status_account_legacy">قم بتمكينه مرة واحدة في الإعدادات → حساب الهاتف</string>
+    <string name="status_call">إذن إجراء المكالمات</string>
+    <string name="status_perm_ok">ممنوح</string>
+    <string name="status_call_missing">انقر على زر الاتصال للسماح</string>
+    <string name="status_answer">إذن الرد على المكالمات</string>
+    <string name="status_answer_missing">مطلوب للرد التلقائي</string>
+    <string name="status_mic">الميكروفون</string>
+    <string name="status_mic_ok">ممنوح</string>
+    <string name="status_mic_missing">مطلوب للاستماع الذاتي</string>
+
+    <string name="action_call">اتصل بنفسي</string>
+    <string name="action_incoming">محاكاة مكالمة واردة</string>
+    <string name="wait_home_now">يرن فورًا — انقر لتغيير وقت الانتظار</string>
+    <string name="wait_home">يرن %s — انقر لتغيير وقت الانتظار</string>
+
+    <string name="settings_identity">هوية المتصل</string>
+    <string name="settings_name_label">الاسم المعروض على شاشة الاتصال</string>
+    <string name="preset_number_label">رقم الجوال</string>
+    <string name="preset_card_label">الهوية النشطة</string>
+    <string name="preset_hint">انقر لإدارة الإعدادات المسبقة</string>
+    <string name="title_presets">الإعدادات المسبقة</string>
+    <string name="preset_add">إضافة</string>
+    <string name="preset_edit">تعديل</string>
+    <string name="preset_delete">حذف</string>
+    <string name="preset_save">حفظ</string>
+    <string name="preset_need_one">احتفظ بإعداد مسبق واحد على الأقل</string>
+    <string name="preset_invalid">الاسم والرقم مطلوبان</string>
+    <string name="preset_empty">لا توجد إعدادات مسبقة</string>
+    <string name="manage_presets">إدارة الإعدادات المسبقة</string>
+    <string name="preset_voice">الصوت</string>
+    <string name="preset_import">استيراد</string>
+    <string name="preset_import_title">استيراد الإعدادات المسبقة</string>
+    <string name="preset_import_contacts">من جهات الاتصال</string>
+    <string name="preset_import_vcf">من ملف VCF</string>
+    <string name="preset_import_reading">جاري الاستيراد…</string>
+    <string name="preset_import_failed">لا يمكن قراءة هذا الملف أو دفتر العناوين</string>
+    <string name="preset_import_empty">لا توجد أرقام هاتف موجودة</string>
+    <string name="preset_import_none">لا توجد إعدادات جديدة — تلك الأرقام موجودة بالفعل في القائمة</string>
+    <string name="preset_import_contacts_denied">أذونات جهات اتصال مطلوبة للاستيراد</string>
+    <plurals name="preset_imported">
+        <item quantity="one">تم استيراد إعداد مسبق %1$d</item>
+        <item quantity="other">تم استيراد %1$d إعدادات مسبقة</item>
+    </plurals>
+
+    <string name="title_voice">الصوت في المكالمة</string>
+    <string name="voice_source">مصدر الصوت</string>
+    <string name="voice_none">صمت</string>
+    <string name="voice_mic">الميكروفون المباشر</string>
+    <string name="voice_file">ملف صوتي</string>
+    <string name="voice_file_section">ملف صوتي</string>
+    <string name="voice_no_file">لا يوجد ملف — استورد أو سجل أدناه</string>
+    <string name="voice_file_hint">يتم تشغيله في حلقة أثناء الاتصال.</string>
+    <string name="voice_import">استيراد ملف صوتي</string>
+    <string name="voice_record">تسجيل عبر الميكروفون</string>
+    <string name="voice_need_file">استورد أو سجل ملف صوتي أولاً</string>
+    <string name="voice_saved">تم تحديث الصوت</string>
+    <string name="voice_imported">تم استيراد الملف الصوتي</string>
+    <string name="voice_import_failed">فشل استيراد ذلك الملف</string>
+    <string name="voice_row_title">الصوت في المكالمة</string>
+    <string name="voice_row_sub">ما تسمعه أثناء المكالمة (لكل هوية)</string>
+    <string name="voice_configure">تكوين الصوت</string>
+    <string name="voice_video">مكالمة فيديو</string>
+    <string name="voice_video_hint">إضافة فيديو مباشر؛ تُفتح شاشة فيديو كاملة عند الاتصال.</string>
+
+    <string name="title_record">التسجيل</string>
+    <string name="record_hint">تسجيل صوتك — انقر إيقاف عند الانتهاء</string>
+    <string name="record_stop">إيقاف</string>
+    <string name="record_failed">فشل التسجيل</string>
+
+    <string name="settings_timing">توقيت المكالمة</string>
+    <string name="timing_hint">رنين قبل الاتصال (المكالمة الذاتية الصادرة)</string>
+    <string name="radio_c2">الاتصال بعد ثانيتين</string>
+    <string name="radio_c5">الاتصال بعد 5 ثوانٍ</string>
+    <string name="radio_c10">الاتصال بعد 10 ثوانٍ</string>
+
+    <string name="settings_autoend">الإنهاء التلقائي</string>
+    <string name="autoend_hint">ينهي المكالمة تلقائيًا بعد الاتصال.</string>
+    <string name="radio_e_off">أبداً</string>
+    <string name="radio_e30">بعد 30 ثانية</string>
+    <string name="radio_e60">بعد دقيقة واحدة</string>
+    <string name="radio_e300">بعد 5 دقائق</string>
+
+    <string name="settings_autoanswer">الرد التلقائي</string>
+    <string name="radio_off">إيقاف</string>
+    <string name="radio_now">الرد فوراً</string>
+    <string name="radio_3">بعد 3 ثوانٍ</string>
+    <string name="radio_5">بعد 5 ثوانٍ</string>
+    <string name="radio_10">بعد 10 ثوانٍ</string>
+    <string name="autoanswer_hint">الرد على المكالمة الواردة المحاكاة تلقائيًا (أندرويد 8+).</string>
+
+    <string name="settings_audio">الصوت</string>
+    <string name="switch_loopback">الاستماع الذاتي الدائري</string>
+    <string name="loopback_hint">يوجه الميكروفون إلى المكالمة بحيث تسمع نفسك</string>
+
+    <string name="settings_account">حساب الهاتف</string>
+    <string name="settings_branding">تحديد اتصال المتصل</string>
+    <string name="branding_title">تحديد اتصال المتصل</string>
+    <string name="branding_preview">مكالمات عبر %1$s</string>
+    <string name="branding_hint">العلامة التي يُظهرها الاتصال باسمك. تُطبَّق على المكالمات الجديدة.</string>
+    <string name="branding_change">تغيير التحديد</string>
+    <string name="branding_dialog_title">تحديد المكالمة</string>
+    <string name="branding_dialog_hint">هذا النص يظهر بعد “مكالمات عبر” في الاتصال. اترك فارغاً لاستخدام اسم التطبيق.</string>
+    <string name="branding_save">حفظ</string>
+    <string name="branding_reset_button">إعادة تعيين</string>
+    <string name="branding_reset_toast">تم إعادة تعيين التحديد إلى %1$s</string>
+    <string name="branding_saved">المكالمات الجديدة ستظهر “مكالمات عبر %1$s”</string>
+    <string name="account_status_ready">مسجل — جاهز للمكالمة</string>
+    <string name="account_status_self">مسجل (ذاتيا) — جاهز</string>
+    <string name="account_status_fail">غير مسجل — أعد فتح التطبيق لإعادة المحاولة</string>
+    <string name="account_status_legacy">غير مفعل — افتح إدارة حسابات المكالمات وقم بتشغيل اتصال ذاتي</string>
+    <string name="manage_accounts">إدارة حسابات المكالمات</string>
+
+    <string name="log_out">مكالمة ذاتية صادرة</string>
+    <string name="log_in">مكالمة ذاتية واردة</string>
+    <string name="log_auto">مُجاب تلقائياً</string>
+    <string name="log_missed">فُوتت</string>
+    <string name="log_canceled">مُلغيت</string>
+    <string name="log_empty">لا توجد مكالمات ذاتية بعد</string>
+    <string name="log_clear">مسح</string>
+    <string name="log_clear_confirm">مسح سجل المكالمات الذاتية بالكامل؟</string>
+    <string name="log_video_out">مكالمة فيديو ذاتية صادرة</string>
+    <string name="log_video_in">مكالمة فيديو ذاتية واردة</string>
+
+    <string name="pending_firing">جاري إجراء مكالمتك الواردة…</string>
+    <string name="toast_scheduled_now">المكالمة الواردة تُرن الآن</string>
+    <string name="toast_scheduled">مكالمة واردة %s</string>
+    <string name="pending_chip">مكالمة واردة %s — انقر للإلغاء</string>
+    <string name="toast_canceled">تم إلغاء المكالمة المجدولة</string>
+    <string name="shortcut_step_call">مكالمة واردة محاكاة</string>
+    <string name="shortcut_step_message">إرسال رسالة نصية</string>
+    <string name="shortcut_step_type_call">اتصال</string>
+    <string name="shortcut_step_type_message">رسالة</string>
+    <string name="shortcut_step_msg_hint">نص الرسالة (خطوات الرسائل النصية فقط)</string>
+    <string name="perm_sms">أذونات الرسائل النصية مطلوبة لإرسال الرسائل</string>
+
+    <string name="settings_incoming">المكالمة الواردة</string>
+    <string name="incoming_wait_title">وقت الانتظار</string>
+    <string name="incoming_wait_hint">مدة الانتظار بعد النقر على محاكاة المكالمة الواردة حتى تبدأ الرنة. يظل الهاتف هادئًا حتى ذلك الحين.</string>
+    <string name="incoming_delay_now">فورًا</string>
+    <string name="radio_w_now">فورًا</string>
+    <string name="radio_w1">انتظر ثانية واحدة</string>
+    <string name="radio_w2">انتظر ثانيتين</string>
+    <string name="radio_w3">انتظر 3 ثوانٍ</string>
+    <string name="radio_w5">انتظر 5 ثوانٍ</string>
+    <string name="radio_w10">انتظر 10 ثوانٍ</string>
+    <string name="radio_w30">انتظر 30 ثانية</string>
+    <string name="radio_w60">انتظر دقيقة واحدة</string>
+    <string name="radio_w300">انتظر 5 دقائق</string>
+    <string name="radio_w900">انتظر 15 دقيقة</string>
+    <string name="radio_w1800">انتظر 30 دقيقة</string>
+    <string name="radio_w3600">انتظر ساعة واحدة</string>
+    <string name="radio_w7200">انتظر ساعتين</string>
+    <string name="radio_w10800">انتظر 3 ساعات</string>
+    <string name="incoming_ring_title">مهلة الرنة</string>
+    <string name="ring_timeout_hint">توقف الرنة بعد الوقت المحدد، مثل شبكات الاتصال الفعلية.</string>
+    <string name="exact_alarm_needed">السماح بالمنبهات الدقيقة حتى يمكن للمكالمة الرنين بعد انتظار طويل.</string>
+    <string name="radio_r_never">الرن حتى الرد (لا مهلة)</string>
+    <string name="radio_r15">إلغاء تلقائي بعد 15 ثانية</string>
+    <string name="radio_r30">إلغاء تلقائي بعد 30 ثانية</string>
+    <string name="radio_r45">إلغاء تلقائي بعد 45 ثانية</string>
+    <string name="radio_r60">إلغاء تلقائي بعد دقيقة واحدة</string>
+
+    <string-array name="incoming_delay_labels">
+        <item>فورًا</item>
+        <item>3 ثوانٍ</item>
+        <item>5 ثوانٍ</item>
+        <item>10 ثوانٍ</item>
+        <item>30 ثانية</item>
+        <item>دقيقة واحدة</item>
+        <item>5 دقائق</item>
+        <item>15 دقيقة</item>
+        <item>30 دقيقة</item>
+        <item>ساعة واحدة</item>
+        <item>ساعتان</item>
+        <item>3 ساعات</item>
+    </string-array>
+
+    <string name="video_remote_label">فيديو بعيد</string>
+    <string name="video_local_label">أنت</string>
+    <string name="video_live">مكالمة فيديو ذاتية</string>
+    <string name="video_mute">كتم الصوت</string>
+    <string name="video_muted">مكتوم الصوت</string>
+    <string name="video_camera">فيديو</string>
+    <string name="video_switch_camera">قلب</string>
+    <string name="video_hangup">إنهاء المكالمة</string>
+    <string name="video_off">الفيديو متوقف</string>
+    <string name="video_unavailable">الكاميرا غير متاحة</string>
+    <string name="perm_camera">أذونات الكاميرا مطلوبة للمعاينة المحلية.</string>
+
+    <string name="title_sms_autoreply">الرد التلقائي على الرسائل النصية</string>
+    <string name="sms_autoreply_title">الرد التلقائي على الرسائل النصية</string>
+    <string name="sms_autoreply_hint">الرد تلقائيًا على كل رسالة واردة برسالتك.</string>
+    <string name="sms_autoreply_enabled">تمكين الرد التلقائي</string>
+    <string name="sms_autoreply_message_label">رسالة الرد</string>
+    <string name="sms_autoreply_message_hint">مثال: مرحباً، أنا مشغول - سأرد لاحقًا.</string>
+    <string name="sms_autoreply_saved">تم حفظ الرد التلقائي</string>
+    <string name="perm_sms_receive">أذونات استقبال الرسائل النصية مطلوبة للرد التلقائي</string>
+    <string name="perm_sms_send">أذونات إرسال الرسائل النصية مطلوبة للرد التلقائي</string>
+
+    <string name="title_sms_log">سجل الرسائل النصية</string>
+    <string name="sms_log_status">سجل الرسائل النصية: %d رسالة</string>
+
+    <string name="widget_title">تعيين اختصار</string>
+    <string name="widget_sub_tap">انقر للتنفيذ</string>
+    <string name="widget_sub_not_configured">انقر للتكوين</string>
+    <string name="widget_configure_title">تكوين الأداة</string>
+    <string name="widget_choose_set">اختر مجموعة الاختصارات للتنفيذ</string>
+    <string name="widget_cancel">إلغاء</string>
+</resources>

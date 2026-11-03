@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ಸ್ವಯಂ ಕಾಲಿಂಗ್</string>
+    <string name="tagline">ಮೂಲ ಡಯಲರ್ ಮೂಲಕ സ്വಯಂ ಕರೆ</string>
+    <string name="account_desc">ಸ್ವಯಂ ಕರೆ</string>
+    <string name="footer">ಕರೆ ಮೂಲ ಡಯಲರ್ ಯು ಐನಲ್ಲಿ ಹೊರಗುಟ್ಟಲಾಗುತ್ತದೆ — ಈ ಅಪ್ಲಿಕೇಶನ್ ಕೇವಲ ಅವುಗಳನ್ನು ಇರಿಸುತ್ತದೆ.</string>
+
+    <string name="title_settings">ಸೆಟಿಂಗ್‌ಗಳು</string>
+    <string name="title_log">ಸ್ವಯಂ-ಕರೆ ಲಾಗ್</string>
+    <string name="perm_granted">ಅಧಿಕಾರ ನೀಡಲಾಗಿದೆ</string>
+
+    <string name="status_title">ಸಿಸ್ಟಮ್ ಸ್ಥಿತಿ</string>
+    <string name="status_account">ಟೆಲಿಕಾಂ ಖಾತೆ</string>
+    <string name="status_account_ok">ದಾಖಲಾತಿ ಮಾಡಲಾಗಿದೆ</string>
+    <string name="status_account_fail">ದಾಖಲಾತಿ ಮಾಡಿಲ್ಲ — ಅಪ್ಲಿಕೇಶನ್ ಅನ್ನು ಮತ್ತೆ ತೆರೆದುಕೊಳ್ಳಿ</string>
+    <string name="status_account_legacy">ಸೆಟ್ಟಿಂಗ್‌ಗಳಲ್ಲಿ ಒಮ್ಮೆ ಸಕ್ರಿಯಗೊಳಿಸಿ → ಫోన్ ಖಾತೆ</string>
+    <string name="status_call">ಕರೆ ಮಾಡುವ ಅಧಿಕಾರ</string>
+    <string name="status_perm_ok">ನೀಡಲಾಗಿದೆ</string>
+    <string name="status_call_missing">ಅಧಿಕಾರ ನೀಡಲು ಕರೆ ಬಟನ್ ಕ್ಲಿಕ್ ಮಾಡಿ</string>
+    <string name="status_answer">ಕರೆಗೆ ಉತ್ತರಿಸುವ ಅಧಿಕಾರ</string>
+    <string name="status_answer_missing">ಸ್ವಯಂచಾಲಿತ ಉತ್ತರಕ್ಕೆ ಅಗತ್ಯ</string>
+    <string name="status_mic">ಮೈಕ್ರೋಫోన్</string>
+    <string name="status_mic_ok">ನೀಡಲಾಗಿದೆ</string>
+    <string name="status_mic_missing">ಸ್ವಯಂ ಶ್ರಾವಣಕ್ಕೆ ಅಗತ್ಯ</string>
+
+    <string name="action_call">ಪೋತನೇ ಕರೆ ಮಾಡಿ</string>
+    <string name="action_incoming">ಬರುವ ಕರೆಗಳ ಅನುಕರಣ ಮಾಡಿ</string>
+    <string name="wait_home_now">ಹೆಚ್ಚಿನ ವೇಗದಲ್ಲಿ ಹನಿ — ವೇಗ ಬದಲಾಯಿಸಲು ಕ್ಲಿಕ್ ಮಾಡಿ</string>
+    <string name="wait_home">%s ಹನಿ — ವೇಗ ಬದಲಾಯಿಸಲು ಕ್ಲಿಕ್ ಮಾಡಿ</string>
+
+    <string name="settings_identity">ಕರೆಗಾರ ನ identidad</string>
+    <string name="settings_name_label">ಕರೆ ಸ್ಕ್ರೀನ್ ಮೇಲೆ ತೋರುವ ಹೆಸರು</string>
+    <string name="preset_number_label">ಮೊಬೈಲ್ ನಂಬರ್</string>
+    <string name="preset_card_label">ಸಕ್ರಿಯ ಗುರುತು</string>
+    <string name="preset_hint">ಪ್ರಿಸೆಟ್‌ಗಳನ್ನು ನಿರ್ವಹಿಸಲು ಕ್ಲಿಕ್ ಮಾಡಿ</string>
+    <string name="title_presets">ಪ್ರಿಸೆಟ್‌ಗಳು</string>
+    <string name="preset_add">ಸೇರಿಸು</string>
+    <string name="preset_edit">ಸುಧಾರಿಸಿ</string>
+    <string name="preset_delete">ಮ contaba</string>
+    <string name="preset_save">ಉಳಿಸು</string>
+    <string name="preset_need_one">ಕನಿಷ್ಠ ಒಂದು ಪ್ರಿಸೆಟ್ ಇರಬೇಕು</string>
+    <string name="preset_invalid">ಹೆಸರು ಮತ್ತು ಸಂಖ್ಯೆ ಅಗತ್ಯ</string>
+    <string name="preset_empty">ಯಾವುದೇ ಪ್ರಿಸೆಟ್ ಇಲ್ಲ</string>
+    <string name="manage_presets">ಪ್ರಿಸೆಟ್‌ಗಳನ್ನು ನಿರ್ವಹಿಸಿ</string>
+    <string name="preset_voice">ಧ್ವನಿ</string>
+    <string name="preset_import">ಇಂಪೋರ್ಟ್ ಮಾಡಿ</string>
+    <string name="preset_import_title">ಪ್ರಿಸೆಟ್‌ಗಳನ್ನು ಇಂಪೋರ್ಟ್ ಮಾಡಿ</string>
+    <string name="preset_import_contacts">ಸಂಪರ್ಕಗಳಿಂದ</string>
+    <string name="preset_import_vcf">VCF ಫೈಲಿನಿಂದ</string>
+    <string name="preset_import_reading">ಇಂಪೋರ್ಟ್ ಆಗುತ್ತಿದೆ…</string>
+    <string name="preset_import_failed">ಈ ಫೈಲ್ ಅಥವಾ ವಿಳಾಸ ಪುಸ್ತಿಕೆಯನ್ನು ಓದಲಾಗಿಲ್ಲ</string>
+    <string name="preset_import_empty">ಯಾವ fût ಫೋನ್ ಸಂಖ್ಯೆಯೂ ಕಂಡುಬಂದಿಲ್ಲ</string>
+    <string name="preset_import_none">ಯಾವುದೇ ಹೊಸ ಪ್ರಿಸೆಟ್ ಇಲ್ಲ — ಈ ಸಂಖ್ಯೆಗಳು पहले से ಪಟ್ಟಿಯಲ್ಲಿವೆ</string>
+    <string name="preset_import_contacts_denied">ಇಂಪೋರ್ಟ್ ಮಾಡಲು ಸಂಪರ್ಕ ಅಧಿಕಾರ ಅಗತ್ಯ</string>
+    <plurals name="preset_imported">
+        <item quantity="one">%1$d ಪ್ರಿಸೆಟ್ ಇಂಪೋರ್ಟ್ ಆಗಿದೆ</item>
+        <item quantity="other">%1$d ಪ್ರಿಸೆಟ್‌ಗಳು ಇಂಪೋರ್ಟ್ ಆಗಿವೆ</item>
+    </plurals>
+
+    <string name="title_voice">ಕರೆの中での ಧ್ವನಿ</string>
+    <string name="voice_source">ಧ್ವನಿ ಮೂಲ</string>
+    <string name="voice_none">ಮೌನ</string>
+    <string name="voice_mic">ಲೈವ್ ಮೈಕ್ರೋಫోన్</string>
+    <string name="voice_file">ಆಡಿಯೋ ಫೈಲ್</string>
+    <string name="voice_file_section">ಆಡಿಯೋ ಫೈಲ್</string>
+    <string name="voice_no_file">ಯಾವುದೇ ಫೈಲ್ ಇಲ್ಲ — ಕೆಳಗೆ ಇಂಪೋರ್ಟ್ ಅಥವಾ రికార್ಡ್ ಮಾಡಿ</string>
+    <string name="voice_file_hint">ಸಂಯೋಜನೆಯ ನಂತರ ಲೂಪ್‌ನಲ್ಲಿ बजाती remains</string>
+    <string name="voice_import">ಆಡಿಯೋ ಫೈಲ್ ಇಂಪೋರ್ಟ್ ಮಾಡಿ</string>
+    <string name="voice_record">ಮೈಕ್ರೋಫೋನ್ ಮೂಲಕ ರೆಕಾರ್ಡ್ ಮಾಡಿ</string>
+    <string name="voice_need_file">ಮೊದಲು ಆಡಿಯೋ ಫೈಲ್ ಇಂಪೋರ್ಟ್ ಅಥವಾ ರೆಕಾರ್ಡ್ ಮಾಡಿ</string>
+    <string name="voice_saved">ಧ್ವನಿ ನವೀಕರಿಸಲಾಗಿದೆ</string>
+    <string name="voice_imported">ಆಡಿಯೋ ಫೈಲ್ ಇಂಪೋರ್ಟ್ ಆಗಿದೆ</string>
+    <string name="voice_import_failed">ಈ ಫೈಲ್ ಇಂಪೋರ್ಟ್ ಮಾಡಲು ಸಾಧ್ಯವಿಲ್ಲ</string>
+    <string name="voice_row_title">ಕರೆ中的での ಧ್ವನಿ</string>
+    <string name="voice_row_sub">ಕರೆ ಸಮಯದಲ್ಲಿ ನೀವು ಕೇಳುವ ಧ್ವನಿ (ಪ್ರತಿ ಗುರುತಿಗೆ)</string>
+    <string name="voice_configure">ಧ್ವನಿಯನ್ನುCanadian کنفیگر ಮಾಡಿ</string>
+    <string name="voice_video">ವೀಡಿಯೋ ಕರೆ</string>
+    <string name="voice_video_hint">ಲೈವ್ ವೀಡಿಯೋ ಸೇರಿಸುತ್ತದೆ; ಕರೆ সংಯೋಜಿತರಾದರೆ ಪೂರ್ಣ-ಸ್ಕ್ರೀನ್ ವೀಡಿಯೋ ತೆರೆದುಬರುತ್ತದೆ</string>
+
+    <string name="title_record">ರೆಕಾರ್ಡಿಂಗ್</string>
+    <string name="record_hint">ನಿಮ್ಮ ಧ್ವನಿಯನ್ನು ರೆಕಾರ್ಡ್ ಮಾಡುತ್ತಿದ್ದೀರಿ — ಮುಕ್ತಾಯವೇрони ಸ್ಟಾಪ್ ಕ್ಲಿಕ್ ಮಾಡಿ</string>
+    <string name="record_stop">ಸ್ಟಾಪ್</string>
+    <string name="record_failed">ರೆಕಾರ್ಡಿಂಗ್ ವಿಫಲ</string>
+
+    <string name="settings_timing">ಕರೆ ಕಾಲಸಮಯ</string>
+    <string name="timing_hint">ಸಂಯೋಜನೆಯ ಮೊದಲು ರಿಂಗ್ (ಛارج್ ಸ್ವಯಂ ಕರೆ)</string>
+    <string name="radio_c2">2 ಸೆಕೆಂಡ分钟后ದರ ಕನેક್ಟ್ ಮಾಡಿ</string>
+    <string name="radio_c5">5 ಸೆಕೆಂಡ分钟后ದರ ಕನেক್ಟ್ ಮಾಡಿ</string>
+    <string name="radio_c10">10 ಸೆಕೆಂಡ分钟后ದರ ಕನেক್ಟ್ ಮಾಡಿ</string>
+
+    <string name="settings_autoend">ಸ್ವಯಂಚಾಲಿತ ಅಂತ್ಯ</string>
+    <string name="autoend_hint">ಸಂಯೋಜನೆಯ ನಂತರ ಕರೆ ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಅಂತ್ಯಗೊಳ್ಳುತ್ತದೆ</string>
+    <string name="radio_e_off">ಕದಲ್ಪಿ ನಶಿಸ</string>
+    <string name="radio_e30">30 ಸೆಕೆಂಡுக் ਵਿੱਚ</string>
+    <string name="radio_e60">1 ನಿಮಿಷದ分钟后</string>
+    <string name="radio_e300">5 ನಿಮಿಷದ分钟后</string>
+
+    <string name="settings_autoanswer">ಸ್ವಯಂಚಾಲಿತ ಉತ್ತರ</string>
+    <string name="radio_off">ಆಫ್</string>
+    <string name="radio_now">ತಕ್ಷಣವೇ ಉತ್ತರಿಸು</string>
+    <string name="radio_3">3 ಸೆಕೆಂಡಿನುದ್ದಿನ乃米</string>
+    <string name="radio_5">5 ಸೆಕೆಂಡಿನುದ್ದಿನ乃米</string>
+    <string name="radio_10">10 ಸೆಕೆಂಡಿನುದ್ದಿನ乃米</string>
+    <string name="autoanswer_hint">ನಿಮ್ಮ ಅನುಕರಣಿತ ಬರುವ ಕರೆಗೆ ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಉತ್ತರಿಸಿ (ಅಂಡ್ರಾಯ್ಡ್ 8+)</string>
+
+    <string name="settings_audio">ಆಡಿಯೋ</string>
+    <string name="switch_loopback">ಸ್ವಯಂ ಶ್ರಾವಣ ಲೂಪ್ಬ್ಯಾಕ್</string>
+    <string name="loopback_hint">ನಿಮ್ಮ ಮೈಕ್ರೋಫోన్ ಅನ್ನು ಕರೆಗೆ Canadian プレイできます ನಿಮಗೆ ಧ್ವನಿ ಕೇಳಿಸಲು</string>
+
+    <string name="settings_account">ಫోన్ ಖಾತೆ</string>
+    <string name="settings_branding">ಕರೆಗಾರ ಬ್ರಾಂಡಿಂಗ್</string>
+    <string name="branding_title">ಕರೆಗಾರ ಬ್ರಾಂಡಿಂಗ್</string>
+    <string name="branding_preview">%1$s ಮೂಲಕ ಕರೆಗಳು</string>
+    <string name="branding_hint">ಡಯಲರ್ ನಿಮ್ಮ ಹೆಸರಿನ ಕೆಳಗೆ ಲೇಬಲ್ ತೋರಿಸುತ್ತದೆ. ಹೊಸ ಕರೆಗಳಿಗೆ ಅರ್ಹತೆ</string>
+    <string name="branding_change">ಬ್ರಾಂಡಿಂಗ್ ಬದಲಾಯಿಸಿ</string>
+    <string name="branding_dialog_title">ಕರೆ ಬ್ರಾಂಡಿಂಗ್</string>
+    <string name="branding_dialog_hint">ಡಯಲರ್‌ನಲ್ಲಿ “ಕರೆಗಳ ಮೂಲಕ” ನಂತರ ಕಾಣிக ವಿನ್ಯಾಸ. ಖಾಲಿ ಬಿಟ್ಟರೆ ಅಪ್ಲಿಕೇಶನ್ ಹೆಸರನ್ನು ಬಳಸುತ್ತದೆ</string>
+    <string name="branding_save">ಉಳಿಸು</string>
+    <string name="branding_reset_button">ರಿಸೆಟ್ ಮಾಡಿ</string>
+    <string name="branding_reset_toast">ಬ್ರಾಂಡಿಂಗ್ %1$s ರಿಸೆಟ್ ಆಗಿದೆ</string>
+    <string name="branding_saved">ಹೊಸ ಕರೆಗಳು “ಕರೆಗಳ ಮೂಲಕ %1$s” ತೋರಿಸುತ್ತವೆ</string>
+    <string name="account_status_ready">ದಾಖಲಾತಿ ಮಾಡಲಾಗಿದೆ — ಕರೆಗೆ ಸಿದ್ಧ</string>
+    <string name="account_status_self">ದಾಖಲಾತಿ ಮಾಡಲಾಗಿದೆ (ಸ್ವಯಂ ನಿರ್ವಹಿತ) — ಸಿದ್ಧ</string>
+    <string name="account_status_fail">ದಾಖಲಾತಿ ಮಾಡಿಲ್ಲ — ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಲು ಅಪ್ಲಿಕೇಶನ್ ತೆರೆದುಕೊಳ್ಳಿ</string>
+    <string name="account_status_legacy">ಸಕ್ರಿಯವಲ್ಲ — ಕರೆ ಖಾತೆಗಳನ್ನು ನಿರ್ವಹಿಸಿ ಮತ್ತು ಸ್ವಯಂ ಕರೆಗಳನ್ನು শুরু ಮಾಡಿ</string>
+    <string name="manage_accounts">ಕರೆ ಖಾತೆಗಳನ್ನು ನಿರ್ವಹಿಸಿ</string>
+
+    <string name="log_out">ಛارج್ ಸ್ವಯಂ ಕರೆ</string>
+    <string name="log_in">ಬರುವ ಸ್ವಯಂ ಕರೆ</string>
+    <string name="log_auto">ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಉತ್ತರಿಸಲಾಗಿದೆ</string>
+    <string name="log_missed">ಕಳೆದುಕೊಂಡ</string>
+    <string name="log_canceled">ರದ್ದು ಮಾಡಲಾಗಿದೆ</string>
+    <string name="log_empty">ಇಲ್ಲಿಗೆ ಯಾವುದೇ ಸ್ವಯಂ ಕರೆ ಇಲ್ಲ</string>
+    <string name="log_clear">ಶೂನ್ಯಗೊಳಿಸಿ</string>
+    <string name="log_clear_confirm">ಮೊಗ تبدیلಿ ಸ್ವಯಂ-ಕರೆ ಲಾಗ್?</string>
+    <string name="log_video_out">ಛارج್ ಸ್ವಯಂ ವೀಡಿಯೋ ಕರೆ</string>
+    <string name="log_video_in">ಬರುವ ಸ್ವಯಂ ವೀಡಿಯೋ ಕರೆ</string>
+
+    <string name="pending_firing">ನಿಮ್ಮ ಬರುವ ಕರೆ ಇರಿಸಲಾಗುತ್ತಿದೆ…</string>
+    <string name="toast_scheduled_now">ಬರುವ ಕರೆ ಈಗ bass बज रही है</string>
+    <string name="toast_scheduled">ಬರುವ ಕರೆ %s</string>
+    <string name="pending_chip">ಬರುವ ಕರೆ %s — ರದ್ದು ಮಾಡಲು ಕ್ಲಿಕ್ ಮಾಡಿ</string>
+    <string name="toast_canceled">ನಿಗದಿತ ಕರೆ ರದ್ದು ಆಗಿದೆ</string>
+    <string name="shortcut_step_call">ಅನುಕರಣಿತ ಬರುವ ಕರೆ</string>
+    <string name="shortcut_step_message">SMS ಸಂದೇಶ அனுப்புங்கள்</string>
+    <string name="shortcut_step_type_call">ಕರೆ</string>
+    <string name="shortcut_step_type_message">ಸಂದೇಶ</string>
+    <string name="shortcut_step_msg_hint">ಸಂದೇಶ ಪಠ್ಯ (ಕೆವಲ SMS ಹಂತಗಳು)</string>
+    <string name="perm_sms">ಸಂದೇಶ ಕಳುಹಿಸಲು SMS ಅಧಿಕಾರ ಅಗತ್ಯ</string>
+
+    <string name="settings_incoming">ಬರುವ ಕರೆ</string>
+    <string name="incoming_wait_title">ಪ್ರ देरね ಸಮಯ</string>
+    <string name="incoming_wait_hint">ಬರುವ ಕರೆಗಳ ಅನುಕರಣ ಕ್ಲಿಕ್ ನಂತರ了一会儿ದರ పాటు ಹನಿ ಬರುತ್ತದೆ. ಫೋನ್ ತಾಂತಿರಿ ನೀರವವಾಗಿರುತ್ತದೆ</string>
+    <string name="incoming_delay_now">ತಕ್ಷಣ</string>
+    <string name="radio_w_now">ತಕ್ಷಣ</string>
+    <string name="radio_w1">1 ಸೆಕೆಂಡುキング</string>
+    <string name="radio_w2">2 ಸೆಕೆಂಡುキング</string>
+    <string name="radio_w3">3 ಸೆಕೆಂಡುキング</string>
+    <string name="radio_w5">5 ಸೆಕೆಂಡುキング</string>
+    <string name="radio_w10">10 ಸೆಕೆಂಡುキング</string>
+    <string name="radio_w30">30 ಸೆಕೆಂಡುキング</string>
+    <string name="radio_w60">1 ನಿಮಿಷದೀಕキング</string>
+    <string name="radio_w300">5 ನಿಮಿಷದೀಕキング</string>
+    <string name="radio_w900">15 ನಿಮಿಷದೀಕキング</string>
+    <string name="radio_w1800">30 ನಿಮಿಷದೀಕキング</string>
+    <string name="radio_w3600">1 ಗಂಟೆಯ dinastía</string>
+    <string name="radio_w7200">2 ಗಂಟೆಯ dinastía</string>
+    <string name="radio_w10800">3 ಗಂಟೆಯ dynastie</string>
+    <string name="incoming_ring_title">ಹನಿ ಟೈಂಮೌಟ್</string>
+    <string name="ring_timeout_hint">ಆಯ್ಕೆ ಮಾಡಿದ ಸಮಯದ ನಂತರ ಹನಿ ಬন্ধಗೆققಣ ಮಾಡಿ, ನೈಸರ್ಗಿಕ ಟೆಲಿಕಾಂ Rama</string>
+    <string name="exact_alarm_needed">ದೀರ್ಘ ಇವுல屆以后 ಕರೆ ಹನಿ ಬರಲು, ಸದೆ டೈಮರ್ ಅಧಿಕಾರ ನೀಡಿ</string>
+    <string name="radio_r_never">ಉತ್ತರ ಬಾರೊವರೆಗೆ ಹನಿ。”（ಕನಿಕ ಟೈಂಮೌಟ್ ಇಲ್ಲ)</string>
+    <string name="radio_r15">15 ಸೆಕೆಂಡಿನಲ್ಲಿಯ ಸ್ವಯಂಚಾಲಿತ ರದ್ದುಗೊಳಿಸಿ</string>
+    <string name="radio_r30">30 ಸೆಕೆಂಡಿನಲ್ಲಿಯ ಸ್ವಯಂಚಾಲಿತ ರದ್ದುಗೊಳಿಸಿ</string>
+    <string name="radio_r45">45 ಸೆಕೆಂಡಿನಲ್ಲಿಯ ಸ್ವಯಂಚಾಲಿತ ರದ್ದುಗೊಳಿಸಿ</string>
+    <string name="radio_r60">1 ನಿಮಿಷದಲ್ಲಿಯ ಸ್ವಯಂಚಾಲಿತ ರದ್ದುಗೊಳಿಸಿ</string>
+
+    <string-array name="incoming_delay_labels">
+        <item>ತಕ್ಷಣ</item>
+        <item>3 ಸೆಕೆಂಡುಗಳು</item>
+        <item>5 ಸೆಕೆಂಡುಗಳು</item>
+        <item>10 ಸೆಕೆಂಡುಗಳು</item>
+        <item>30 ಸೆಕೆಂಡುಗಳು</item>
+        <item>1 ನಿಮಿಷ</item>
+        <item>5 ನಿಮಿಷ</item>
+        <item>15 ನಿಮಿಷ</item>
+        <item>30 ನಿಮಿಷ</item>
+        <item>1 ಗಂಟೆ</item>
+        <item>2 ಗಂಟೆಗಳು</item>
+        <item>3 ಗಂಟೆಗಳು</item>
+    </string-array>
+
+    <string name="video_remote_label">ರಿಮೋಟ್ ವೀಡಿಯೋ</string>
+    <string name="video_local_label">ನೀವು</string>
+    <string name="video_live">ಸ್ವಯಂ ವೀಡಿಯೋ ಕರೆ</string>
+    <string name="video_mute">ಮ್ಯೂಟ್ ಮಾಡಿ</string>
+    <string name="video_muted">ಮ್ಯೂಟ್ ಆಗಿದೆ</string>
+    <string name="video_camera">ವೀಡಿಯೋ</string>
+    <string name="video_switch_camera">ಓಡಾಡುವೆ</string>
+    <string name="video_hangup">ಕರೆ ಮುಕ್ತಾಯಗೊಳಿಸಿ</string>
+    <string name="video_off">ವೀಡಿಯೋ ಆಫ್</string>
+    <string name="video_unavailable">ಕ್ಯಾಮೆರಾ ಲಭ್ಯವಿಲ್ಲ</string>
+    <string name="perm_camera">ಸ్థಳೀಯ ಪೂರ್ವದರ್ಶನಕ್ಕೆ ಕ್ಯಾಮೆರಾ ಅಧಿಕಾರ ಅಗತ್ಯ</string>
+
+    <string name="title_sms_autoreply">SMS ಆಟೋ-ರಿಪ್ಲೈ</string>
+    <string name="sms_autoreply_title">SMS ಆಟೋ-ರಿಪ್ಲೈ</string>
+    <string name="sms_autoreply_hint">ಪ್ರತಿ ಬರುವ SMS ಗೆ ನಿಮ್ಮ ಸಂದೇಶದ ಮೂಲಕ ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಉತ್ತರಿಸಿ</string>
+    <string name="sms_autoreply_enabled">ಸ್ವಯಂಚಾಲಿತ ಉತ್ತರ ಸಕ್ರಿಯಗೊಳಿಸಿ</string>
+    <string name="sms_autoreply_message_label">ಉತ್ತರ ಸಂದೇಶ</string>
+    <string name="sms_autoreply_message_hint">ಉದಾ. ಹಲೋ, ನಾನು ಬ್ಯುಸಿಯಾಗಿದ್ದೇನೆ - ನಂತರ ಉತ್ತರಿಸುತ್ತೇನೆ</string>
+    <string name="sms_autoreply_saved">ಆಟೋ-ರಿಪ್ಲೈ ಉಳಿಸಲಾಗಿದೆ</string>
+    <string name="perm_sms_receive">ಸ್ವಯಂಚಾಲಿತ ಉತ್ತರಕ್ಕೆ SMS ಸ್ವೀಕರಿಸುವ ಅಧಿಕಾರ ಅಗತ್ಯ</string>
+    <string name="perm_sms_send">ಸ್ವಯಂಚಾಲಿತ ಉತ್ತರಕ್ಕೆ SMS ಕಳುಹಿಸುವ ಅಧಿಕಾರ ಅಗತ್ಯ</string>
+
+    <string name="title_sms_log">SMS ಲಾಗ್</string>
+    <string name="sms_log_status">SMS ಲಾಗ್: %d ಸಂದೇಶಗಳು</string>
+
+    <string name="widget_title">ಶಾರ್ಟ್‌ಕಟ್‌ಗಳು</string>
+    <string name="widget_sub_tap">ರನ್ ಮಾಡಲು ಕ್ಲಿಕ್ ಮಾಡಿ</string>
+    <string name="widget_sub_not_configured">ಕಾನ್ಫಿಗರ್ ಮಾಡಲು ಕ್ಲಿಕ್ ಮಾಡಿ</string>
+    <string name="widget_configure_title">ವಿಜೆಟ್ ಕಾನ್ಫಿಗರ್ ಮಾಡಿ</string>
+    <string name="widget_choose_set">ರನ್ ಮಾಡಲು ಶಾರ್ಟ್‌ಕಟ್ ಸೆಟ್ ಆಯ್ಕೆಮಾಡಿ</string>
+    <string name="widget_cancel">ರದ್ದುಗೊಳಿಸಿ</string>
+</resources>

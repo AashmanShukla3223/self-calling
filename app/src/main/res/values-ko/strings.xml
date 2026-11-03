@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">자기 통화</string>
+    <string name="tagline">자신을 네이티브 다이얼러를 통해 걸기</string>
+    <string name="account_desc">자신에게 거는 전화</string>
+    <string name="footer">전화는 네이티브 다이얼러 UI에 표시됩니다 — 이 앱은 그것들을 시작할 뿐입니다.</string>
+
+    <string name="title_settings">설정</string>
+    <string name="title_log">자체 통화 로그</string>
+    <string name="perm_granted">권한이 승인되었습니다</string>
+
+    <string name="status_title">시스템 상태</string>
+    <string name="status_account">통신 계정</string>
+    <string name="status_account_ok">등록됨</string>
+    <string name="status_account_fail">등록되지 않음 — 앱을 다시 열어주세요</string>
+    <string name="status_account_legacy">설정에서 한 번 활성화하세요 → 전화 계정</string>
+    <string name="status_call">발신 권한</string>
+    <string name="status_perm_ok">승인됨</string>
+    <string name="status_call_missing">전화 버튼을 눌러 허용하세요</string>
+    <string name="status_answer">수신 권한</string>
+    <string name="status_answer_missing">자동 응답에 필요함</string>
+    <string name="status_mic">마이크</string>
+    <string name="status_mic_ok">승인됨</string>
+    <string name="status_mic_missing">자기 수신에 필요함</string>
+
+    <string name="action_call">나에게 전화 걸기</string>
+    <string name="action_incoming">수신 전화 시뮬레이션</string>
+    <string name="wait_home_now">즉시 울림 — 탭하여 대기 시간 변경</string>
+    <string name="wait_home">%s 울림 — 탭하여 대기 시간 변경</string>
+
+    <string name="settings_identity">발신자 신원</string>
+    <string name="settings_name_label">통화 화면에 표시될 이름</string>
+    <string name="preset_number_label">휴대폰 번호</string>
+    <string name="preset_card_label">활성 신원</string>
+    <string name="preset_hint">사전 설정 관리를 위해 탭하세요</string>
+    <string name="title_presets">사전 설정</string>
+    <string name="preset_add">추가</string>
+    <string name="preset_edit">수정</string>
+    <string name="preset_delete">삭제</string>
+    <string name="preset_save">저장</string>
+    <string name="preset_need_one">최소 하나의 사전 설정을 유지하세요</string>
+    <string name="preset_invalid">이름과 번호가 필요합니다</string>
+    <string name="preset_empty">사전 설정이 없습니다</string>
+    <string name="manage_presets">사전 설정 관리</string>
+    <string name="preset_voice">음성</string>
+    <string name="preset_import">가져오기</string>
+    <string name="preset_import_title">사전 설정 가져오기</string>
+    <string name="preset_import_contacts">연락처에서</string>
+    <string name="preset_import_vcf">VCF 파일에서</string>
+    <string name="preset_import_reading">가져오는 중…</string>
+    <string name="preset_import_failed">파일이나 주소록을 읽을 수 없습니다</string>
+    <string name="preset_import_empty">전화번호를 찾을 수 없습니다</string>
+    <string name="preset_import_none">새로운 사전 설정 없음 — 해당 번호는 이미 목록에 있습니다</string>
+    <string name="preset_import_contacts_denied">가져오기 위해 연락처 권한이 필요합니다</string>
+    <plurals name="preset_imported">
+        <item quantity="one">%1$d개의 사전 설정을 가져왔습니다</item>
+        <item quantity="other">%1$d개의 사전 설정을 가져왔습니다</item>
+    </plurals>
+
+    <string name="title_voice">통화 중 음성</string>
+    <string name="voice_source">음성 소스</string>
+    <string name="voice_none">무음</string>
+    <string name="voice_mic">실시간 마이크</string>
+    <string name="voice_file">오디오 파일</string>
+    <string name="voice_file_section">오디오 파일</string>
+    <string name="voice_no_file">파일 없음 — 아래에서 가져오거나 녹음하세요</string>
+    <string name="voice_file_hint">연결 중 루프로 재생됩니다.</string>
+    <string name="voice_import">오디오 파일 가져오기</string>
+    <string name="voice_record">마이크로 녹음하기</string>
+    <string name="voice_need_file">먼저 오디오 파일을 가져오거나 녹음하세요</string>
+    <string name="voice_saved">음성이 업데이트되었습니다</string>
+    <string name="voice_imported">오디오 파일이 가져왔습니다</string>
+    <string name="voice_import_failed">해당 파일을 가져올 수 없습니다</string>
+    <string name="voice_row_title">통화 중 음성</string>
+    <string name="voice_row_sub">통화 중 듣는 소리 (신원별)</string>
+    <string name="voice_configure">음성 구성</string>
+    <string name="voice_video">영상 통화</string>
+    <string name="voice_video_hint">실시간 영상 추가; 통화 연결 시 전체 화면 영상 화면이 열립니다.</string>
+
+    <string name="title_record">녹음</string>
+    <string name="record_hint">음성 녹음 — 완료 시 정지 탭</string>
+    <string name="record_stop">정지</string>
+    <string name="record_failed">녹음 실패</string>
+
+    <string name="settings_timing">통화 타이밍</string>
+    <string name="timing_hint">연결 전 울림 시간 (출발 자체 통화)</string>
+    <string name="radio_c2">2초 후 연결</string>
+    <string name="radio_c5">5초 후 연결</string>
+    <string name="radio_c10">10초 후 연결</string>
+
+    <string name="settings_autoend">자동 종료</string>
+    <string name="autoend_hint">연결 후 자동으로 통화를 종료합니다.</string>
+    <string name="radio_e_off">안 함</string>
+    <string name="radio_e30">30초 후</string>
+    <string name="radio_e60">1분 후</string>
+    <string name="radio_e300">5분 후</string>
+
+    <string name="settings_autoanswer">자동 응답</string>
+    <string name="radio_off">끔</string>
+    <string name="radio_now">바로 응답</string>
+    <string name="radio_3">3초 후</string>
+    <string name="radio_5">5초 후</string>
+    <string name="radio_10">10초 후</string>
+    <string name="autoanswer_hint">시뮬레이션 수신 전화를 자동으로 응답합니다 (Android 8+).</string>
+
+    <string name="settings_audio">오디오</string>
+    <string name="switch_loopback">자기 피드백 루프백</string>
+    <string name="loopback_hint">마이크를 통화에 연결하여 자신의 목소리를 듣습니다</string>
+
+    <string name="settings_account">전화 계정</string>
+    <string name="settings_branding">발신자 브랜딩</string>
+    <string name="branding_title">발신자 브랜딩</string>
+    <string name="branding_preview">%1$s를 통한 전화</string>
+    <string name="branding_hint">다이얼러가 이름 아래에 표시하는 라벨. 신규 통화에 적용됩니다.</string>
+    <string name="branding_change">브랜딩 변경</string>
+    <string name="branding_dialog_title">통화 브랜딩</string>
+    <string name="branding_dialog_hint">다이얼러에서 “전화” 뒤에 나타나는 텍스트입니다. 비워 두면 앱 이름을 사용합니다.</string>
+    <string name="branding_save">저장</string>
+    <string name="branding_reset_button">재설정</string>
+    <string name="branding_reset_toast">브랜딩이 %1$s로 재설정되었습니다</string>
+    <string name="branding_saved">새 통화에는 “전화 %1$s”가 표시됩니다</string>
+    <string name="account_status_ready">등록됨 — 통화 준비 완료</string>
+    <string name="account_status_self">등록됨 (자기 관리됨) — 준비 완료</string>
+    <string name="account_status_fail">등록되지 않음 — 앱을 다시 열어 재시도하세요</string>
+    <string name="account_status_legacy">활성화되지 않음 — 통화 계정 관리에서 자기 통화를 켜세요</string>
+    <string name="manage_accounts">통화 계정 관리</string>
+
+    <string name="log_out">발신 자체 통화</string>
+    <string name="log_in">수신 자체 통화</string>
+    <string name="log_auto">자동 응답됨</string>
+    <string name="log_missed">부재중</string>
+    <string name="log_canceled">취소됨</string>
+    <string name="log_empty">아직 자체 통화가 없습니다</string>
+    <string name="log_clear">지우기</string>
+    <string name="log_clear_confirm">전체 자체 통화 로그를 지우시겠습니까?</string>
+    <string name="log_video_out">발신 자체 영상 통화</string>
+    <string name="log_video_in">수신 자체 영상 통화</string>
+
+    <string name="pending_firing">수신 전화를 걸고 있습니다…</string>
+    <string name="toast_scheduled_now">수신 전화가 지금 울리고 있습니다</string>
+    <string name="toast_scheduled">수신 전화 %s</string>
+    <string name="pending_chip">수신 전화 %s — 탭하여 취소</string>
+    <string name="toast_canceled">예약된 통화가 취소되었습니다</string>
+    <string name="shortcut_step_call">시뮬레이션 수신 전화</string>
+    <string name="shortcut_step_message">SMS 메시지 전송</string>
+    <string name="shortcut_step_type_call">전화</string>
+    <string name="shortcut_step_type_message">메시지</string>
+    <string name="shortcut_step_msg_hint">메시지 텍스트 (SMS 단계만 해당)</string>
+    <string name="perm_sms">메시지 전송을 위한 SMS 권한이 필요합니다</string>
+
+    <string name="settings_incoming">수신 전화</string>
+    <string name="incoming_wait_title">대기 시간</string>
+    <string name="incoming_wait_hint">수신 전화 시뮬레이션 탭 후 울리기까지 걸리는 시간. 전화는 그때까지 조용하게 유지됩니다.</string>
+    <string name="incoming_delay_now">즉시</string>
+    <string name="radio_w_now">즉시</string>
+    <string name="radio_w1">1초 대기</string>
+    <string name="radio_w2">2초 대기</string>
+    <string name="radio_w3">3초 대기</string>
+    <string name="radio_w5">5초 대기</string>
+    <string name="radio_w10">10초 대기</string>
+    <string name="radio_w30">30초 대기</string>
+    <string name="radio_w60">1분 대기</string>
+    <string name="radio_w300">5분 대기</string>
+    <string name="radio_w900">15분 대기</string>
+    <string name="radio_w1800">30분 대기</string>
+    <string name="radio_w3600">1시간 대기</string>
+    <string name="radio_w7200">2시간 대기</string>
+    <string name="radio_w10800">3시간 대기</string>
+    <string name="incoming_ring_title">벨소리 만료</string>
+    <string name="ring_timeout_hint">선택한 시간 후에 벨소리를 멈춥니다. 실제 통신사처럼.</string>
+    <string name="exact_alarm_needed">오래 기다린 후에도 전화가 울리도록 정확한 알람을 허용하세요.</string>
+    <string name="radio_r_never">응답될 때까지 울림 (시간 제한 없음)</string>
+    <string name="radio_r15">15초 후 자동 해제</string>
+    <string name="radio_r30">30초 후 자동 해제</string>
+    <string name="radio_r45">45초 후 자동 해제</string>
+    <string name="radio_r60">1분 후 자동 해제</string>
+
+    <string-array name="incoming_delay_labels">
+        <item>즉시</item>
+        <item>3초</item>
+        <item>5초</item>
+        <item>10초</item>
+        <item>30초</item>
+        <item>1분</item>
+        <item>5분</item>
+        <item>15분</item>
+        <item>30분</item>
+        <item>1시간</item>
+        <item>2시간</item>
+        <item>3시간</item>
+    </string-array>
+
+    <string name="video_remote_label">원격 영상</string>
+    <string name="video_local_label">본인</string>
+    <string name="video_live">자기 영상 통화</string>
+    <string name="video_mute">음소거</string>
+    <string name="video_muted">음소거됨</string>
+    <string name="video_camera">카메라</string>
+    <string name="video_switch_camera">뒤집기</string>
+    <string name="video_hangup">통화 종료</string>
+    <string name="video_off">영상 꺼짐</string>
+    <string name="video_unavailable">카메라 사용 불가</string>
+    <string name="perm_camera">로컬 미리보기를 위한 카메라 권한이 필요합니다.</string>
+
+    <string name="title_sms_autoreply">SMS 자동 답장</string>
+    <string name="sms_autoreply_title">SMS 자동 답장</string>
+    <string name="sms_autoreply_hint">모든 수신 SMS에 자동으로 답장을 보냅니다.</string>
+    <string name="sms_autoreply_enabled">자동 답장 활성화</string>
+    <string name="sms_autoreply_message_label">답장 메시지</string>
+    <string name="sms_autoreply_message_hint">예: 안녕하세요, 바빠서 나중에 답장할게요.</string>
+    <string name="sms_autoreply_saved">자동 답장이 저장되었습니다</string>
+    <string name="perm_sms_receive">자동 답장을 위한 SMS 수신 권한이 필요합니다</string>
+    <string name="perm_sms_send">자동 답장을 위한 SMS 전송 권한이 필요합니다</string>
+
+    <string name="title_sms_log">SMS 로그</string>
+    <string name="sms_log_status">SMS 로그: %d건의 메시지</string>
+
+    <string name="widget_title">단축키 세트</string>
+    <string name="widget_sub_tap">탭하여 실행</string>
+    <string name="widget_sub_not_configured">탭하여 구성</string>
+    <string name="widget_configure_title">위젯 구성</string>
+    <string name="widget_choose_set">실행할 단축키 세트 선택</string>
+    <string name="widget_cancel">취소</string>
+</resources>

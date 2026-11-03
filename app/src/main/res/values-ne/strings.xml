@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">स्व-कोलिङ</string>
+    <string name="tagline">स्वको नेटिभ डायलर मार्फत आफूलाई फोन गर्नुहोस्</string>
+    <string name="account_desc">आफूलाई फोन गर्नु</string>
+    <string name="footer">फोन नेटिभ डायलर UI मा देखा पर्छ — यो एप्लिकेशनले मात्र ती सिर्जना गर्दछ।</string>
+
+    <string name="title_settings">सेटिंग</string>
+    <string name="title_log">स्व-कल लग</string>
+    <string name="perm_granted">अनुमति प्रदान गरियो</string>
+
+    <string name="status_title">सिस्टम अवस्था</string>
+    <string name="status_account">टेलिकम खाता</string>
+    <string name="status_account_ok">दर्ता गरिएको</string>
+    <string name="status_account_fail">दर्ता भएको छैन — एप फेरि खोल्नुहोस्</string>
+    <string name="status_account_legacy">सेटिंगमा एक पटक सक्षम गर्नुहोस् → फोन खाता</string>
+    <string name="status_call">फोन गर्ने अनुमति</string>
+    <string name="status_perm_ok">प्रदान गरिएको</string>
+    <string name="status_call_missing">अनुमति दिन फोन बटन थिच्नुहोस्</string>
+    <string name="status_answer">कल जवाफ दिने अनुमति</string>
+    <string name="status_answer_missing">स्वचालित जवाफको लागि आवश्यक</string>
+    <string name="status_mic">माइक्रोफोन</string>
+    <string name="status_mic_ok">प्रदान गरिएको</string>
+    <string name="status_mic_missing">स्व-श्रवणको लागि आवश्यक</string>
+
+    <string name="action_call">म आफूलाई कल गर्छु</string>
+    <string name="action_incoming">आउने कल सिमुलेट गर्नुहोस्</string>
+    <string name="wait_home_now">तरतब वजे — प्रतीक्षा परिवर्तन गर्न थिच्नुहोस्</string>
+    <string name="wait_home">%s बाट बजे — प्रतीक्षा परिवर्तन गर्न थिच्नुहोस्</string>
+
+    <string name="settings_identity">कलर पहिचान</string>
+    <string name="settings_name_label">कल स्क्रिनमा देखाइने नाम</string>
+    <string name="preset_number_label">मोबाइल नम्बर</string>
+    <string name="preset_card_label">सक्रिय पहिचान</string>
+    <string name="preset_hint">प्रि-सेट व्यवस्थापन गर्न थिच्नुहोस्</string>
+    <string name="title_presets">प्रि-सेट</string>
+    <string name="preset_add">थप्नुहोस्</string>
+    <string name="preset_edit">सम्पादन गर्नुहोस्</string>
+    <string name="preset_delete">मेटाउनुहोस्</string>
+    <string name="preset_save">सेभ गर्नुहोस्</string>
+    <string name="preset_need_one">कम्तिमा एउटा प्रि-सेट राख्नुहोस्</string>
+    <string name="preset_invalid">नाम र नम्बर आवश्यक छ</string>
+    <string name="preset_empty">कोई प्रि-सेट छैन</string>
+    <string name="manage_presets">प्रि-सेट व्यवस्थापन गर्नुहोस्</string>
+    <string name="preset_voice">आवाज</string>
+    <string name="preset_import">इम्पोर्ट गर्नुहोस्</string>
+    <string name="preset_import_title">प्रि-सेट इम्पोर्ट गर्नुहोस्</string>
+    <string name="preset_import_contacts">सम्पर्कबाट</string>
+    <string name="preset_import_vcf">VCF फाइलबाट</string>
+    <string name="preset_import_reading">इम्पोर्ट हुदैछ…</string>
+    <string name="preset_import_failed">त्यो फाइल वा एड्रेस बुक पढ्न सकिएन</string>
+    <string name="preset_import_empty">फोन नम्बर कुनै पाएन</string>
+    <string name="preset_import_none">कोई नयाँ प्रि-सेट छैन — ती नम्बरहरू पहिलेदेखि नै सूचीमा छन्</string>
+    <string name="preset_import_contacts_denied">इम्पोर्ट गर्न सम्पर्क अनुमति चाहिन्छ</string>
+    <plurals name="preset_imported">
+        <item quantity="one">%1$d प्रि-सेट इम्पोर्ट गरियो</item>
+        <item quantity="other">%1$d प्रि-सेटहरू इम्पोर्ट गरिए</item>
+    </plurals>
+
+    <string name="title_voice">कलमा आवाज</string>
+    <string name="voice_source">आवाज स्रोत</string>
+    <string name="voice_none">मौन</string>
+    <string name="voice_mic">लाइभ माइक्रोफोन</string>
+    <string name="voice_file">अडियो फाइल</string>
+    <string name="voice_file_section">अडियो फाइल</string>
+    <string name="voice_no_file">फाइल छैन — तल इम्पोर्ट वा रेकर्ड गर्नुहोस्</string>
+    <string name="voice_file_hint">कल जोडिएको अवस्थामा लुपमा बजाइन्छ।</string>
+    <string name="voice_import">अडियो फाइल इम्पोर्ट गर्नुहोस्</string>
+    <string name="voice_record">माइक्रोफोनबाट रेकर्ड गर्नुहोस्</string>
+    <string name="voice_need_file">पहिले अडियो फाइल इम्पोर्ट वा रेकर्ड गर्नुहोस्</string>
+    <string name="voice_saved">आवाज अद्यावधिक गरियो</string>
+    <string name="voice_imported">अडियो फाइल इम्पोर्ट गरियो</string>
+    <string name="voice_import_failed">त्यो फाइल इम्पोर्ट गर्न सकिएन</string>
+    <string name="voice_row_title">कलमा आवाज</string>
+    <string name="voice_row_sub">कलको समयमा सुन्नुहुने आवाज (प्रत्येक पहिचानको लागि)</string>
+    <string name="voice_configure">आवाज कन्फिगर गर्नुहोस्</string>
+    <string name="voice_video">भिडियो कल</string>
+    <string name="voice_video_hint">लाइभ भिडियो थप्नुहोस्; कल जोडिएपछि पूर्ण-स्क्रिन भिडियो खुल्नेछ।</string>
+
+    <string name="title_record">रेकर्डिङ</string>
+    <string name="record_hint">आफ्नो आवाज रेकर्ड गर्दै हुनुहुन्छ — सकेपछि स्टप थिच्नुहोस्</string>
+    <string name="record_stop">स्टप</string>
+    <string name="record_failed">रेकर्डिङ असफल भयो</string>
+
+    <string name="settings_timing">कल टाइमिङ</string>
+    <string name="timing_hint">कल जोडिनु पहिले रिङ (बाहिर जान sweep自我-कल)</string>
+    <string name="radio_c2">2 सेकेन्डमा जोड्नुहोस्</string>
+    <string name="radio_c5">5 सेकेन्डमा जोड्नुहोस्</string>
+    <string name="radio_c10">10 सेकेन्डमा जोड्नुहोस्</string>
+
+    <string name="settings_autoend">स्वतः अन्त</string>
+    <string name="autoend_hint">कल जोडिएपछि स्वतः समाप्त हुन्छ।</string>
+    <string name="radio_e_off">कदापि नहोस्</string>
+    <string name="radio_e30">30 सेकेन्डपछि</string>
+    <string name="radio_e60">1 मिनेटपछि</string>
+    <string name="radio_e300">5 मिनेटपछि</string>
+
+    <string name="settings_autoanswer">स्वतः जवाफ</string>
+    <string name="radio_off">बन्द</string>
+    <string name="radio_now">तरतब जवाफ दिनुहोस्</string>
+    <string name="radio_3">3 सेकेन्डपछि</string>
+    <string name="radio_5">5 सेकेन्डपछि</string>
+    <string name="radio_10">10 सेकेन्डपछि</string>
+    <string name="autoanswer_hint">तपाईंको सिम्युलेटेड आउने कललाई स्वचालित रूपमा जवाफ दिनुहोस् (एन्ड्रोइड 8+ मा मात्र)।</string>
+
+    <string name="settings_audio">अडियो</string>
+    <string name="switch_loopback">स्व-श्रवण लुपब्याक</string>
+    <string name="loopback_hint">तपाईंको माइक्रोफोनलाई कलमा पठाउँनुहोस् ताकि तपाईं आफ्नो आवाज सुन्न सक्नुहुन्छ</string>
+
+    <string name="settings_account">फोन खाता</string>
+    <string name="settings_branding">कलर ब्रान्डिङ</string>
+    <string name="branding_title">कलर ब्रान्डिङ</string>
+    <string name="branding_preview">%1$s मार्फत कलहरू</string>
+    <string name="branding_hint">डायलरले तपाईंको नाम मुनि देखाउने लेबल। नयाँ कलहरूमा लागू हुन्छ।</string>
+    <string name="branding_change">ब्रान्डिङ परिवर्तन गर्नुहोस्</string>
+    <string name="branding_dialog_title">कल ब्रान्डिङ</string>
+    <string name="branding_dialog_hint">डायलरमा “कलहरू वाया” पछि देखाइने पाठ। खाली छोड्नुहोस् एप नाम प्रयोग गर्न।</string>
+    <string name="branding_save">सेभ गर्नुहोस्</string>
+    <string name="branding_reset_button">रीसेट गर्नुहोस्</string>
+    <string name="branding_reset_toast">ब्रान्डिङ %1$s मा रीसेट भयो</string>
+    <string name="branding_saved">नयाँ कलहरूमा “कलहरू वाया %1$s” देखिनेछ</string>
+    <string name="account_status_ready">दर्ता गरिएको — कलको लागि तयार</string>
+    <string name="account_status_self">दर्ता गरिएको (स्व-व्यवस्थापित) — तयार</string>
+    <string name="account_status_fail">दर्ता भएको छैन — फेरि प्रयास गर्न एप खोल्नुहोस्</string>
+    <string name="account_status_legacy">सक्षम छैन — कल खाता व्यवस्थापन खोल्नुहोस् र स्व-कलिङ 온 गर्नुहोस्</string>
+    <string name="manage_accounts">कल खाताहरू व्यवस्थापन गर्नुहोस्</string>
+
+    <string name="log_out">बाहिर जानौ自我-कल</string>
+    <string name="log_in">आउनौ自我-कल</string>
+    <string name="log_auto">स्वतः जवाफ गरिएको</string>
+    <string name="log_missed">छुट्यो</string>
+    <string name="log_canceled">रद्द गरियो</string>
+    <string name="log_empty">अब भएको आत्मकल कुनै छैन</string>
+    <string name="log_clear">सफा गर्नुहोस्</string>
+    <string name="log_clear_confirm">मैलबाट आत्मकल लग समग्र सफा गर्नुहुन्छ? पक्का छ?</string>
+    <string name="log_video_out">बाहिर जानौ भिडियो自我-कल</string>
+    <string name="log_video_in">आउनौ भिडियो自我-कल</string>
+
+    <string name="pending_firing">तपाईंको आउने कल राखिएको छ…</string>
+    <string name="toast_scheduled_now">आउने कल अहिले बजिरहेको छ</string>
+    <string name="toast_scheduled">आउने कल %s</string>
+    <string name="pending_chip">आउने कल %s — रद्द गर्न थिच्नुहोस्</string>
+    <string name="toast_canceled">समयताल गरिएको कल रद्द गरियो</string>
+    <string name="shortcut_step_call">सिम्युलेटेड आउने कल</string>
+    <string name="shortcut_step_message">SMS सन्देश पठाउनुहोस्</string>
+    <string name="shortcut_step_type_call">कल</string>
+    <string name="shortcut_step_type_message">सन्देश</string>
+    <string name="shortcut_step_msg_hint">सन्देश पाठ (केवल SMS चरणहरूको लागि)</string>
+    <string name="perm_sms">सन्देश पठाउन SMS अनुमति चाहिन्छ</string>
+
+    <string name="settings_incoming">आउने कल</string>
+    <string name="incoming_wait_title">प्रतीक्षा समय</string>
+    <string name="incoming_wait_hint">आउने कल सिमुलेट थिचेपछि कति समयपछि रिङ सुरु हुन्छ। फोन तबसम्म शान्त रहनेछ।</string>
+    <string name="incoming_delay_now">तरतब</string>
+    <string name="radio_w_now">तरतब</string>
+    <string name="radio_w1">1 सेकेन्ड प्रतीक्षा गर्नुहोस्</string>
+    <string name="radio_w2">2 सेकेन्ड प्रतीक्षा गर्नुहोस्</string>
+    <string name="radio_w3">3 सेकेन्ड प्रतीक्षा गर्नुहोस्</string>
+    <string name="radio_w5">5 सेकेन्ड प्रतीक्षा गर्नुहोस्</string>
+    <string name="radio_w10">10 सेकेन्ड प्रतीक्षा गर्नुहोस्</string>
+    <string name="radio_w30">30 सेकेन्ड प्रतीक्षा गर्नुहोस्</string>
+    <string name="radio_w60">1 मिनेट प्रतीक्षा गर्नुहोस्</string>
+    <string name="radio_w300">5 मिनेट प्रतीक्षा गर्नुहोस्</string>
+    <string name="radio_w900">15 मिनेट प्रतीक्षा गर्नुहोस्</string>
+    <string name="radio_w1800">30 मिनेट प्रतीक्षा गर्नुहोस्</string>
+    <string name="radio_w3600">1 घण्टा प्रतीक्षा गर्नुहोस्</string>
+    <string name="radio_w7200">2 घण्टा प्रतीक्षा गर्नुहोस्</string>
+    <string name="radio_w10800">3 घण्टा प्रतीक्षा गर्नुहोस्</string>
+    <string name="incoming_ring_title">रिङ टाइमआउट</string>
+    <string name="ring_timeout_hint">चयनित समयपछि रिङ बन्द गर्नुहोस्, वास्तविक टेलिकम जस्तै।</string>
+    <string name="exact_alarm_needed">लामो प्रतीक्षापछि कल बज्न सकून्, सही अलार्म अनुमति दिनुहोस्।</string>
+    <string name="radio_r_never">जवाफ नपाइसम्म रिङ बजाउनुहोस् (कुनै टाइमआउट छैन)</string>
+    <string name="radio_r15">15 सेकेन्डपछि स्वतः हट्नुहोस्</string>
+    <string name="radio_r30">30 सेकेन्डपछि स्वतः हट्नुहोस्</string>
+    <string name="radio_r45">45 सेकेन्डपछि स्वतः हट्नुहोस्</string>
+    <string name="radio_r60">1 मिनेटपछि स्वतः हट्नुहोस्</string>
+
+    <string-array name="incoming_delay_labels">
+        <item>तरतब</item>
+        <item>3 सेकेन्ड</item>
+        <item>5 सेकेन्ड</item>
+        <item>10 सेकेन्ड</item>
+        <item>30 सेकेन्ड</item>
+        <item>1 मिनेट</item>
+        <item>5 मिनेट</item>
+        <item>15 मिनेट</item>
+        <item>30 मिनेट</item>
+        <item>1 घण्टा</item>
+        <item>2 घण्टा</item>
+        <item>3 घण्टा</item>
+    </string-array>
+
+    <string name="video_remote_label">रिमोट भिडियो</string>
+    <string name="video_local_label">तपाईं</string>
+    <string name="video_live">स्व-भिडियो कल</string>
+    <string name="video_mute">म्युट गर्नुहोस्</string>
+    <string name="video_muted">म्युट गरिएको</string>
+    <string name="video_camera">भिडियो</string>
+    <string name="video_switch_camera">फ्लिप गर्नुहोस्</string>
+    <string name="video_hangup">कल बन्द गर्नुहोस्</string>
+    <string name="video_off">भिडियो बन्द</string>
+    <string name="video_unavailable">क्यामेरा उपलब्ध छैन</string>
+    <string name="perm_camera">स्थानिक पूर्वावलोकनको लागि क्यामेरा अनुमति चाहिन्छ।</string>
+
+    <string name="title_sms_autoreply">SMS ओटो-रिप्लाइ</string>
+    <string name="sms_autoreply_title">SMS ओटो-रिप्लाइ</string>
+    <string name="sms_autoreply_hint">सबै आउने SMS लाई आफ्नो सन्देशबाट स्वचालित रूपमा जवाफ दिनुहोस्।</string>
+    <string name="sms_autoreply_enabled">स्वचालित जवाफ सक्षम गर्नुहोस्</string>
+    <string name="sms_autoreply_message_label">जवाफ सन्देश</string>
+    <string name="sms_autoreply_message_hint">उदा. नमस्ते, म व्यस्त छु - पछि जवाफ दिन्छु।</string>
+    <string name="sms_autoreply_saved">ओटो-रिप्लाइ सेभ गरियो</string>
+    <string name="perm_sms_receive">स्वचालित जवाफको लागि SMS प्राप्त गर्ने अनुमति चाहिन्छ</string>
+    <string name="perm_sms_send">स्वचालित जवाफको लागि SMS पठाउने अनुमति चाहिन्छ</string>
+
+    <string name="title_sms_log">SMS लग</string>
+    <string name="sms_log_status">SMS लग: %d सन्देशहरू</string>
+
+    <string name="widget_title">शर्टकट सेट</string>
+    <string name="widget_sub_tap">चलाउन थिच्नुहोस्</string>
+    <string name="widget_sub_not_configured">कन्फिगर गर्न थिच्नुहोस्</string>
+    <string name="widget_configure_title">विजेट कन्फिगर गर्नुहोस्</string>
+    <string name="widget_choose_set">चलाउनको लागि शर्टकट सेट छनौट गर्नुहोस्</string>
+    <string name="widget_cancel">रद्द गर्नुहोस्</string>
+</resources>

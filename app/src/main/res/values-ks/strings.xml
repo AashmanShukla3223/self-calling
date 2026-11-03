@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ءو ří self-calling</string>
+    <string name="tagline">آتھ sia czmut ci call karaan</string>
+    <string name="account_desc">آتھ sia cz ci call</string>
+    <string name="footer">Call لە dyalr UI dë shwa dris — yea app traw karda chee.</string>
+
+    <string name="title_settings">سیٹنگز</string>
+    <string name="title_log">Self-call لөг</string>
+    <string name="perm_granted">اجازت دے دیتی Chee</string>
+
+    <string name="status_title">سیستم کی حالت</string>
+    <string name="status_account">ٹیلیcom اکاؤنٹ</string>
+    <string name="status_account_ok">رجسٹرڈ</string>
+    <string name="status_account_fail">رجسٹرڈ نہیں — ایپ کو دوبارہ کھولیں</string>
+    <string name="status_account_legacy">سیٹنگ میں ایک بار فعال کریں → فون اکاؤنٹ</string>
+    <string name="status_call">کل کرنے کی اجازت</string>
+    <string name="status_perm_ok">دے دیا گیا</string>
+    <string name="status_call_missing">اجازت دینے کے لیے کل بٹن دبائیں</string>
+    <string name="status_answer">کل کا جواب دینے کی اجازت</string>
+    <string name="status_answer_missing">خودکار جواب کے لیے ضروری</string>
+    <string name="status_mic">مائیکروفون</string>
+    <string name="status_mic_ok">دے دیا گیا</string>
+    <string name="status_mic_missing">سیلف سننے کے لیے ضروری</string>
+
+    <string name="action_call">میں اپنا آپ کال کرتا ہوں</string>
+    <string name="action_incoming">آئنگ کل کا انکام simulation کریں</string>
+    <string name="wait_home_now">فوری ringing ہے — انتظار تبدیل کرنے کے لیے دبائیں</string>
+    <string name="wait_home">%s ringing ہے — انتظار تبدیل کرنے کے لیے دبائیں</string>
+
+    <string name="settings_identity">کلر کی شناخت</string>
+    <string name="settings_name_label">کل اسکرین پر دکھایا جانے والا نام</string>
+    <string name="preset_number_label">موبائل نمبر</string>
+    <string name="preset_card_label">فعال شناخت</string>
+    <string name="preset_hint">پری سیٹس کا انتظام کرنے کے لیے دبائیں</string>
+    <string name="title_presets">پری سیٹس</string>
+    <string name="preset_add">شامل کریں</string>
+    <string name="preset_edit">ترمیم کریں</string>
+    <string name="preset_delete">پھینک دیں</string>
+    <string name="preset_save">محفوظ کریں</string>
+    <string name="preset_need_one">کم از کم ایک پری سیٹ برقرار رکھیں</string>
+    <string name="preset_invalid">نام اور نمبر ضروری ہیں</string>
+    <string name="preset_empty">کوئی پری سیٹ نہیں</string>
+    <string name="manage_presets">پری سیٹس کا انتظام کریں</string>
+    <string name="preset_voice">آواز</string>
+    <string name="preset_import">درگراہ کریں</string>
+    <string name="preset_import_title">پری سیٹس درگراہ کریں</string>
+    <string name="preset_import_contacts">رابطوں سے</string>
+    <string name="preset_import_vcf">ایک وی سی ایف فائل سے</string>
+    <string name="preset_import_reading">درگراھی جا رہا ہے…</string>
+    <string name="preset_import_failed">اس فائل یا ایڈریس بک کو پڑھنا ممکن نہیں</string>
+    <string name="preset_import_empty">کوئی فون نمبر نہیں ملیں</string>
+    <string name="preset_import_none">کوئ نئی پری سیٹ نہیں — وہ نمبر già فہرست میں ہیں</string>
+    <string name="preset_import_contacts_denied">درگراہ کرنے کے لیے رابطوں کی اجازت درکار ہے</string>
+    <plurals name="preset_imported">
+        <item quantity="one">%1$d پری سیٹ درگراھ کیا گیا</item>
+        <item quantity="other">%1$d پری سیٹس درگراھ کیے گئے</item>
+    </plurals>
+
+    <string name="title_voice">کل میں آواز</string>
+    <string name="voice_source">آواز کا ذریعہ</string>
+    <string name="voice_none">خاموشی</string>
+    <string name="voice_mic">لائیو مائیکروفون</string>
+    <string name="voice_file">آڈیو فائل</string>
+    <string name="voice_file_section">آڈیو فائل</string>
+    <string name="voice_no_file">کوئی فائل نہیں — نیچے درگراہ یا ریکارڈ کریں</string>
+    <string name="voice_file_hint">کل متصل رہنے پر لوپ میں بجاتا ہے۔</string>
+    <string name="voice_import">آڈیو فائل درگراہ کریں</string>
+    <string name="voice_record">مائیکروفون سے ریکارڈ کریں</string>
+    <string name="voice_need_file">پہلے آڈیو فائل درگراہ یا ریکارڈ کریں</string>
+    <string name="voice_saved">آواز اپڈیٹ ہو گئی</string>
+    <string name="voice_imported">آڈیو فائل درگراھ ہو گئی</string>
+    <string name="voice_import_failed">اس فائل کو درگراہ نہیں کیا جا سکا</string>
+    <string name="voice_row_title">کل میں آواز</string>
+    <string name="voice_row_sub">کل کے دوران آپ کو کیا سنائی دیتا ہے (ہر شناخت کے لیے)</string>
+    <string name="voice_configure">آواز کی کنفیگر کریں</string>
+    <string name="voice_video">ویڈیو کل</string>
+    <string name="voice_video_hint">لائیو ویڈیو شامل کرتا ہے؛ کل منسلک ہونے پر فکس اسکرین کھولتا ہے۔</string>
+
+    <string name="title_record">ریکارڈنگ</string>
+    <string name="record_hint">اپنی آواز ریکارڈ کر رہے ہیں — مکمل ہونے پر سٹاپ دبائیں</string>
+    <string name="record_stop">سٹاپ</string>
+    <string name="record_failed">ریکارڈنگ ناکام ہوئی</string>
+
+    <string name="settings_timing">کل کا وقت</string>
+    <string name="timing_hint">کل سے پہلے ringing (آؤٹgoing سیلف کل)</string>
+    <string name="radio_c2">2 سیکنڈ کے بعد کل کریں</string>
+    <string name="radio_c5">5 سیکنڈ کے بعد کل کریں</string>
+    <string name="radio_c10">10 سیکنڈ کے بعد کل کریں</string>
+
+    <string name="settings_autoend">خودکار اختتام</string>
+    <string name="autoend_hint">کل متصل ہونے پر خودکار اختتام کرتا ہے۔</string>
+    <string name="radio_e_off">کبھی نہیں</string>
+    <string name="radio_e30">30 سیکنڈ کے بعد</string>
+    <string name="radio_e60">1 منٹ کے بعد</string>
+    <string name="radio_e300">5 منٹ کے بعد</string>
+
+    <string name="settings_autoanswer">خودکار جواب</string>
+    <string name="radio_off">بند</string>
+    <string name="radio_now">فوری جواب دیں</string>
+    <string name="radio_3">3 سیکنڈ کے بعد</string>
+    <string name="radio_5">5 سیکنڈ کے بعد</string>
+    <string name="radio_10">10 سیکنڈ کے بعد</string>
+    <string name="autoanswer_hint">آئنگ سیلف کل کا خودکار جواب دیتے ہیں (Android 8+).</string>
+
+    <string name="settings_audio">آواز</string>
+    <string name="switch_loopback">سیلف سننے لوپ بیک</string>
+    <string name="loopback_hint">آپ کے مائیکروفون کو کل میں پیپ کرتا ہے تاکہ آپ اپنی آواز سن سکیں</string>
+
+    <string name="settings_account">فون اکاؤنٹ</string>
+    <string name="settings_branding">کلر برانڈنگ</string>
+    <string name="branding_title">کلر برانڈنگ</string>
+    <string name="branding_preview">%1$s کے ذریعے کلز</string>
+    <string name="branding_hint">ڈائلر آپ کے نام کے تحت جو لیبل دکھاتا ہے۔ نئی کلz پر لاگو ہوتا ہے۔</string>
+    <string name="branding_change">برانڈنگ تبدیل کریں</string>
+    <string name="branding_dialog_title">کل برانڈنگ</string>
+    <string name="branding_dialog_hint">یہ متن ڈائلر میں “کلز duruch” کے بعد نظر آتا ہے۔ خالی چھوڑ کر ایپ کا نام استعمال کریں۔</string>
+    <string name="branding_save">محفوظ کریں</string>
+    <string name="branding_reset_button">ری سیٹ کریں</string>
+    <string name="branding_reset_toast">برانڈنگ %1$s پر ری سیٹ ہو گئی</string>
+    <string name="branding_saved">نیی کلز میں “کلز duruch %1$s” نظر آएंगे</string>
+    <string name="account_status_ready">رجسٹرڈ — کل کے لیے تیار</string>
+    <string name="account_status_self">رجسٹرڈ (سیلف مینجڈ) — تیار</string>
+    <string name="account_status_fail">رجسٹرڈ نہیں — دوبارہ کوشش کے لیے ایپ کھولیں</string>
+    <string name="account_status_legacy">فعال نہیں — کل اکاؤنٹس منیج کریں اور سیلف کلنگ آن کریں</string>
+    <string name="manage_accounts">کل اکاؤنٹس منیج کریں</string>
+
+    <string name="log_out">آؤٹgoing سیلف کل</string>
+    <string name="log_in">انkommt سیلف کل</string>
+    <string name="log_auto">خودکار جواب دیا گیا</string>
+    <string name="log_missed">خوتی ہوئی کل</string>
+    <string name="log_canceled">مُنسوخ کی گئی کل</string>
+    <string name="log_empty">اب تک کوئی سیلف کل نہیں</string>
+    <string name="log_clear">صاف کریں</string>
+    <string name="log_clear_confirm">مکمل سیلف 칼 لاگ صاف کریں؟</string>
+    <string name="log_video_out">آؤٹgoing ویڈیو سیلف کل</string>
+    <string name="log_video_in">انkommt ویڈیو سیلف کل</string>
+
+    <string name="pending_firing">آپ کی انkommt کل پیدا ہو رہی ہے…</string>
+    <string name="toast_scheduled_now">انkommt کل اب ringing ہے</string>
+    <string name="toast_scheduled">انkommt کل %s</string>
+    <string name="pending_chip">انkommt کل %s — منسوخ کرنے کے لیے دبائیں</string>
+    <string name="toast_canceled">مطروق کل منسوخ ہو گئی</string>
+    <string name="shortcut_step_call">نقلی انkommt کل</string>
+    <string name="shortcut_step_message">SMS پیغام بھیجیں</string>
+    <string name="shortcut_step_type_call">کل</string>
+    <string name="shortcut_step_type_message">پیغام</string>
+    <string name="shortcut_step_msg_hint">پیغام کا متن (صرف SMS مراحل کے لیے)</string>
+    <string name="perm_sms">پیغامات بھیجنے کے لیے SMS اجازت درکار ہے</string>
+
+    <string name="settings_incoming">انkommt کل</string>
+    <string name="incoming_wait_title">انتظار کا وقت</string>
+    <string name="incoming_wait_hint">انkommt کل کی نقل دبائے کے بعد کتنی دیر تک ring Schrēt日まで۔ فون پھر خاموش رہے گا۔</string>
+    <string name="incoming_delay_now">فوری</string>
+    <string name="radio_w_now">فوری</string>
+    <string name="radio_w1">1 سیکنڈ انتظار کریں</string>
+    <string name="radio_w2">2 سیکنڈ انتظار کریں</string>
+    <string name="radio_w3">3 سیکنڈ انتظار کریں</string>
+    <string name="radio_w5">5 سیکنڈ انتظار کریں</string>
+    <string name="radio_w10">10 سیکنڈ انتظار کریں</string>
+    <string name="radio_w30">30 سیکنڈ انتظار کریں</string>
+    <string name="radio_w60">1 منٹ انتظار کریں</string>
+    <string name="radio_w300">5 منٹ انتظار کریں</string>
+    <string name="radio_w900">15 منٹ انتظار کریں</string>
+    <string name="radio_w1800">30 منٹ انتظار کریں</string>
+    <string name="radio_w3600">1 گھنٹہ انتظار کریں</string>
+    <string name="radio_w7200">2 گھنٹے انتظار کریں</string>
+    <string name="radio_w10800">3 گھنٹے انتظار کریں</string>
+    <string name="incoming_ring_title">ring ٹائم آؤٹ</string>
+    <string name="ring_timeout_hint">اختیار شدہ وقت کے بعد ring روک دیتا ہے، حقیقی ٹیلیcom کی طرح۔</string>
+    <string name="exact_alarm_needed">درست अलارم کی اجازت دیں تاکہ دیر سے ringing ہو سکے۔</string>
+    <string name="radio_r_never">جواب نہ ملنے تک ring کریں (کوئ ٹائم آؤٹ نہیں)</string>
+    <string name="radio_r15">15 سیکنڈ کے بعد خودکار خاتم</string>
+    <string name="radio_r30">30 سیکنڈ کے بعد خودکار خاتم</string>
+    <string name="radio_r45">45 سیکنڈ کے بعد خودکار خاتم</string>
+    <string name="radio_r60">1 منٹ کے بعد خودکار خاتم</string>
+
+    <string-array name="incoming_delay_labels">
+        <item>فوری</item>
+        <item>3 سیکنڈ</item>
+        <item>5 سیکنڈ</item>
+        <item>10 سیکنڈ</item>
+        <item>30 سیکنڈ</item>
+        <item>1 منٹ</item>
+        <item>5 منٹ</item>
+        <item>15 منٹ</item>
+        <item>30 منٹ</item>
+        <item>1 گھنٹہ</item>
+        <item>2 گھنٹے</item>
+        <item>3 گھنٹے</item>
+    </string-array>
+
+    <string name="video_remote_label">remote ویڈیو</string>
+    <string name="video_local_label">آپ</string>
+    <string name="video_live">سیلف ویڈیو کل</string>
+    <string name="video_mute">inksular کریں</string>
+    <string name="video_muted">inksular شدہ</string>
+    <string name="video_camera">ویڈیو</string>
+    <string name="video_switch_camera">الٹائیں</string>
+    <string name="video_hangup">کل ختم کریں</string>
+    <string name="video_off">ویڈیو بند</string>
+    <string name="video_unavailable">کیمرہ دستیاب نہیں</string>
+    <string name="perm_camera">لوکل پریویو کے لیے کیمرہ اجازت درکار ہے۔</string>
+
+    <string name="title_sms_autoreply">SMS آٹو ریپلی</string>
+    <string name="sms_autoreply_title">SMS آٹو ریپلی</string>
+    <string name="sms_autoreply_hint">ہر انkommt SMS پر خودکار آپ کے پیغام سے جواب دیں۔</string>
+    <string name="sms_autoreply_enabled">خودکار جواب فعال کریں</string>
+    <string name="sms_autoreply_message_label">جواب پیغام</string>
+    <string name="sms_autoreply_message_hint">مثال: ہیلو، میں مصروف ہوں — بعد میں جواب دوں گا۔</string>
+    <string name="sms_autoreply_saved">خودکار جواب محفوظ ہو گیا</string>
+    <string name="perm_sms_receive">خودکار جواب کے لیے SMS وصول کرنے کی اجازت درکار ہے</string>
+    <string name="perm_sms_send">خودکار جواب کے لیے SMS بھیجنے کی اجازت درکار ہے</string>
+
+    <string name="title_sms_log">SMS لاگ</string>
+    <string name="sms_log_status">SMS لاگ: %d پیغامات</string>
+
+    <string name="widget_title">šírct کٹ سیٹ</string>
+    <string name="widget_sub_tap">چلنے کے لیے دبائیں</string>
+    <string name="widget_sub_not_configured">کونفیگر کرنے کے لیے دبائیں</string>
+    <string name="widget_configure_title">widget کو ہیں</string>
+    <string name="widget_choose_set">چلنے کے لیے shortcut سیٹ منتخب کریں</string>
+    <string name="widget_cancel">منسوخ کریں</string>
+</resources>

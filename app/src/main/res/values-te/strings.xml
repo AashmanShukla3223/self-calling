@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">సెల్ఫ్ కాలింగ్</string>
+    <string name="tagline">స్థానిక డయలర్ ద్వారా మీకు మీరే కాల్ చేసుకోండి</string>
+    <string name="account_desc">మీకు మీరే కాల్</string>
+    <string name="footer">కాల్‌లు స్థానిక డయలర్ UI లో కనిపిస్తాయి — ఈ యాప్ వాటిని మాత్రమే ప్రారంభిస్తుంది.</string>
+
+    <string name="title_settings">సెట్టింగ్‌లు</string>
+    <string name="title_log">సెల్ఫ్-కాల్ లాగ్</string>
+    <string name="perm_granted">అనుమతి ఇవ్వబడింది</string>
+
+    <string name="status_title">సిస్టమ్ స్థితి</string>
+    <string name="status_account">టెలికాం ఖాతా</string>
+    <string name="status_account_ok">నమోదు చేయబడింది</string>
+    <string name="status_account_fail">నమోదు కాలేదు — యాప్‌ను మళ్లీ తెరవండి</string>
+    <string name="status_account_legacy">సెట్టింగ్‌లు → ఫోన్ ఖాతా లో ఒకసారి ప్రారంభించండి</string>
+    <string name="status_call">కాల్ చేయడానికి అనుమతి</string>
+    <string name="status_perm_ok">ఇవ్వబడింది</string>
+    <string name="status_call_missing">అనుమతి కోసం కాల్ బటన్ నొక్కండి</string>
+    <string name="status_answer">కాల్‌కు సమాధానం ఇవ్వడానికి అనుమతి</string>
+    <string name="status_answer_missing">స్వయంచాలక సమాధానానికి అవసరం</string>
+    <string name="status_mic">మైక్రోఫోన్</string>
+    <string name="status_mic_ok">ఇవ్వబడింది</string>
+    <string name="status_mic_missing">స్వీయ శ్రవణానికి అవసరం</string>
+
+    <string name="action_call">నాకు నేనే కాల్ చేయండి</string>
+    <string name="action_incoming">ఇన్‌కమింగ్ కాల్‌ను అనుకరించండి</string>
+    <string name="wait_home_now">వెంటనే మోగుతుంది — వేచి ఉండే సమయాన్ని మార్చడానికి నొక్కండి</string>
+    <string name="wait_home">%s తర్వాత మోగుతుంది — వేచి ఉండే సమయాన్ని మార్చడానికి నొక్కండి</string>
+
+    <string name="settings_identity">కాలర్ గుర్తింపు</string>
+    <string name="settings_name_label">కాల్ స్క్రీన్‌పై కనిపించే పేరు</string>
+    <string name="preset_number_label">మొబైల్ నంబర్</string>
+    <string name="preset_card_label">యాక్టివ్ గుర్తింపు</string>
+    <string name="preset_hint">ప్రీసెట్‌లను నిర్వహించడానికి నొక్కండి</string>
+    <string name="title_presets">ప్రీసెట్‌లు</string>
+    <string name="preset_add">జోడించు</string>
+    <string name="preset_edit">సవరించు</string>
+    <string name="preset_delete">తొలగించు</string>
+    <string name="preset_save">సేవ్ చేయి</string>
+    <string name="preset_need_one">కనీసం ఒక ప్రీసెట్‌ను ఉంచండి</string>
+    <string name="preset_invalid">పేరు మరియు నంబర్ అవసరం</string>
+    <string name="preset_empty">ప్రీసెట్‌లు లేవు</string>
+    <string name="manage_presets">ప్రీసెట్‌లను నిర్వహించు</string>
+    <string name="preset_voice">వాయిస్</string>
+    <string name="preset_import">దిగుమతి చేయి</string>
+    <string name="preset_import_title">ప్రీసెట్‌లను దిగుమతి చేయి</string>
+    <string name="preset_import_contacts">పరిచయాల నుండి</string>
+    <string name="preset_import_vcf">.vcf ఫైల్ నుండి</string>
+    <string name="preset_import_reading">దిగుమతి అవుతోంది…</string>
+    <string name="preset_import_failed">ఆ ఫైల్ లేదా చిరునామా పుస్తకాన్ని చదవలేకపోయాము</string>
+    <string name="preset_import_empty">ఫోన్ నంబర్‌లు ఏవీ కనుగొనబడలేదు</string>
+    <string name="preset_import_none">కొత్త ప్రీసెట్‌లు లేవు — ఆ నంబర్‌లు ఇప్పటికే జాబితాలో ఉన్నాయి</string>
+    <string name="preset_import_contacts_denied">దిగుమతి చేయడానికి పరిచయాల అనుమతి అవసరం</string>
+    <plurals name="preset_imported">
+        <item quantity="one">%1$d ప్రీసెట్ దిగుమతి అయింది</item>
+        <item quantity="other">%1$d ప్రీసెట్‌లు దిగుమతి అయ్యాయి</item>
+    </plurals>
+
+    <string name="title_voice">కాల్‌లో వాయిస్</string>
+    <string name="voice_source">వాయిస్ మూలం</string>
+    <string name="voice_none">నిశ్శబ్దం</string>
+    <string name="voice_mic">ప్రత్యక్ష మైక్రోఫోన్</string>
+    <string name="voice_file">ఆడియో ఫైల్</string>
+    <string name="voice_file_section">ఆడియో ఫైల్</string>
+    <string name="voice_no_file">ఫైల్ లేదు — క్రింద దిగుమతి చేయండి లేదా రికార్డ్ చేయండి</string>
+    <string name="voice_file_hint">కాల్ కనెక్ట్ అయి ఉన్నప్పుడు లూప్‌లో ప్లే అవుతుంది.</string>
+    <string name="voice_import">ఆడియో ఫైల్ దిగుమతి చేయి</string>
+    <string name="voice_record">మైక్రోఫోన్‌తో రికార్డ్ చేయి</string>
+    <string name="voice_need_file">మొదట ఆడియో ఫైల్‌ను దిగుమతి చేయండి లేదా రికార్డ్ చేయండి</string>
+    <string name="voice_saved">వాయిస్ నవీకరించబడింది</string>
+    <string name="voice_imported">ఆడియో ఫైల్ దిగుమతి అయింది</string>
+    <string name="voice_import_failed">ఆ ఫైల్‌ను దిగుమతి చేయలేకపోయాము</string>
+    <string name="voice_row_title">కాల్‌లో వాయిస్</string>
+    <string name="voice_row_sub">కాల్ సమయంలో మీరు వినేది (ప్రతి గుర్తింపుకు)</string>
+    <string name="voice_configure">వాయిస్‌ను కాన్ఫిగర్ చేయి</string>
+    <string name="voice_video">వీడియో కాల్</string>
+    <string name="voice_video_hint">ప్రత్యక్ష వీడియోను జోడిస్తుంది; కాల్ కనెక్ట్ అయినప్పుడు పూర్తి స్క్రీన్ వీడియో స్క్రీన్ తెరుచుకుంటుంది.</string>
+
+    <string name="title_record">రికార్డింగ్</string>
+    <string name="record_hint">మీ వాయిస్ రికార్డ్ అవుతోంది — పూర్తయ్యాక ఆపు నొక్కండి</string>
+    <string name="record_stop">ఆపు</string>
+    <string name="record_failed">రికార్డింగ్ విఫలమైంది</string>
+
+    <string name="settings_timing">కాల్ సమయం</string>
+    <string name="timing_hint">కనెక్ట్ అయ్యే ముందు మోగడం (అవుట్‌గోయింగ్ సెల్ఫ్-కాల్)</string>
+    <string name="radio_c2">2 సెకన్ల తర్వాత కనెక్ట్ చేయి</string>
+    <string name="radio_c5">5 సెకన్ల తర్వాత కనెక్ట్ చేయి</string>
+    <string name="radio_c10">10 సెకన్ల తర్వాత కనెక్ట్ చేయి</string>
+
+    <string name="settings_autoend">స్వయం ముగింపు</string>
+    <string name="autoend_hint">కనెక్ట్ అయిన తర్వాత కాల్ స్వయంచాలకంగా ముగుస్తుంది.</string>
+    <string name="radio_e_off">ఎప్పుడూ వద్దు</string>
+    <string name="radio_e30">30 సెకన్ల తర్వాత</string>
+    <string name="radio_e60">1 నిమిషం తర్వాత</string>
+    <string name="radio_e300">5 నిమిషాల తర్వాత</string>
+    <string name="settings_autoanswer">స్వయంచాలక సమాధానం</string>
+    <string name="radio_off">ఆఫ్</string>
+    <string name="radio_now">వెంటనే సమాధానం ఇవ్వు</string>
+    <string name="radio_3">3 సెకన్ల తర్వాత</string>
+    <string name="radio_5">5 సెకన్ల తర్వాత</string>
+    <string name="radio_10">10 సెకన్ల తర్వాత</string>
+    <string name="autoanswer_hint">మీరు అనుకరించిన ఇన్‌కమింగ్ కాల్‌కు స్వయంచాలకంగా సమాధానం ఇస్తుంది (Android 8+).</string>
+
+    <string name="settings_audio">ఆడియో</string>
+    <string name="switch_loopback">స్వీయ శ్రవణ లూప్‌బ్యాక్</string>
+    <string name="loopback_hint">మీ మైక్రోఫోన్‌ను కాల్‌లోకి పంపి మీరు మిమ్మల్ని వినగలరు</string>
+
+    <string name="settings_account">ఫోన్ ఖాతా</string>
+    <string name="settings_branding">డయలర్ బ్రాండింగ్</string>
+    <string name="branding_title">కాలర్ బ్రాండింగ్</string>
+    <string name="branding_preview">%1$s ద్వారా కాల్‌లు</string>
+    <string name="branding_hint">డయలర్ మీ పేరు క్రింద చూపించే లేబుల్. కొత్త కాల్‌లకు వర్తిస్తుంది.</string>
+    <string name="branding_change">బ్రాండింగ్ మార్చు</string>
+    <string name="branding_dialog_title">కాల్ బ్రాండింగ్</string>
+    <string name="branding_dialog_hint">ఈ టెక్స్ట్ డయలర్‌లో “Calls via” తర్వాత కనిపిస్తుంది. యాప్ పేరు ఉపయోగించడానికి ఖాళీగా ఉంచండి.</string>
+    <string name="branding_save">సేవ్ చేయి</string>
+    <string name="branding_reset_button">రీసెట్</string>
+    <string name="branding_reset_toast">బ్రాండింగ్ %1$s కు రీసెట్ చేయబడింది</string>
+    <string name="branding_saved">కొత్త కాల్‌లు “Calls via %1$s” చూపిస్తాయి</string>
+    <string name="account_status_ready">నమోదు చేయబడింది — కాల్‌కు సిద్ధం</string>
+    <string name="account_status_self">నమోదు చేయబడింది (స్వీయ-నిర్వహణ) — సిద్ధం</string>
+    <string name="account_status_fail">నమోదు కాలేదు — మళ్లీ ప్రయత్నించడానికి యాప్‌ను తెరవండి</string>
+    <string name="account_status_legacy">ప్రారంభించబడలేదు — Manage calling accounts తెరిచి Self Calling ఆన్ చేయండి</string>
+    <string name="manage_accounts">కాలింగ్ ఖాతాలను నిర్వహించు</string>
+
+    <string name="log_out">అవుట్‌గోయింగ్ సెల్ఫ్-కాల్</string>
+    <string name="log_in">ఇన్‌కమింగ్ సెల్ఫ్-కాల్</string>
+    <string name="log_auto">స్వయంచాలక సమాధానం</string>
+    <string name="log_missed">మిస్ అయింది</string>
+    <string name="log_canceled">రద్దు చేయబడింది</string>
+    <string name="log_empty">ఇంకా సెల్ఫ్ కాల్‌లు లేవు</string>
+    <string name="log_clear">క్లియర్ చేయి</string>
+    <string name="log_clear_confirm">మొత్తం సెల్ఫ్-కాల్ లాగ్‌ను క్లియర్ చేయాలా?</string>
+<string name="log_video_out">అవుట్‌గోయింగ్ వీడియో సెల్ఫ్-కాల్</string>
+<string name="log_video_in">ఇన్‌కమింగ్ వీడియో సెల్ఫ్-కాల్</string>
+
+    <string name="pending_firing">మీ ఇన్‌కమింగ్ కాల్ ప్లేస్ చేయబడుతోంది…</string>
+    <string name="toast_scheduled_now">ఇన్‌కమింగ్ కాల్ ఇప్పుడు మోగుతోంది</string>
+    <string name="toast_scheduled">ఇన్‌కమింగ్ కాల్ %s</string>
+    <string name="pending_chip">ఇన్‌కమింగ్ కాల్ %s — రద్దు చేయడానికి నొక్కండి</string>
+    <string name="toast_canceled">షెడ్యూల్ చేసిన కాల్ రద్దు చేయబడింది</string>
+    <string name="shortcut_step_call">అనుకరించిన ఇన్‌కమింగ్ కాల్</string>
+    <string name="shortcut_step_message">SMS సందేశం పంపు</string>
+    <string name="shortcut_step_type_call">కాల్</string>
+    <string name="shortcut_step_type_message">సందేశం</string>
+    <string name="shortcut_step_msg_hint">సందేశ టెక్స్ట్ (SMS దశలకు మాత్రమే)</string>
+    <string name="perm_sms">సందేశాలు పంపడానికి SMS అనుమతి అవసరం</string>
+
+    <string name="settings_incoming">ఇన్‌కమింగ్ కాల్</string>
+    <string name="incoming_wait_title">వేచి ఉండే సమయం</string>
+    <string name="incoming_wait_hint">మీరు ఇన్‌కమింగ్ కాల్‌ను అనుకరించండి నొక్కిన తర్వాత ఎంత సేపటికి మోగడం ప్రారంభమవుతుంది. అంతవరకు ఫోన్ నిశ్శబ్దంగా ఉంటుంది.</string>
+    <string name="incoming_delay_now">వెంటనే</string>
+    <string name="radio_w_now">వెంటనే</string>
+    <string name="radio_w1">1 సెకను వేచి ఉండు</string>
+    <string name="radio_w2">2 సెకన్లు వేచి ఉండు</string>
+    <string name="radio_w3">3 సెకన్లు వేచి ఉండు</string>
+    <string name="radio_w5">5 సెకన్లు వేచి ఉండు</string>
+    <string name="radio_w10">10 సెకన్లు వేచి ఉండు</string>
+    <string name="radio_w30">30 సెకన్లు వేచి ఉండు</string>
+    <string name="radio_w60">1 నిమిషం వేచి ఉండు</string>
+    <string name="radio_w300">5 నిమిషాలు వేచి ఉండు</string>
+    <string name="radio_w900">15 నిమిషాలు వేచి ఉండు</string>
+    <string name="radio_w1800">30 నిమిషాలు వేచి ఉండు</string>
+    <string name="radio_w3600">1 గంట వేచి ఉండు</string>
+    <string name="radio_w7200">2 గంటలు వేచి ఉండు</string>
+    <string name="radio_w10800">3 గంటలు వేచి ఉండు</string>
+    <string name="incoming_ring_title">మోగే సమయ పరిమితి</string>
+    <string name="ring_timeout_hint">నిజమైన టెలికాం కంపెనీల మాదిరిగా ఎంచుకున్న సమయం తర్వాత మోగడాన్ని ఆపుతుంది.</string>
+    <string name="exact_alarm_needed">పొడవైన నిరీక్షణ తర్వాత కాల్ మోగడానికి ఖచ్చితమైన అలారం అనుమతి ఇవ్వండి.</string>
+    <string name="radio_r_never">సమాధానం ఇచ్చే వరకు మోగుతుంది (ఎప్పుడూ పరిమితి లేదు)</string>
+    <string name="radio_r15">15 సెకన్ల తర్వాత స్వయంచాలకంగా మూసివేయి</string>
+    <string name="radio_r30">30 సెకన్ల తర్వాత స్వయంచాలకంగా మూసివేయి</string>
+    <string name="radio_r45">45 సెకన్ల తర్వాత స్వయంచాలకంగా మూసివేయి</string>
+    <string name="radio_r60">1 నిమిషం తర్వాత స్వయంచాలకంగా మూసివేయి</string>
+
+    <string-array name="incoming_delay_labels">
+        <item>వెంటనే</item>
+        <item>3 సెకన్లు</item>
+        <item>5 సెకన్లు</item>
+        <item>10 సెకన్లు</item>
+        <item>30 సెకన్లు</item>
+        <item>1 నిమిషం</item>
+        <item>5 నిమిషాలు</item>
+        <item>15 నిమిషాలు</item>
+        <item>30 నిమిషాలు</item>
+        <item>1 గంట</item>
+        <item>2 గంటలు</item>
+        <item>3 గంటలు</item>
+    </string-array>
+
+    <string name="video_remote_label">రిమోట్ వీడియో</string>
+    <string name="video_local_label">మీరు</string>
+    <string name="video_live">సెల్ఫ్ వీడియో కాల్</string>
+    <string name="video_mute">మ్యూట్</string>
+    <string name="video_muted">మ్యూట్ చేయబడింది</string>
+    <string name="video_camera">వీడియో</string>
+    <string name="video_switch_camera">ఫ్లిప్</string>
+    <string name="video_hangup">కాల్ కట్ చేయి</string>
+    <string name="video_off">వీడియో ఆఫ్</string>
+    <string name="video_unavailable">కెమెరా అందుబాటులో లేదు</string>
+    <string name="perm_camera">స్థానిక ప్రివ్యూ కోసం కెమెరా అనుమతి అవసరం.</string>
+
+    <string name="title_sms_autoreply">SMS స్వయంచాలక ప్రత్యుత్తరం</string>
+    <string name="sms_autoreply_title">SMS స్వయంచాలక ప్రత్యుత్తరం</string>
+    <string name="sms_autoreply_hint">ప్రతి ఇన్‌కమింగ్ SMS కు మీ సందేశంతో స్వయంచాలకంగా సమాధానం ఇవ్వండి.</string>
+    <string name="sms_autoreply_enabled">స్వయంచాలక ప్రత్యుత్తరాన్ని ప్రారంభించు</string>
+    <string name="sms_autoreply_message_label">ప్రత్యుత్తర సందేశం</string>
+    <string name="sms_autoreply_message_hint">ఉదా. నమస్కారం, నేను బిజీగా ఉన్నాను - తర్వాత సమాధానం ఇస్తాను.</string>
+    <string name="sms_autoreply_saved">స్వయంచాలక ప్రత్యుత్తరం సేవ్ అయింది</string>
+    <string name="perm_sms_receive">స్వయంచాలక ప్రత్యుత్తరానికి SMS స్వీకరణ అనుమతి అవసరం</string>
+    <string name="perm_sms_send">స్వయంచాలక ప్రత్యుత్తరానికి SMS పంపే అనుమతి అవసరం</string>
+
+    <string name="title_sms_log">SMS లాగ్</string>
+    <string name="sms_log_status">SMS లాగ్: %d సందేశాలు</string>
+
+    <string name="widget_title">షార్ట్‌కట్ సెట్</string>
+    <string name="widget_sub_tap">అమలు చేయడానికి నొక్కండి</string>
+    <string name="widget_sub_not_configured">కాన్ఫిగర్ చేయడానికి నొక్కండి</string>
+    <string name="widget_configure_title">విడ్జెట్‌ను కాన్ఫిగర్ చేయి</string>
+    <string name="widget_choose_set">అమలు చేయడానికి షార్ట్‌కట్ సెట్‌ను ఎంచుకోండి</string>
+    <string name="widget_cancel">రద్దు</string>
+</resources>

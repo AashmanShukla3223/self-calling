@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">स्वतः call</string>
+    <string name="tagline">मोलू dialer मधून स्वतःला call करून्</string>
+    <string name="account_desc">स्वतःला call</string>
+    <string name="footer">Calls मूल dialer UI मध्ये दिसेल — ही app फक्त ती ठेवते.</string>
+
+    <string name="title_settings">सेटिंग्ज्</string>
+    <string name="title_log">स्व-call लॉग</string>
+    <string name="perm_granted">अनुज्ञा देण्याचे</string>
+
+    <string name="status_title">सिस्टम स्थिती</string>
+    <string name="status_account">टेलिकॉम खाता</string>
+    <string name="status_account_ok">नोंदविलेले</string>
+    <string name="status_account_fail">नोंदविलेले नाही — app पुन्हा उघडा</string>
+    <string name="status_account_legacy">सेटिंग्जमध्ये एकदा सक्षम करा → फोन खाता</string>
+    <string name="status_call">Call करण्याची परवानगी</string>
+    <string name="status_perm_ok">दिलेली आहे</string>
+    <string name="status_call_missing">परवानगी देण्यासाठी call बटण दाबा</string>
+    <string name="status_answer">Call उत्तर देण्याची परवानगी</string>
+    <string name="status_answer_missing">स्वचालित उत्तरासाठी आवश्यक</string>
+    <string name="status_mic">मायक्रोफोन</string>
+    <string name="status_mic_ok">दिलेली आहे</string>
+    <string name="status_mic_missing">स्व-ऐकाठीसाठी आवश्यक</string>
+
+    <string name="action_call">स्वतःला call करून्</string>
+    <string name="action_incoming">येणारी call सिम्युलेट करून्</string>
+    <string name="wait_home_now">लवकरच वाजते — वाट पाहणं बदलण्यासाठी दाबा</string>
+    <string name="wait_home">%s वाजते — वाट पाहणं बदलण्यासाठी दाबा</string>
+
+    <string name="settings_identity">Caller ओळख</string>
+    <string name="settings_name_label">Call स्क्रीनवर दिसणारे नांव</string>
+    <string name="preset_number_label">मोबाईल नंबर</string>
+    <string name="preset_card_label">सक्रिय ओळख</string>
+    <string name="preset_hint">Preset व्यवस्थापन करून्</string>
+    <string name="title_presets">Presets</string>
+    <string name="preset_add">जोडून्</string>
+    <string name="preset_edit">संपादन करून्</string>
+    <string name="preset_delete">हटवून्</string>
+    <string name="preset_save">सेव्ह करून्</string>
+    <string name="preset_need_one">किमान एक preset ठेवून्</string>
+    <string name="preset_invalid">नांव आणि नंबर आवश्यक आहे</string>
+    <string name="preset_empty">कोणताही preset नाही</string>
+    <string name="manage_presets">Presets व्यवस्थापित करून्</string>
+    <string name="preset_voice">आवाज</string>
+    <string name="preset_import">आयात करून्</string>
+    <string name="preset_import_title">Presets आयात करून्</string>
+    <string name="preset_import_contacts">संपर्कातून</string>
+    <string name="preset_import_vcf">VCF फाइलून</string>
+    <string name="preset_import_reading">आयात होत आहे…</string>
+    <string name="preset_import_failed">ही फाइल किंवा एड्रेस बुक वाचता येत नाही</string>
+    <string name="preset_import_empty">कोणताही फोन नंबर सापडला नाही</string>
+    <string name="preset_import_none">कोणतेही नवीन presets नाही — ते नंबर आधीच यादीत आहेत</string>
+    <string name="preset_import_contacts_denied">आयात करण्यासाठी संपर्क परवानगी आवश्यक आहे</string>
+    <plurals name="preset_imported">
+        <item quantity="one">%1$d preset आयात केले आहे</item>
+        <item quantity="other">%1$d presets आयात केले आहेत</item>
+    </plurals>
+
+    <string name="title_voice">Call मध्ये आवाज</string>
+    <string name="voice_source">आवाज स्रोत</string>
+    <string name="voice_none">मौन</string>
+    <string name="voice_mic">लाइव्ह मायक्रोफोन</string>
+    <string name="voice_file">ऑडिओ फाइल</string>
+    <string name="voice_file_section">ऑडिओ फाइल</string>
+    <string name="voice_no_file">कोणतीही फाइल नाही — खालील आयात किंवा रेकॉर्ड करून्</string>
+    <string name="voice_file_hint">कनेक्ट झाल्यावर लूपमध्ये वाजते</string>
+    <string name="voice_import">ऑडिओ फाइल आयात करून्</string>
+    <string name="voice_record">मायक्रोफोनने रेकॉर्ड करून्</string>
+    <string name="voice_need_file">पहिले ऑडिओ फाइल आयात किंवा रेकॉर्ड करून्</string>
+    <string name="voice_saved">आवाज अपडेट झाले आहे</string>
+    <string name="voice_imported">ऑडिओ फाइल आयात झाली आहे</string>
+    <string name="voice_import_failed">ही फाइल आयात करता येत नाही</string>
+    <string name="voice_row_title">Call मध्ये आवाज</string>
+    <string name="voice_row_sub">Call वेळेस ऐकून घेतलेला आवाज (प्रत्येक ओळखीनुसार)</string>
+    <string name="voice_configure">आवाज कॉन्फिगर करून्</string>
+    <string name="voice_video">व्हिडिओ Call</string>
+    <string name="voice_video_hint">लाइव्ह व्हिडिओ जोडते; Call कनेक्ट झाल्यावर फुल-स्क्रीन व्हिडिओ उघडतो</string>
+
+    <string name="title_record">रेकॉर्डिंग</string>
+    <string name="record_hint">तुमची आवाज रेकॉर्ड करत आहोत — पूर्ण झाल्यावर स्टॉप दाबा</string>
+    <string name="record_stop">स्टॉप</string>
+    <string name="record_failed">रेकॉर्डिंग अपयशी</string>
+
+    <string name="settings_timing">Call टाइमिंग</string>
+    <string name="timing_hint">कनेक्ट होऊ नगोव्हावा तेव्हा वाजते (बहिर्गत स्व-call)</string>
+    <string name="radio_c2">2 सेकंदानंतर कनेक्ट करून्</string>
+    <string name="radio_c5">5 सेकंदानंतर कनेक्ट करून्</string>
+    <string name="radio_c10">10 सेकंदानंतर कनेक्ट करून्</string>
+
+    <string name="settings_autoend">स्वचालित समाप्ती</string>
+    <string name="autoend_hint">कनेक्ट झाल्यावर Call स्वचालितपणे संपते</string>
+    <string name="radio_e_off">कधीही नाही</string>
+    <string name="radio_e30">30 सेकंदांनंतर</string>
+    <string name="radio_e60">1 मिनिटानंतर</string>
+    <string name="radio_e300">5 मिनिटांनंतर</string>
+
+    <string name="settings_autoanswer">स्वचालित उत्तर</string>
+    <string name="radio_off">बंद</string>
+    <string name="radio_now">लवकरच उत्तर द्या</string>
+    <string name="radio_3">3 सेकंदांनंतर</string>
+    <string name="radio_5">5 सेकंदांनंतर</string>
+    <string name="radio_10">10 सेकंदांनंतर</string>
+    <string name="autoanswer_hint">तुमच्या सिम्युलेटेड येणारी Call चा स्वचालित उत्तर द्या (Android 8+)</string>
+
+    <string name="settings_audio">ऑडिओ</string>
+    <string name="switch_loopback">स्व-ऐकाठी लूपबॅक</string>
+    <string name="loopback_hint">तुमचे मायक्रोफोन Call मध्ये पाइप करा जेणेकरून तुम्हाला स्वतःला ऐकू येईल</string>
+
+    <string name="settings_account">फोन खाता</string>
+    <string name="settings_branding">Caller ब्रँडिंग</string>
+    <string name="branding_title">Caller ब्रँडिंग</string>
+    <string name="branding_preview">%1$s द्वारे Calls</string>
+    <string name="branding_hint">Dialer तुमच्या नांवाखाली लेबल दर्शवते. नव्या Calls ला लागू होते</string>
+    <string name="branding_change">ब्रँडिंग बदलून्</string>
+    <string name="branding_dialog_title">Call ब्रँडिंग</string>
+    <string name="branding_dialog_hint">Dialer मध्ये “Calls वाया” नंतर दिसणारा मजकूर. रिकामा ठेवल्यास app नांव वापरले जाईल</string>
+    <string name="branding_save">सेव्ह करून्</string>
+    <string name="branding_reset_button">रीसेट करून्</string>
+    <string name="branding_reset_toast">ब्रँडिंग %1$s वर रीसेट झाले आहे</string>
+    <string name="branding_saved">नव्या Calls दाखवेल “Calls वाया %1$s”</string>
+    <string name="account_status_ready">नोंदविलेले — Call साठी तयार</string>
+    <string name="account_status_self">नोंदविलेले (स्व-व्यवस्थापित) — तयार</string>
+    <string name="account_status_fail">नोंदविलेले नाही — पुन्हा प्रयत्न करण्यासाठी App उघडा</string>
+    <string name="account_status_legacy">सक्षम नाही — Call खाते व्यवस्थापित करा आणि स्व-Calling चालू करा</string>
+    <string name="manage_accounts">Call खाते व्यवस्थापित करा</string>
+
+    <string name="log_out">बहिर्गत स्व-Call</string>
+    <string name="log_in">येणारी स्व-Call</string>
+    <string name="log_auto">स्वचालितपणे उत्तर देण्यात आले आहे</string>
+    <string name="log_missed">चूकलेली</string>
+    <string name="log_canceled">रद्द केलेली</string>
+    <string name="log_empty">आतापर्यंत कोणतीही स्व-Call नाही</string>
+    <string name="log_clear">साफ करून्</string>
+    <string name="log_clear_confirm">पूरा स्व-Call लॉग साफ करावा?</string>
+    <string name="log_video_out">बहिर्गत स्व-व्हिडिओ Call</string>
+    <string name="log_video_in">येणारी स्व-व्हिडिओ Call</string>
+
+    <string name="pending_firing">तुमची येणारी Call ठेवली जात आहे…</string>
+    <string name="toast_scheduled_now">येणारी Call आता वाजत आहे</string>
+    <string name="toast_scheduled">येणारी Call %s</string>
+    <string name="pending_chip">येणारी Call %s — रद्द करण्यासाठी दाबा</string>
+    <string name="toast_canceled">नियोजित Call रद्द झाली आहे</string>
+    <string name="shortcut_step_call">सिम्युलेटेड येणारी Call</string>
+    <string name="shortcut_step_message">SMS संदेश पाठवा</string>
+    <string name="shortcut_step_type_call">Call</string>
+    <string name="shortcut_step_type_message">संदेश</string>
+    <string name="shortcut_step_msg_hint">संदेश मजकूर (फक्त SMS स्टेपसाठी)</string>
+    <string name="perm_sms">संदेश पाठविण्यासाठी SMS परवानगी आवश्यक आहे</string>
+
+    <string name="settings_incoming">येणारी Call</string>
+    <string name="incoming_wait_title">वाट पाहण्याचा वेळ</string>
+    <string name="incoming_wait_hint">येणारी Call सिम्युलेट दाबल्यानंतर कसे वेळ वाजते. फोन तोपर्यंत शांत राहील</string>
+    <string name="incoming_delay_now">लवकरच</string>
+    <string name="radio_w_now">लवकरच</string>
+    <string name="radio_w1">1 सेकंद वाट पहा</string>
+    <string name="radio_w2">2 सेकंद वाट पहा</string>
+    <string name="radio_w3">3 सेकंद वाट पहा</string>
+    <string name="radio_w5">5 सेकंद वाट पहा</string>
+    <string name="radio_w10">10 सेकंद वाट पहा</string>
+    <string name="radio_w30">30 सेकंद वाट पहा</string>
+    <string name="radio_w60">1 मिनिट वाट पहा</string>
+    <string name="radio_w300">5 मिनिट वाट पहा</string>
+    <string name="radio_w900">15 मिनिट वाट पहा</string>
+    <string name="radio_w1800">30 मिनिट वाट पहा</string>
+    <string name="radio_w3600">1 तास वाट पहा</string>
+    <string name="radio_w7200">2 तास वाट पहा</string>
+    <string name="radio_w10800">3 तास वाट पहा</string>
+    <string name="incoming_ring_title">वाजण्याचा टाइमआउट</string>
+    <string name="ring_timeout_hint">थांबविण्यासाठी निवडलेला वेळ, वास्तव Telecom प्रमाणे</string>
+    <string name="exact_alarm_needed">दiru वेळ नंतरही Call वाजू शकेल, अचूक अलार्मची परवानगी द्या</string>
+    <string name="radio_r_never">उत्तर न मिळेपर्यंत वाजवणे (कोणताही टाइमआउट नाही)</string>
+    <string name="radio_r15">15 सेकंदानंतर स्वचालित रद्द करा</string>
+    <string name="radio_r30">30 सेकंदानंतर स्वचालित रद्द करा</string>
+    <string name="radio_r45">45 सेकंदानंतर स्वचालित रद्द करा</string>
+    <string name="radio_r60">1 मिनिटानंतर स्वचालित रद्द करा</string>
+
+    <string-array name="incoming_delay_labels">
+        <item>लवकरच</item>
+        <item>1 सेकंद</item>
+        <item>2 सेकंद</item>
+        <item>3 सेकंद</item>
+        <item>5 सेकंद</item>
+        <item>10 सेकंद</item>
+        <item>30 सेकंद</item>
+        <item>1 मिनिट</item>
+        <item>5 मिनिट</item>
+        <item>15 मिनिट</item>
+        <item>30 मिनिट</item>
+        <item>1 तास</item>
+        <item>2 तास</item>
+        <item>3 तास</item>
+    </string-array>
+
+    <string name="video_remote_label">रिमोट व्हिडिओ</string>
+    <string name="video_local_label">तुम्ही</string>
+    <string name="video_live">स्व-व्हिडिओ Call</string>
+    <string name="video_mute">म्यूट करा</string>
+    <string name="video_muted">म्यूट केलेले आहे</string>
+    <string name="video_camera">व्हिडिओ</string>
+    <string name="video_switch_camera">फ्लिप करा</string>
+    <string name="video_hangup">Call संपवून्</string>
+    <string name="video_off">व्हिडिओ बंद</string>
+    <string name="video_unavailable">कॅमेरा उपलब्ध नाही</string>
+    <string name="perm_camera">स्थानिक पूर्वावलोकनासाठी कॅमेरा परवानगी आवश्यक आहे</string>
+
+    <string name="title_sms_autoreply">SMS ऑटो-रिप्लाई</string>
+    <string name="sms_autoreply_title">SMS ऑटो-रिप्लाई</string>
+    <string name="sms_autoreply_hint">प्रत्येक येणारी SMS तुमच्या संदेशाने स्वचालितपणे उत्तर द्या</string>
+    <string name="sms_autoreply_enabled">स्वचालित उत्तर सक्षम करून्</string>
+    <string name="sms_autoreply_message_label">उत्तर संदेश</string>
+    <string name="sms_autoreply_message_hint">उदा. नमस्कार, मी व्यस्त आहे — नंतर उत्तर देईल</string>
+    <string name="sms_autoreply_saved">ऑटो-रिप्लाई सेव्ह केलेले आहे</string>
+    <string name="perm_sms_receive">स्वचालित उत्तरासाठी SMS प्राप्त करण्याची परवानगी आवश्यक आहे</string>
+    <string name="perm_sms_send">स्वचालित उत्तरासाठी SMS पाठविण्याची परवानगी आवश्यक आहे</string>
+
+    <string name="title_sms_log">SMS लॉग</string>
+    <string name="sms_log_status">SMS लॉग: %d संदेश</string>
+
+    <string name="widget_title">शॉर्टकट सेट</string>
+    <string name="widget_sub_tap">चालविण्यासाठी दाबा</string>
+    <string name="widget_sub_not_configured">कॉन्फिगर करण्यासाठी दाबा</string>
+    <string name="widget_configure_title">विजेट कॉन्फिगर करून्</string>
+    <string name="widget_choose_set">चालविण्यासाठी शॉर्टकट सेट निवडून्</string>
+    <string name="widget_cancel">रद्द करून्</string>
+</resources>
