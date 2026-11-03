@@ -10,4 +10,9 @@
         android:icon="@drawable/ic_history"
         android:showAsAction="always"
         android:title="@string/title_log" />
+    <item
+        android:id="@+id/action_shortcuts"
+        android:icon="@drawable/ic_add"
+        android:showAsAction="always"
+        android:title="Shortcuts" />
 </menu>
