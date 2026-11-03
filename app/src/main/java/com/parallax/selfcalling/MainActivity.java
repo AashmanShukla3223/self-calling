@@ -214,6 +214,10 @@ public class MainActivity extends Activity {
             startActivity(new Intent(this, LogActivity.class));
             return true;
         }
+        if (id == R.id.action_shortcuts) {
+            startActivity(new Intent(this, ShortcutSetsActivity.class));
+            return true;
+        }
         return super.onOptionsItemSelected(item);
     }
 

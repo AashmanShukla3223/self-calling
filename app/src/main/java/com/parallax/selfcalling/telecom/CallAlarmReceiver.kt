@@ -12,12 +12,12 @@ class CallAlarmReceiver : BroadcastReceiver() {
 
     override fun onReceive(c: Context, i: Intent) {
         val id = i.getIntExtra("id", -1)
-        val preset = i.getIntExtra("preset", Prefs.activeIndex(c))
+        val snapshot = i.getStringExtra(FgsIncomingService.EXTRA_PRESET_SNAPSHOT)
+        val ringTimeout = i.getIntExtra("ring_timeout", -1)
         if (id >= 0) CallScheduler.clearFired(c, id)
-        // Hand the actual Telecom request to a foreground service: Telecom is friendlier to
-        // incoming calls placed by a foregrounded process, and this survives long waits.
         val s = Intent(c, FgsIncomingService::class.java)
-            .putExtra(FgsIncomingService.EXTRA_PRESET_INDEX, preset)
+            .putExtra(FgsIncomingService.EXTRA_PRESET_SNAPSHOT, snapshot)
+            .putExtra(FgsIncomingService.EXTRA_RING_TIMEOUT, ringTimeout)
             .putExtra("id", id)
         try {
             if (Build.VERSION.SDK_INT >= 26) c.startForegroundService(s) else c.startService(s)

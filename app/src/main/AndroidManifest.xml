@@ -69,6 +69,24 @@
             android:parentActivityName=".MainActivity" />
 
         <activity
+            android:name=".ShortcutSetsActivity"
+            android:label="Shortcut sets"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".ShortcutEditorActivity"
+            android:label="Shortcut set"
+            android:exported="false"
+            android:parentActivityName=".ShortcutSetsActivity" />
+
+        <activity
+            android:name=".ShortcutRunActivity"
+            android:exported="true"
+            android:excludeFromRecents="true"
+            android:theme="@android:style/Theme.NoDisplay" />
+
+        <activity
             android:name=".telecom.VideoCallActivity"
             android:exported="false"
             android:excludeFromRecents="true"

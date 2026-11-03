@@ -24,7 +24,7 @@ object CallScheduler {
     private const val KEY_PENDING = "incoming_pending"
     private const val KEY_NEXT_ID = "incoming_next_id"
 
-    data class Pending(val id: Int, val at: Long, val presetIndex: Int)
+    data class Pending(val id: Int, val at: Long, val preset: Preset, val ringTimeout: Int = -1)
 
     private fun sp(c: Context) = c.getSharedPreferences("selfcall", Context.MODE_PRIVATE)
 
@@ -34,7 +34,14 @@ object CallScheduler {
             val arr = JSONArray(sp(c).getString(KEY_PENDING, "[]"))
             for (i in 0 until arr.length()) {
                 val o = arr.getJSONObject(i)
-                out.add(Pending(o.getInt("id"), o.getLong("at"), o.getInt("preset")))
+                val preset = if (o.has("preset") && o.get("preset") is JSONObject) {
+                    Preset.fromJson(o.getJSONObject("preset"))
+                } else {
+                    val idx = o.optInt("presetIndex", Prefs.activeIndex(c))
+                    val all = Prefs.presets(c)
+                    all.getOrElse(idx) { Prefs.activePreset(c) }
+                }
+                out.add(Pending(o.getInt("id"), o.getLong("at"), preset, o.optInt("ringTimeout", -1)))
             }
         } catch (_: Exception) {
         }
@@ -47,7 +54,8 @@ object CallScheduler {
             val o = JSONObject()
             o.put("id", p.id)
             o.put("at", p.at)
-            o.put("preset", p.presetIndex)
+            o.put("preset", p.preset.toJson())
+            o.put("ringTimeout", p.ringTimeout)
             arr.put(o)
         }
         sp(c).edit().putString(KEY_PENDING, arr.toString()).apply()
@@ -59,13 +67,14 @@ object CallScheduler {
         return n
     }
 
-    private fun alarmOp(c: Context, id: Int, presetIndex: Int): PendingIntent =
+    private fun alarmOp(c: Context, id: Int, preset: Preset, ringTimeout: Int): PendingIntent =
         PendingIntent.getBroadcast(
             c, id,
             Intent(c, CallAlarmReceiver::class.java)
                 .setAction("com.parallax.selfcalling.FIRE_INCOMING")
                 .putExtra("id", id)
-                .putExtra("preset", presetIndex),
+                .putExtra("preset_snapshot", preset.toJson().toString())
+                .putExtra("ring_timeout", ringTimeout),
             PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE)
 
     /** Opens system exact-alarm settings when a long delayed ring would miss the clock. */
@@ -86,15 +95,21 @@ object CallScheduler {
     /** Schedules a new independent incoming call; does not cancel other pending ones. */
     @JvmStatic
     fun fireIncoming(c: Context, delaySec: Int) {
+        fireIncoming(c, delaySec, Prefs.activePreset(c), -1)
+    }
+
+    /** Schedules a new independent incoming call for an explicit (possibly snapshotted) preset. */
+    @JvmStatic
+    @JvmOverloads
+    fun fireIncoming(c: Context, delaySec: Int, preset: Preset, ringTimeout: Int = -1) {
         val at = System.currentTimeMillis() + delaySec * 1000L
-        val presetIdx = Prefs.activeIndex(c)
         val id = nextId(c)
         val list = load(c)
-        list.add(Pending(id, at, presetIdx))
+        list.add(Pending(id, at, preset, ringTimeout))
         save(c, list)
 
         if (delaySec <= 0) {
-            TelecomHelper.simulateIncoming(c, presetIdx)
+            TelecomHelper.simulateIncoming(c, preset, ringTimeout)
             save(c, load(c).filter { it.id != id })
             return
         }
@@ -103,7 +118,8 @@ object CallScheduler {
             // short wait: use foreground service for on-time ring
             val s = Intent(c, FgsIncomingService::class.java)
                 .putExtra(FgsIncomingService.EXTRA_DELAY_MS, delaySec * 1000L)
-                .putExtra(FgsIncomingService.EXTRA_PRESET_INDEX, presetIdx)
+                .putExtra(FgsIncomingService.EXTRA_PRESET_SNAPSHOT, preset.toJson().toString())
+                .putExtra(FgsIncomingService.EXTRA_RING_TIMEOUT, ringTimeout)
                 .putExtra("id", id)
             if (Build.VERSION.SDK_INT >= 26) c.startForegroundService(s) else c.startService(s)
             return
@@ -112,7 +128,7 @@ object CallScheduler {
         ensureExactAlarms(c)
         val am = c.getSystemService(AlarmManager::class.java) ?: return
         val exact = Build.VERSION.SDK_INT < 31 || am.canScheduleExactAlarms()
-        val op = alarmOp(c, id, presetIdx)
+        val op = alarmOp(c, id, preset, ringTimeout)
         if (exact) {
             am.setExactAndAllowWhileIdle(AlarmManager.RTC_WAKEUP, at, op)
         } else {
@@ -125,7 +141,7 @@ object CallScheduler {
     fun cancel(c: Context) {
         for (p in load(c)) {
             try {
-                c.getSystemService(AlarmManager::class.java)?.cancel(alarmOp(c, p.id, p.presetIndex))
+                c.getSystemService(AlarmManager::class.java)?.cancel(alarmOp(c, p.id, p.preset, p.ringTimeout))
             } catch (_: Exception) {
             }
         }
@@ -143,7 +159,7 @@ object CallScheduler {
         val list = load(c)
         val target = list.firstOrNull { it.id == id } ?: return
         try {
-            c.getSystemService(AlarmManager::class.java)?.cancel(alarmOp(c, target.id, target.presetIndex))
+            c.getSystemService(AlarmManager::class.java)?.cancel(alarmOp(c, target.id, target.preset, target.ringTimeout))
         } catch (_: Exception) {
         }
         save(c, list.filter { it.id != id })
@@ -160,10 +176,10 @@ object CallScheduler {
     @JvmStatic
     fun pendingCount(c: Context): Int = load(c).size
 
-    /** Returns the preset index of the earliest pending call. */
+    /** Returns the earliest pending call's preset (or active). */
     @JvmStatic
-    fun pendingPresetIndex(c: Context): Int =
-        load(c).minByOrNull { it.at }?.presetIndex ?: Prefs.activeIndex(c)
+    fun pendingPreset(c: Context): Preset =
+        load(c).minByOrNull { it.at }?.preset ?: Prefs.activePreset(c)
 
     /** Removes a fired pending entry by id. */
     @JvmStatic

@@ -14,6 +14,7 @@ import android.telecom.PhoneAccountHandle
 import android.telecom.TelecomManager
 import com.parallax.selfcalling.R
 import com.parallax.selfcalling.util.Prefs
+import com.parallax.selfcalling.util.Preset
 
 /**
  * Telecom plumbing: registers the calling account, places the self-call, and simulates the
@@ -234,6 +235,24 @@ object TelecomHelper {
             tm.addNewIncomingCall(handle(c), extras)
         } catch (e: SecurityException) {
             // Thrown while the account is disabled (e.g. right after re-registering).
+            android.util.Log.w("SelfCall", "simulateIncoming: ${e.message}")
+        }
+    }
+
+    /** Rings a simulated incoming call from an explicit (snapshotted) preset. */
+    @JvmStatic
+    @JvmOverloads
+    fun simulateIncoming(c: Context, preset: Preset, ringTimeoutSec: Int = -1) {
+        val tm = c.getSystemService(TelecomManager::class.java) ?: return
+        ensureRegistered(c)
+        val uri = telUri(preset.number)
+        val extras = Bundle()
+        extras.putParcelable(TelecomManager.EXTRA_INCOMING_CALL_ADDRESS, uri)
+        extras.putString("preset_snapshot", preset.toJson().toString())
+        if (ringTimeoutSec >= 0) extras.putInt("ring_timeout_sec", ringTimeoutSec)
+        try {
+            tm.addNewIncomingCall(handle(c), extras)
+        } catch (e: SecurityException) {
             android.util.Log.w("SelfCall", "simulateIncoming: ${e.message}")
         }
     }

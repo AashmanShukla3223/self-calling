@@ -13,6 +13,7 @@ import android.os.Looper
 import com.parallax.selfcalling.R
 import com.parallax.selfcalling.util.CallScheduler
 import com.parallax.selfcalling.util.Prefs
+import com.parallax.selfcalling.util.Preset
 
 /**
  * Foreground wait + fire: rings one or more simulated incoming calls after exact Handler delays.
@@ -25,7 +26,7 @@ class FgsIncomingService : Service() {
     private val entries = mutableListOf<FireEntry>()
     private var foregroundStarted = false
 
-    data class FireEntry(val id: Int, val preset: Int, val delayMs: Long, val fireAt: Long, val runnable: Runnable)
+    data class FireEntry(val id: Int, val delayMs: Long, val fireAt: Long, val runnable: Runnable)
 
     override fun onBind(intent: Intent?): IBinder? = null
 
@@ -40,14 +41,25 @@ class FgsIncomingService : Service() {
             return START_NOT_STICKY
         }
         val id = intent?.getIntExtra("id", -1) ?: -1
-        val preset = intent?.getIntExtra(EXTRA_PRESET_INDEX, Prefs.activeIndex(this)) ?: Prefs.activeIndex(this)
+        val snapshotJson = intent?.getStringExtra(EXTRA_PRESET_SNAPSHOT)
+        val presetSnapshot = if (snapshotJson != null) {
+            try { Preset.fromJson(org.json.JSONObject(snapshotJson)) } catch (_: Exception) { null }
+        } else null
+        val presetIndex = intent?.getIntExtra(EXTRA_PRESET_INDEX, -1) ?: -1
+        val ringTimeout = intent?.getIntExtra(EXTRA_RING_TIMEOUT, -1) ?: -1
         val delayMs = intent?.getLongExtra(EXTRA_DELAY_MS, 0L) ?: 0L
         val fireAt = System.currentTimeMillis() + delayMs.coerceAtLeast(0L)
 
         val holder = arrayOfNulls<Runnable>(1)
         val runnable = Runnable {
             try {
-                TelecomHelper.simulateIncoming(this, preset)
+                if (presetSnapshot != null) {
+                    TelecomHelper.simulateIncoming(this, presetSnapshot, ringTimeout)
+                } else if (presetIndex >= 0) {
+                    TelecomHelper.simulateIncoming(this, presetIndex)
+                } else {
+                    TelecomHelper.simulateIncoming(this)
+                }
             } catch (e: Exception) {
                 android.util.Log.w("SelfCall", "delayed incoming: ${e.message}")
             } finally {
@@ -58,7 +70,7 @@ class FgsIncomingService : Service() {
             }
         }
         holder[0] = runnable
-        val entry = FireEntry(id, preset, delayMs, fireAt, runnable)
+        val entry = FireEntry(id, delayMs, fireAt, runnable)
         synchronized(entries) { entries.add(entry) }
 
         h.postDelayed(runnable, delayMs.coerceAtLeast(0L))
@@ -129,6 +141,8 @@ class FgsIncomingService : Service() {
     companion object {
         const val EXTRA_DELAY_MS = "delay_ms"
         const val EXTRA_PRESET_INDEX = "preset_index"
+        const val EXTRA_PRESET_SNAPSHOT = "preset_snapshot"
+        const val EXTRA_RING_TIMEOUT = "ring_timeout"
         const val ACTION_CANCEL = "com.parallax.selfcalling.CANCEL_WAIT"
     }
 }

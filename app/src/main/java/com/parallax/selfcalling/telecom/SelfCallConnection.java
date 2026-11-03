@@ -45,6 +45,7 @@ public class SelfCallConnection extends Connection {
     private final Context ctx;
     private final Kind kind;
     private final Preset preset;
+    private final int ringTimeoutOverride;
     private final boolean dialed;
     private final boolean video;
     private final SelfCallVideoProvider videoProvider;
@@ -67,23 +68,40 @@ public class SelfCallConnection extends Connection {
         kind = k;
         // For simulated incoming calls, honour the preset that was active when the call was
         // scheduled, so switching presets later does not change the ringing identity.
-        int presetIdx = -1;
+        Preset resolved = null;
         if (kind == Kind.INCOMING && req != null && req.getExtras() != null) {
+            android.os.Bundle ex = req.getExtras();
             try {
-                presetIdx = req.getExtras().getInt("preset_index", -1);
+                String snap = ex.getString("preset_snapshot");
+                if (snap != null) {
+                    resolved = Preset.fromJson(new org.json.JSONObject(snap));
+                }
             } catch (Exception ignored) {
             }
-        }
-        if (presetIdx >= 0) {
-            java.util.List<Preset> all = Prefs.presets(c);
-            if (presetIdx >= 0 && presetIdx < all.size()) {
-                preset = all.get(presetIdx);
-            } else {
-                preset = Prefs.activePreset(c);
+            if (resolved == null) {
+                try {
+                    int presetIdx = ex.getInt("preset_index", -1);
+                    if (presetIdx >= 0) {
+                        java.util.List<Preset> all = Prefs.presets(c);
+                        if (presetIdx >= 0 && presetIdx < all.size()) {
+                            resolved = all.get(presetIdx);
+                        }
+                    }
+                } catch (Exception ignored) {
+                }
             }
-        } else {
-            preset = Prefs.activePreset(c);
         }
+        if (resolved == null) {
+            resolved = Prefs.activePreset(c);
+        }
+        preset = resolved;
+
+        int rto = -1;
+        if (kind == Kind.INCOMING && req != null && req.getExtras() != null
+                && req.getExtras().containsKey("ring_timeout_sec")) {
+            rto = req.getExtras().getInt("ring_timeout_sec", -1);
+        }
+        ringTimeoutOverride = rto;
 
         // A number dialed in the phone app is re-placed as sip:<number>@dial.selfcall.local;
         // "Call Myself" uses sip:<number>@selfcall.local and keeps the preset identity.
@@ -154,7 +172,7 @@ public class SelfCallConnection extends Connection {
     void initIncoming() {
         setRinging();
         maybeAutoAnswer();
-        int rt = Prefs.ringTimeoutSec(ctx);
+        int rt = ringTimeoutOverride >= 0 ? ringTimeoutOverride : Prefs.ringTimeoutSec(ctx);
         if (rt > 0) {
             h.postDelayed(() -> {
                 if (getState() == STATE_RINGING) {
