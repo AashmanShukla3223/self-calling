@@ -7,6 +7,8 @@ import android.os.Handler
 import android.os.Looper
 import android.widget.Toast
 
+import com.parallax.selfcalling.telecom.TelecomHelper
+
 object ShortcutRunner {
 
     /** Result of attempting to run a set. */
@@ -22,7 +24,8 @@ object ShortcutRunner {
         return set.steps.any { it.type == ShortcutStep.TYPE_MESSAGE }
     }
 
-    /** Schedules every step of a set: calls via CallScheduler, messages via native Messages app. */
+    /** Schedules every step of a set: calls via CallScheduler, messages via native Messages app,
+     *  outgoing calls via Telecom. */
     @JvmStatic
     fun run(c: Context, setId: Int): RunResult {
         val set = ShortcutSets.get(c, setId) ?: return RunResult.FAILED
@@ -30,13 +33,31 @@ object ShortcutRunner {
 
         for (step in set.steps) {
             val delay = if (step.delaySec < 0) 0 else step.delaySec
-            if (step.type == ShortcutStep.TYPE_MESSAGE) {
-                openNativeMessages(c, delay, step.snapshot.number, step.messageText)
-            } else {
-                CallScheduler.fireIncoming(c, delay, step.snapshot, step.ringTimeoutSec)
+            when (step.type) {
+                ShortcutStep.TYPE_MESSAGE -> {
+                    openNativeMessages(c, delay, step.snapshot.number, step.messageText)
+                }
+                ShortcutStep.TYPE_OUTGOING -> {
+                    placeOutgoingCall(c, delay, step.snapshot)
+                }
+                else -> {
+                    // TYPE_CALL: simulated incoming call
+                    CallScheduler.fireIncoming(c, delay, step.snapshot, step.ringTimeoutSec)
+                }
             }
         }
         return RunResult.OK
+    }
+
+    private fun placeOutgoingCall(c: Context, delaySec: Int, preset: Preset) {
+        val send = {
+            TelecomHelper.connectSelfCall(c, preset)
+        }
+        if (delaySec <= 0) {
+            send()
+        } else {
+            Handler(Looper.getMainLooper()).postDelayed(send, delaySec * 1000L)
+        }
     }
 
     /** Cleans a number to digits/+ only for the SMS URI. */

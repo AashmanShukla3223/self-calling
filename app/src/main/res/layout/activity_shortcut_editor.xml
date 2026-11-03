@@ -63,6 +63,20 @@
             android:layout_width="match_parent"
             android:layout_height="200dp" />
 
+        <Button
+            android:id="@+id/btnBulkAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/btn_outline"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="Add multiple presets"
+            android:textColor="@color/accent"
+            android:textSize="14sp" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

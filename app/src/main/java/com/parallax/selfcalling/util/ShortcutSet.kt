@@ -5,20 +5,21 @@ import android.content.SharedPreferences
 import org.json.JSONArray
 import org.json.JSONObject
 
-/** One step in a shortcut set: call (simulated incoming) or message (SMS). */
+/** One step in a shortcut set: call (simulated incoming), message (SMS), or outgoing call. */
 class ShortcutStep(
     @JvmField val snapshot: Preset,
     @JvmField val delaySec: Int = 0,
-    /** step type: TYPE_CALL or TYPE_MESSAGE */
+    /** step type: TYPE_CALL, TYPE_MESSAGE, or TYPE_OUTGOING */
     @JvmField val type: String = TYPE_CALL,
     /** message body for TYPE_MESSAGE steps */
     @JvmField val messageText: String = "",
-    @JvmField val ringTimeoutSec: Int = -1,   // -1 = use global
-    @JvmField val autoAnswerSec: Int = -2      // -2 = use global, -1 = off
+    @JvmField val ringTimeoutSec: Int = -1,   // -1 = use global (calls only)
+    @JvmField val autoAnswerSec: Int = -2      // -2 = use global, -1 = off (calls only)
 ) {
     companion object {
         const val TYPE_CALL = "call"
         const val TYPE_MESSAGE = "message"
+        const val TYPE_OUTGOING = "outgoing"
         @JvmOverloads
         fun call(snapshot: Preset, delaySec: Int = 0,
                  ringTimeoutSec: Int = -1, autoAnswerSec: Int = -2) =
@@ -26,6 +27,9 @@ class ShortcutStep(
         @JvmOverloads
         fun message(snapshot: Preset, messageText: String, delaySec: Int = 0) =
             ShortcutStep(snapshot, delaySec, TYPE_MESSAGE, messageText, -1, -2)
+        @JvmOverloads
+        fun outgoing(snapshot: Preset, delaySec: Int = 0) =
+            ShortcutStep(snapshot, delaySec, TYPE_OUTGOING, "", -1, -2)
     }
 }
 

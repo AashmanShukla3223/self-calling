@@ -63,17 +63,46 @@ public class ShortcutEditorActivity extends Activity {
             int delay = steps.isEmpty() ? 0 : steps.get(steps.size() - 1).delaySec + 60;
             new android.app.AlertDialog.Builder(this)
                     .setTitle("Add step for " + snap.name)
-                    .setItems(new String[]{"Simulated incoming call", "Send SMS message"},
+                    .setItems(new String[]{"Simulated incoming call", "Send SMS message", "Outgoing call"},
                             (d, w) -> {
                                 if (w == 0) {
                                     steps.add(new com.parallax.selfcalling.util.ShortcutStep(
                                             snap, delay, "call", "", -1, -2));
-                                } else {
+                                } else if (w == 1) {
                                     steps.add(new com.parallax.selfcalling.util.ShortcutStep(
                                             snap, delay, "message", "", -1, -2));
+                                } else {
+                                    steps.add(new com.parallax.selfcalling.util.ShortcutStep(
+                                            snap, delay, "outgoing", "", -1, -2));
                                 }
                                 refreshSteps();
                             })
+                    .show();
+        });
+
+        b.btnBulkAdd.setOnClickListener(v -> {
+            boolean[] checked = new boolean[names.size()];
+            new AlertDialog.Builder(this)
+                    .setTitle("Add multiple presets as steps")
+                    .setMultiChoiceItems(names.toArray(new String[0]), checked,
+                            (d, w, isChecked) -> checked[w] = isChecked)
+                    .setPositiveButton("Add", (d, w) -> {
+                        int baseDelay = steps.isEmpty() ? 0 : steps.get(steps.size() - 1).delaySec + 60;
+                        int added = 0;
+                        for (int i = 0; i < checked.length; i++) {
+                            if (checked[i]) {
+                                Preset snap = presets.get(i);
+                                steps.add(new com.parallax.selfcalling.util.ShortcutStep(
+                                        snap, baseDelay + (added * 60), "call", "", -1, -2));
+                                added++;
+                            }
+                        }
+                        if (added > 0) {
+                            refreshSteps();
+                            Toast.makeText(this, added + " steps added", Toast.LENGTH_SHORT).show();
+                        }
+                    })
+                    .setNegativeButton(android.R.string.cancel, null)
                     .show();
         });
 
@@ -127,7 +156,14 @@ public class ShortcutEditorActivity extends Activity {
             card.setBackgroundResource(R.drawable.card);
 
             TextView title = new TextView(this);
-            String typeLabel = st.type.equals(com.parallax.selfcalling.util.ShortcutStep.TYPE_MESSAGE) ? "SMS" : "Call";
+            String typeLabel;
+            if (st.type.equals(com.parallax.selfcalling.util.ShortcutStep.TYPE_MESSAGE)) {
+                typeLabel = "SMS";
+            } else if (st.type.equals(com.parallax.selfcalling.util.ShortcutStep.TYPE_OUTGOING)) {
+                typeLabel = "OUT";
+            } else {
+                typeLabel = "CALL";
+            }
             title.setText((i + 1) + ". [" + typeLabel + "] " + st.snapshot.name + " (" + st.snapshot.number + ")");
             title.setTextColor(getResources().getColor(R.color.text_primary));
             card.addView(title);
@@ -135,6 +171,8 @@ public class ShortcutEditorActivity extends Activity {
             TextView sub = new TextView(this);
             if (st.type.equals(com.parallax.selfcalling.util.ShortcutStep.TYPE_MESSAGE)) {
                 sub.setText("delay " + st.delaySec + "s · \"" + st.messageText + "\"");
+            } else if (st.type.equals(com.parallax.selfcalling.util.ShortcutStep.TYPE_OUTGOING)) {
+                sub.setText("delay " + st.delaySec + "s · outgoing call");
             } else {
                 String rt = st.ringTimeoutSec >= 0 ? (st.ringTimeoutSec + "s ring") : "global ring";
                 sub.setText("delay " + st.delaySec + "s · " + rt);
@@ -147,6 +185,30 @@ public class ShortcutEditorActivity extends Activity {
             android.widget.Button edit = new android.widget.Button(this);
             edit.setText("Edit");
             edit.setOnClickListener(v -> editStep(idx));
+            android.widget.Button dup = new android.widget.Button(this);
+            dup.setText("Dup");
+            dup.setOnClickListener(v -> {
+                steps.add(idx + 1, new ShortcutStep(st.snapshot, st.delaySec, st.type, st.messageText, st.ringTimeoutSec, st.autoAnswerSec));
+                refreshSteps();
+            });
+            android.widget.Button up = new android.widget.Button(this);
+            up.setText("▲");
+            up.setOnClickListener(v -> {
+                if (idx > 0) {
+                    ShortcutStep moved = steps.remove(idx);
+                    steps.add(idx - 1, moved);
+                    refreshSteps();
+                }
+            });
+            android.widget.Button dn = new android.widget.Button(this);
+            dn.setText("▼");
+            dn.setOnClickListener(v -> {
+                if (idx < steps.size() - 1) {
+                    ShortcutStep moved = steps.remove(idx);
+                    steps.add(idx + 1, moved);
+                    refreshSteps();
+                }
+            });
             android.widget.Button del = new android.widget.Button(this);
             del.setText("Remove");
             del.setOnClickListener(v -> {
@@ -154,6 +216,9 @@ public class ShortcutEditorActivity extends Activity {
                 refreshSteps();
             });
             row.addView(edit);
+            row.addView(dup);
+            row.addView(up);
+            row.addView(dn);
             row.addView(del);
             card.addView(row);
 
@@ -176,10 +241,12 @@ public class ShortcutEditorActivity extends Activity {
         msg.setText(st.messageText);
         final android.widget.Spinner typeSpin = new android.widget.Spinner(this);
         ArrayAdapter<String> ta = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item,
-                new String[]{"Call", "Message"});
+                new String[]{"Call", "Message", "Outgoing"});
         ta.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         typeSpin.setAdapter(ta);
-        typeSpin.setSelection(st.type.equals(com.parallax.selfcalling.util.ShortcutStep.TYPE_MESSAGE) ? 1 : 0);
+        int curSel = st.type.equals(com.parallax.selfcalling.util.ShortcutStep.TYPE_MESSAGE) ? 1
+                : st.type.equals(com.parallax.selfcalling.util.ShortcutStep.TYPE_OUTGOING) ? 2 : 0;
+        typeSpin.setSelection(curSel);
         container.addView(new android.widget.TextView(this) {{
             setText("Type");
             setTextColor(getResources().getColor(R.color.text_primary));
@@ -197,9 +264,14 @@ public class ShortcutEditorActivity extends Activity {
                 .setView(container)
                 .setPositiveButton("Save", (d, w) -> {
                     String t = typeSpin.getSelectedItem().toString();
-                    String newType = t.equals("Message")
-                            ? com.parallax.selfcalling.util.ShortcutStep.TYPE_MESSAGE
-                            : com.parallax.selfcalling.util.ShortcutStep.TYPE_CALL;
+                    String newType;
+                    if (t.equals("Message")) {
+                        newType = com.parallax.selfcalling.util.ShortcutStep.TYPE_MESSAGE;
+                    } else if (t.equals("Outgoing")) {
+                        newType = com.parallax.selfcalling.util.ShortcutStep.TYPE_OUTGOING;
+                    } else {
+                        newType = com.parallax.selfcalling.util.ShortcutStep.TYPE_CALL;
+                    }
                     int dVal = 0;
                     int rVal = st.ringTimeoutSec;
                     try { dVal = Integer.parseInt(delay.getText().toString().trim()); } catch (Exception ignored) {}

@@ -198,6 +198,22 @@ object TelecomHelper {
         }
     }
 
+    /** Places an outgoing self-call using the given preset identity instead of the active one. */
+    @JvmStatic
+    fun connectSelfCall(c: Context, preset: Preset) {
+        val tm = c.getSystemService(TelecomManager::class.java) ?: return
+        ensureRegistered(c)
+        enableSipForCall(c)
+        val extras = Bundle()
+        extras.putParcelable(TelecomManager.EXTRA_PHONE_ACCOUNT_HANDLE, handle(c))
+        try {
+            tm.placeCall(selfCallUri(preset.number), extras)
+        } catch (e: SecurityException) {
+            android.util.Log.w("SelfCall", "connectSelfCall: ${e.message}")
+            restoreTelOnly(c)
+        }
+    }
+
     /**
      * Re-places a number dialed in the phone app on this account. The dialer's own SIM call has
      * already been cancelled by DialedCallReceiver; sip: plus the explicit handle keeps the

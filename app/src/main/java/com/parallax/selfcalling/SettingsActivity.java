@@ -130,6 +130,15 @@ public class SettingsActivity extends Activity {
         // ---- SMS auto-reply ----
         b.btnSmsAutoreply.setOnClickListener(v ->
                 startActivity(new Intent(this, SmsAutoReplyActivity.class)));
+
+        b.btnSmsLog.setOnClickListener(v ->
+                startActivity(new Intent(this, SmsLogActivity.class)));
+
+        b.btnBackupRestore.setOnClickListener(v ->
+                startActivity(new Intent(this, BackupRestoreActivity.class)));
+
+        b.btnPermissionCenter.setOnClickListener(v ->
+                startActivity(new Intent(this, PermissionCenterActivity.class)));
     }
 
     /** Edits the PhoneAccount label used by the dialer as "Calls via ...". */

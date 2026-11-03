@@ -210,4 +210,7 @@
     <string name="sms_autoreply_saved">Auto-reply saved</string>
     <string name="perm_sms_receive">Receive SMS permission is needed for auto-reply</string>
     <string name="perm_sms_send">Send SMS permission is needed for auto-reply</string>
+
+    <string name="title_sms_log">SMS Log</string>
+    <string name="sms_log_status">SMS log: %d messages</string>
 </resources>

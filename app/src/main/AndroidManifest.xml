@@ -95,6 +95,24 @@
             android:parentActivityName=".SettingsActivity" />
 
         <activity
+            android:name=".SmsLogActivity"
+            android:label="@string/title_sms_log"
+            android:exported="false"
+            android:parentActivityName=".SettingsActivity" />
+
+        <activity
+            android:name=".BackupRestoreActivity"
+            android:label="Backup &amp; Restore"
+            android:exported="false"
+            android:parentActivityName=".SettingsActivity" />
+
+        <activity
+            android:name=".PermissionCenterActivity"
+            android:label="Permissions"
+            android:exported="false"
+            android:parentActivityName=".SettingsActivity" />
+
+        <activity
             android:name=".telecom.VideoCallActivity"
             android:exported="false"
             android:excludeFromRecents="true"

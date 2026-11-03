@@ -9,7 +9,9 @@ class Preset @JvmOverloads constructor(
     @JvmField val voice: String = VOICE_MIC,
     @JvmField val voiceFile: String? = null,
     @JvmField val voiceFiles: List<String>? = null,
-    @JvmField val video: Boolean = false
+    @JvmField val video: Boolean = false,
+    @JvmField val smsAutoReplyMessage: String? = null,
+    @JvmField val smsAutoReplyKeyword: String = ""
 ) {
     /** Ordered list of audio files to chain (falls back to single voiceFile). */
     fun chainedFiles(): List<String> {
@@ -18,6 +20,17 @@ class Preset @JvmOverloads constructor(
         if (list.isEmpty() && voiceFile != null) list.add(voiceFile)
         return list
     }
+
+    /** Whether this preset should auto-reply to incoming SMS. */
+    fun smsAutoReplyEnabled(): Boolean = smsAutoReplyMessage != null && smsAutoReplyMessage!!.isNotEmpty()
+
+    /** Whether the incoming message matches this preset's keyword (empty = match all). */
+    fun smsKeywordMatches(incomingText: String): Boolean {
+        val kw = smsAutoReplyKeyword.trim()
+        if (kw.isEmpty()) return true
+        return incomingText.lowercase().contains(kw.lowercase())
+    }
+
     fun toJson(): org.json.JSONObject {
         val o = org.json.JSONObject()
         o.put("name", name)
@@ -28,6 +41,8 @@ class Preset @JvmOverloads constructor(
         for (f in chainedFiles()) fa.put(f)
         if (fa.length() > 0) o.put("voiceFiles", fa)
         o.put("video", video)
+        if (smsAutoReplyMessage != null) o.put("smsAutoReplyMessage", smsAutoReplyMessage)
+        o.put("smsAutoReplyKeyword", smsAutoReplyKeyword)
         return o
     }
 
@@ -45,7 +60,9 @@ class Preset @JvmOverloads constructor(
                 o.optString("voice", VOICE_MIC),
                 if (o.has("voiceFile")) o.getString("voiceFile") else null,
                 if (files.isEmpty()) null else files,
-                o.optBoolean("video", false)
+                o.optBoolean("video", false),
+                if (o.has("smsAutoReplyMessage")) o.getString("smsAutoReplyMessage") else null,
+                o.optString("smsAutoReplyKeyword", "")
             )
         }
         const val VOICE_NONE = "none"
