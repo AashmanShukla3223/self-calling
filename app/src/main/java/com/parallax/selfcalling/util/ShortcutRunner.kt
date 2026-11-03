@@ -5,6 +5,7 @@ import android.content.Intent
 import android.net.Uri
 import android.os.Handler
 import android.os.Looper
+import android.widget.Toast
 
 object ShortcutRunner {
 
@@ -41,11 +42,16 @@ object ShortcutRunner {
     /** Opens the native Messages app with recipient + body pre-filled (after optional delay). */
     private fun openNativeMessages(c: Context, delaySec: Int, number: String, text: String) {
         val send = {
-            val i = Intent(Intent.ACTION_SENDTO)
-            i.data = Uri.parse("smsto:" + number)
-            i.putExtra("sms_body", text)
-            i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
-            c.startActivity(i)
+            try {
+                val i = Intent(Intent.ACTION_VIEW)
+                i.data = Uri.parse("sms:" + number)
+                i.putExtra("sms_body", text)
+                i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TOP)
+                c.startActivity(i)
+                Toast.makeText(c, "Opening Messages to $number", Toast.LENGTH_SHORT).show()
+            } catch (e: Exception) {
+                Toast.makeText(c, "Could not open Messages: ${e.message}", Toast.LENGTH_LONG).show()
+            }
         }
         if (delaySec <= 0) {
             send()
