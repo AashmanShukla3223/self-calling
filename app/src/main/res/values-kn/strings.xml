@@ -104,6 +104,11 @@
     <string name="autoanswer_hint">ನಿಮ್ಮ ಅನುಕರಣಿತ ಬರುವ ಕರೆಗೆ ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಉತ್ತರಿಸಿ (ಅಂಡ್ರಾಯ್ಡ್ 8+)</string>
 
     <string name="settings_audio">ಆಡಿಯೋ</string>
+    <string name="settings_tones">ಕರೆ ಸ್ವರಗಳು</string>
+    <string name="tone_dialing">ಡಯಲಿಂಗ್ ಸ್ವರ</string>
+    <string name="tone_connect">ಸಂಪರ್ಕ ಸ್ವರ</string>
+    <string name="tone_end">ಅಂತ್ಯ ಸ್ವರ</string>
+    <string name="tone_hint">ಆ್ಯಪ್ ನುಡಿಸುತ್ತದೆ: ಡಯಲ್ ಮಾಡುವಾಗ ರಿಂಗ್‌ಬ್ಯಾಕ್, ಕರೆ ಸಂಪರ್ಕಗೊಂಡಾಗ ಬೀಪ್, ಮತ್ತು ಕರೆ ಕೊನೆಗೊಂಡಾಗ ಸ್ವರ.</string>
     <string name="switch_loopback">ಸ್ವಯಂ ಶ್ರಾವಣ ಲೂಪ್ಬ್ಯಾಕ್</string>
     <string name="loopback_hint">ನಿಮ್ಮ ಮೈಕ್ರೋಫోన్ ಅನ್ನು ಕರೆಗೆ Canadian プレイできます ನಿಮಗೆ ಧ್ವನಿ ಕೇಳಿಸಲು</string>
 

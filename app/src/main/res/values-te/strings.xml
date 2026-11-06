@@ -103,6 +103,11 @@
     <string name="autoanswer_hint">మీరు అనుకరించిన ఇన్‌కమింగ్ కాల్‌కు స్వయంచాలకంగా సమాధానం ఇస్తుంది (Android 8+).</string>
 
     <string name="settings_audio">ఆడియో</string>
+    <string name="settings_tones">కాల్ టోన్‌లు</string>
+    <string name="tone_dialing">డయలింగ్ టోన్</string>
+    <string name="tone_connect">కనెక్ట్ టోన్</string>
+    <string name="tone_end">ముగింపు టోన్</string>
+    <string name="tone_hint">యాప్ వాయిస్తుంది: డయల్ చేసేటప్పుడు రింగ్‌బ్యాక్, కాల్ కనెక్ట్ అయినప్పుడు బీప్, కాల్ ముగిసినప్పుడు టోన్.</string>
     <string name="switch_loopback">స్వీయ శ్రవణ లూప్‌బ్యాక్</string>
     <string name="loopback_hint">మీ మైక్రోఫోన్‌ను కాల్‌లోకి పంపి మీరు మిమ్మల్ని వినగలరు</string>
 

@@ -103,6 +103,11 @@
     <string name="autoanswer_hint">ଆପଣଙ୍କ ସିମୁଲେଟେଡ୍ ଇନକମିଂ କଲ୍ ସ୍ୱଚାଳିତ ଭାବେ ଉତ୍ତର ଦିଏ (Android 8+)।</string>
 
     <string name="settings_audio">ଅଡିଓ</string>
+    <string name="settings_tones">କଲ ଟୋନ</string>
+    <string name="tone_dialing">ଡାଏଲିଂ ଟୋନ</string>
+    <string name="tone_connect">କନେକ୍ଟ ଟୋନ</string>
+    <string name="tone_end">ଶେଷ ଟୋନ</string>
+    <string name="tone_hint">ଆପ ବଜାଏ: ଡାଏଲ କରିବା ସମୟରେ ରିଂବ୍ୟାକ, କଲ ଯୋଡ଼ାହେଲେ ବିପ୍ ଏବଂ କଲ ଶେଷ ହେଲେ ଟୋନ।</string>
     <string name="switch_loopback">ସେଲ୍ଫ-ଶ୍ରବଣ ଲୁପବ୍ୟାକ୍</string>
     <string name="loopback_hint">ଆପଣଙ୍କ ମାଇକ୍ରୋଫୋନ୍ କଲ୍‌ରେ ପ୍ରବେଶ କରାଏ ଯାହା ଦ୍ୱାରା ଆପଣ ନିଜକୁ ଶୁଣିପାରିବେ</string>
 

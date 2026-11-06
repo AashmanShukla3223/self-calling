@@ -104,6 +104,11 @@
     <string name="autoanswer_hint">अपने अनुकरणित आने वाली कॉल का स्वचालित उत्तर देता है (एंड्रॉइड 8+)।</string>
 
     <string name="settings_audio">ऑडियो</string>
+    <string name="settings_tones">कॉल टोन</string>
+    <string name="tone_dialing">डायलिंग टोन</string>
+    <string name="tone_connect">कनेक्ट टोन</string>
+    <string name="tone_end">समाप्ति टोन</string>
+    <string name="tone_hint">ऐप बजाता है: डायल करते समय रिंगबैक, कॉल जुड़ने पर बीप, और कॉल खत्म होने पर टोन।</string>
     <string name="switch_loopback">स्व-श्रवण लूपबैक</string>
     <string name="loopback_hint">आपके माइक्रोफोन को कॉल में पाइप करता है ताकि आप स्वयं को सुन सकें</string>
 

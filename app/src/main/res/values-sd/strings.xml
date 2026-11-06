@@ -103,6 +103,11 @@
     <string name="autoanswer_hint">توهان جي سميوليٽ ٿيل ايندڙ ڪال کي خودڪار جواب ڏئي ٿو (Android 8+).</string>
 
     <string name="settings_audio">آڊيو</string>
+    <string name="settings_tones">ڪال ٽون</string>
+    <string name="tone_dialing">ڊائلنگ ٽون</string>
+    <string name="tone_connect">ڪنيڪٽ ٽون</string>
+    <string name="tone_end">اختتامي ٽون</string>
+    <string name="tone_hint">ايپ وڄائيندي آهي: ڊائل ڪرڻ وقت رنگ بيڪ، ڪال ڳنڍجڻ تي بيپ، ۽ ڪال ختم ٿيڻ تي ٽون.</string>
     <string name="switch_loopback">سيئل-ٻڌڻ لوپ بيڪ</string>
     <string name="loopback_hint">توهان جو مائڪروفون ڪال ۾ وجهي ٿو ته جيئن توهان پاڻ کي ٻڌي سگهو</string>
 

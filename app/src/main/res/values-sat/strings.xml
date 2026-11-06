@@ -103,6 +103,11 @@
     <string name="autoanswer_hint">ᱟᱢᱟᱜ ᱥᱤᱢᱩᱞᱮᱴ ᱟᱺᱛᱮ ᱠᱚᱞ ᱟᱡ ᱛᱮ ᱛᱮᱞᱟ ᱮᱢᱚᱜᱼᱟ (Android 8+)᱾</string>
 
     <string name="settings_audio">ᱚᱰᱤᱭᱳ</string>
+    <string name="settings_tones">ᱠᱚᱞ ᱴᱚᱱ</string>
+    <string name="tone_dialing">ᱰᱟᱭᱞᱤᱝ ᱴᱚᱱ</string>
+    <string name="tone_connect">ᱠᱚᱱᱮᱠᱴ ᱴᱚᱱ</string>
+    <string name="tone_end">ᱢᱩᱪᱟᱹᱫ ᱴᱚᱱ</string>
+    <string name="tone_hint">ᱟᱯ ᱮ ᱨᱳᱦᱳ: ᱰᱟᱭᱞ ᱡᱷᱚᱜ ᱨᱤᱝᱵᱮᱠ, ᱠᱚᱞ ᱡᱩᱲᱟᱹᱭ ᱡᱷᱚᱜ ᱵᱤᱯ, ᱟᱨ ᱠᱚᱞ ᱢᱩᱪᱟᱹᱫ ᱡᱷᱚᱜ ᱴᱚᱱ᱾</string>
     <string name="switch_loopback">ᱟᱡ ᱟᱸᱡᱚᱢ ᱞᱩᱯᱵᱮᱠ</string>
     <string name="loopback_hint">ᱟᱢᱟᱜ ᱢᱟᱭᱠᱨᱚᱯᱷᱚᱱ ᱠᱚᱞ ᱨᱮ ᱥᱮᱞᱮᱫᱼᱟ ᱡᱟᱦᱟᱸ ᱛᱮ ᱟᱢ ᱟᱡ ᱟᱸᱡᱚᱢ ᱫᱟᱲᱮᱭᱟᱜᱼᱟ</string>
 

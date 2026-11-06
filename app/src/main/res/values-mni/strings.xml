@@ -104,6 +104,11 @@
     <string name="autoanswer_hint">আপনার সিমুলেটেড আসা কালের স্বয়ংক্রিয় উত্তর দিন (এন্ড্রয়েড 8+)।</string>
 
     <string name="settings_audio">অডিও</string>
+    <string name="settings_tones">কল টোন</string>
+    <string name="tone_dialing">ডাইলিং টোন</string>
+    <string name="tone_connect">কানেক্ট টোন</string>
+    <string name="tone_end">লৈবাক টোন</string>
+    <string name="tone_hint">অ্যাপনা শব্দ তৌই: ডাইল তৌরিবদা রিংবেক, কল কানেক্ট হৌরকপা মতং বীপ, অমসুং কল লৈরকপা মতং টোন।</string>
     <string name="switch_loopback">স্ব-শ্রবণ লুপব্যাক</string>
     <string name="loopback_hint">আপনার মাইক্রোফোনের কলে পাইপ করুন যাতে আপনি নিজেকে শুনতে পান</string>
 

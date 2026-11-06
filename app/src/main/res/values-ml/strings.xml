@@ -104,6 +104,11 @@
     <string name="autoanswer_hint">നിങ്ങളുടെ സിമുലേറ്റ് ചെയ്ത ഇൻകമിംഗ് കോളിന് ഓട്ടോമാറ്റിക് ആയി ഉത്തരം നൽകുക (ആൻഡ്രോയിഡ് 8+)</string>
 
     <string name="settings_audio">ഓഡിയോ</string>
+    <string name="settings_tones">കോൾ ടോണുകൾ</string>
+    <string name="tone_dialing">ഡയലിംഗ് ടോൺ</string>
+    <string name="tone_connect">കണക്ട് ടോൺ</string>
+    <string name="tone_end">അവസാന ടോൺ</string>
+    <string name="tone_hint">ആപ്പ് കേൾപ്പിക്കുന്നു: ഡയൽ ചെയ്യുമ്പോൾ റിംഗ്‌ബാക്ക്, കോൾ ബന്ധിപ്പിക്കുമ്പോൾ ബീപ്പ്, കോൾ അവസാനിക്കുമ്പോൾ ടോൺ.</string>
     <string name="switch_loopback">സ്വयं കേൾക്കുന്ന ലൂപ്പ്‌ബാക്ക്</string>
     <string name="loopback_hint">നിങ്ങളുടെ മൈക്രോഫോൺ കോളിലേക്ക് പൈപ്പ് ചെയ്യുക, നിങ്ങൾക്ക് സ്വയം കേൾക്കാൻ കഴിയും</string>
 

@@ -120,6 +120,16 @@ public class SettingsActivity extends Activity {
             Prefs.setRingTimeoutSec(SettingsActivity.this, s);
         });
 
+        // ---- call tones ----
+        b.switchDialingTone.setChecked(Prefs.dialingTone(this));
+        b.switchDialingTone.setOnCheckedChangeListener((v, on) -> Prefs.setDialingTone(this, on));
+
+        b.switchConnectTone.setChecked(Prefs.connectTone(this));
+        b.switchConnectTone.setOnCheckedChangeListener((v, on) -> Prefs.setConnectTone(this, on));
+
+        b.switchEndTone.setChecked(Prefs.endTone(this));
+        b.switchEndTone.setOnCheckedChangeListener((v, on) -> Prefs.setEndTone(this, on));
+
         b.btnConfigureVoice.setOnClickListener(v ->
                 startActivity(new Intent(this, VoiceActivity.class)));
 

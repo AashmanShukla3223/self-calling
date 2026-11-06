@@ -516,6 +516,45 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
+                android:text="@string/settings_tones" />
+
+            <Switch
+                android:id="@+id/switchDialingTone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/tone_dialing"
+                android:textColor="@color/text_primary"
+                android:textSize="16sp" />
+
+            <Switch
+                android:id="@+id/switchConnectTone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tone_connect"
+                android:textColor="@color/text_primary"
+                android:textSize="16sp" />
+
+            <Switch
+                android:id="@+id/switchEndTone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tone_end"
+                android:textColor="@color/text_primary"
+                android:textSize="16sp" />
+
+            <TextView
+                style="@style/RowSub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/tone_hint" />
+
+            <TextView
+                style="@style/RowTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
                 android:text="@string/voice_row_title" />
 
             <TextView

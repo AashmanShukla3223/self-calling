@@ -130,6 +130,33 @@ object Prefs {
         sp(c).edit().putInt("ring_timeout", seconds).apply()
     }
 
+    /** Ringback tone heard while an outgoing self-call is dialing. Default on. */
+    @JvmStatic
+    fun dialingTone(c: Context): Boolean = sp(c).getBoolean("tone_dialing", true)
+
+    @JvmStatic
+    fun setDialingTone(c: Context, enabled: Boolean) {
+        sp(c).edit().putBoolean("tone_dialing", enabled).apply()
+    }
+
+    /** Tone played at the moment a call connects. Default on. */
+    @JvmStatic
+    fun connectTone(c: Context): Boolean = sp(c).getBoolean("tone_connect", true)
+
+    @JvmStatic
+    fun setConnectTone(c: Context, enabled: Boolean) {
+        sp(c).edit().putBoolean("tone_connect", enabled).apply()
+    }
+
+    /** Tone played when a call ends. Default on. */
+    @JvmStatic
+    fun endTone(c: Context): Boolean = sp(c).getBoolean("tone_end", true)
+
+    @JvmStatic
+    fun setEndTone(c: Context, enabled: Boolean) {
+        sp(c).edit().putBoolean("tone_end", enabled).apply()
+    }
+
     /** Legacy mic-loopback flag; superseded by per-identity voice mode. */
     @JvmStatic
     fun loopback(c: Context): Boolean = sp(c).getBoolean("loopback", false)

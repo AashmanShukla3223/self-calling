@@ -104,6 +104,11 @@
     <string name="autoanswer_hint">الرد على المكالمة الواردة المحاكاة تلقائيًا (أندرويد 8+).</string>
 
     <string name="settings_audio">الصوت</string>
+    <string name="settings_tones">نغمات المكالمة</string>
+    <string name="tone_dialing">نغمة الاتصال</string>
+    <string name="tone_connect">نغمة بدء المكالمة</string>
+    <string name="tone_end">نغمة إنهاء المكالمة</string>
+    <string name="tone_hint">النغمات التي يشغلها التطبيق: نغمة الانتظار أثناء الاتصال، وصفير عند بدء المكالمة، ونغمة عند إنهائها.</string>
     <string name="switch_loopback">الاستماع الذاتي الدائري</string>
     <string name="loopback_hint">يوجه الميكروفون إلى المكالمة بحيث تسمع نفسك</string>
 

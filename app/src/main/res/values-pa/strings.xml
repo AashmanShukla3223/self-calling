@@ -103,6 +103,11 @@
     <string name="autoanswer_hint">ਤੁਹਾਡੀ ਸਿਮੂਲੇਟ ਕੀਤੀ ਆਉਣ ਵਾਲੀ ਕਾਲ ਦਾ ਆਪਣੇ ਆਪ ਜਵਾਬ ਦਿੰਦੀ ਹੈ (Android 8+)।</string>
 
     <string name="settings_audio">ਆਡੀਓ</string>
+    <string name="settings_tones">ਕਾਲ ਟੋਨ</string>
+    <string name="tone_dialing">ਡਾਇਲਿੰਗ ਟੋਨ</string>
+    <string name="tone_connect">ਕਨੈਕਟ ਟੋਨ</string>
+    <string name="tone_end">ਸਮਾਪਤੀ ਟੋਨ</string>
+    <string name="tone_hint">ਐਪ ਵਜਾਉਂਦੀ ਹੈ: ਡਾਇਲ ਕਰਦੇ ਸਮੇਂ ਰਿੰਗਬੈਕ, ਕਾਲ ਜੁੜਨ \'ਤੇ ਬੀਪ ਅਤੇ ਕਾਲ ਖ਼ਤਮ ਹੋਣ \'ਤੇ ਟੋਨ।</string>
     <string name="switch_loopback">ਸੈਲਫ਼-ਸੁਣਨ ਲੂਪਬੈਕ</string>
     <string name="loopback_hint">ਤੁਹਾਡਾ ਮਾਈਕ੍ਰੋਫ਼ੋਨ ਕਾਲ ਵਿੱਚ ਪਾਉਂਦੀ ਹੈ ਤਾਂ ਜੋ ਤੁਸੀਂ ਆਪਣੇ ਆਪ ਨੂੰ ਸੁਣ ਸਕੋ</string>
 

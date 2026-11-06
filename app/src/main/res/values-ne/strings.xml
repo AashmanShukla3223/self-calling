@@ -104,6 +104,11 @@
     <string name="autoanswer_hint">तपाईंको सिम्युलेटेड आउने कललाई स्वचालित रूपमा जवाफ दिनुहोस् (एन्ड्रोइड 8+ मा मात्र)।</string>
 
     <string name="settings_audio">अडियो</string>
+    <string name="settings_tones">कल टोन</string>
+    <string name="tone_dialing">डायलिङ टोन</string>
+    <string name="tone_connect">कनेक्ट टोन</string>
+    <string name="tone_end">अन्त्य टोन</string>
+    <string name="tone_hint">एपले बजाउँछ: डायल गर्दा रिङब्याक, कल जोडिँदा बीप र कल सकिँदा टोन।</string>
     <string name="switch_loopback">स्व-श्रवण लुपब्याक</string>
     <string name="loopback_hint">तपाईंको माइक्रोफोनलाई कलमा पठाउँनुहोस् ताकि तपाईं आफ्नो आवाज सुन्न सक्नुहुन्छ</string>
 

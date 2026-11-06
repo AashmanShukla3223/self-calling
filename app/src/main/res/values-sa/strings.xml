@@ -103,6 +103,11 @@
     <string name="autoanswer_hint">भवतः निर्वर्तितम् आगमन-आह्वानं स्वयमेव उत्तरयति (Android 8+)।</string>
 
     <string name="settings_audio">श्रव्यम्</string>
+    <string name="settings_tones">सम्भाषणस्वराः</string>
+    <string name="tone_dialing">डायलस्वरः</string>
+    <string name="tone_connect">सम्बन्धस्वरः</string>
+    <string name="tone_end">समाप्तिस्वरः</string>
+    <string name="tone_hint">अनुप्रयोगः वादयति: डायलसमये रिङ्बैक्, सम्भाषणसम्बन्धे बीप्, समाप्तौ च स्वरः।</string>
     <string name="switch_loopback">स्व-श्रवण-परिवर्तः</string>
     <string name="loopback_hint">भवतः ध्वनिग्राहकम् आह्वाने प्रवेशयति येन स्वयं शृणुयात्</string>
 

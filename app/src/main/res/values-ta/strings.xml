@@ -103,6 +103,11 @@
     <string name="autoanswer_hint">உங்கள் உருவகப்படுத்தப்பட்ட உள்வரும் அழைப்புக்கு தானாக பதிலளிக்கும் (Android 8+).</string>
 
     <string name="settings_audio">ஒலி</string>
+    <string name="settings_tones">அழைப்பு ஒலிகள்</string>
+    <string name="tone_dialing">டயலிங் ஒலி</string>
+    <string name="tone_connect">இணைப்பு ஒலி</string>
+    <string name="tone_end">முடிவு ஒலி</string>
+    <string name="tone_hint">செயலி இசைப்பவை: டயல் செய்யும்போது மணி சத்தம், அழைப்பு இணைந்ததும் பீப், அழைப்பு முடிந்ததும் ஒலி.</string>
     <string name="switch_loopback">சுய கேட்டல் லூப்பாக்</string>
     <string name="loopback_hint">உங்கள் ஒலிவாங்கியை அழைப்புக்குள் செலுத்தி உங்களை நீங்களே கேட்கலாம்</string>
 

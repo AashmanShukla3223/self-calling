@@ -104,6 +104,11 @@
     <string name="autoanswer_hint">તમારા સિમ્યુલેટેડ આવેલા કોલનું સ્વચાલિત જવાબ આપે છે (એન્ડ્રોઇડ ૮+)</string>
 
     <string name="settings_audio">ઓડિયો</string>
+    <string name="settings_tones">કૉલ ટોન</string>
+    <string name="tone_dialing">ડાયલિંગ ટોન</string>
+    <string name="tone_connect">કનેક્ટ ટોન</string>
+    <string name="tone_end">સમાપ્તિ ટોન</string>
+    <string name="tone_hint">એપ વગાડે છે: ડાયલ કરતી વખતે રિંગબેક, કૉલ જોડાય ત્યારે બીપ અને કૉલ પૂરો થાય ત્યારે ટોન.</string>
     <string name="switch_loopback">સ્વ-શ્રવણ લૂપબેક</string>
     <string name="loopback_hint">તમારા માઇક્રોફોનને કોલમાં પાઇપ કરો જેથી તમે પોતાને સાંભળી શકો</string>
 

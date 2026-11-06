@@ -104,6 +104,11 @@
     <string name="autoanswer_hint">시뮬레이션 수신 전화를 자동으로 응답합니다 (Android 8+).</string>
 
     <string name="settings_audio">오디오</string>
+    <string name="settings_tones">통화음</string>
+    <string name="tone_dialing">발신음</string>
+    <string name="tone_connect">연결음</string>
+    <string name="tone_end">종료음</string>
+    <string name="tone_hint">앱이 재생하는 소리: 발신 중 링백톤, 통화 연결 시 삐 소리, 통화 종료 시 알림음.</string>
     <string name="switch_loopback">자기 피드백 루프백</string>
     <string name="loopback_hint">마이크를 통화에 연결하여 자신의 목소리를 듣습니다</string>
 

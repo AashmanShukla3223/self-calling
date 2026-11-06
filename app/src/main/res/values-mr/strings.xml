@@ -104,6 +104,11 @@
     <string name="autoanswer_hint">तुमच्या सिम्युलेटेड येणारी कॉलचा स्वचालित उत्तर द्या (Android 8+)</string>
 
     <string name="settings_audio">ऑडिओ</string>
+    <string name="settings_tones">कॉल टोन</string>
+    <string name="tone_dialing">डायलिंग टोन</string>
+    <string name="tone_connect">कनेक्ट टोन</string>
+    <string name="tone_end">समाप्ती टोन</string>
+    <string name="tone_hint">अॅप वाजवते: डायल करताना रिंगबॅक, कॉल जोडला गेल्यावर बीप आणि कॉल संपल्यावर टोन.</string>
     <string name="switch_loopback">स्व-ऐकाठी लूपबॅक</string>
     <string name="loopback_hint">तुमचे मायक्रोफोन कॉलमध्ये पाइप करा जेणेकरून तुम्हाला स्वतःला ऐकू येईल</string>
 

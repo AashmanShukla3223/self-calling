@@ -5,6 +5,7 @@ import android.media.AudioManager
 import android.media.ToneGenerator
 import android.os.Handler
 import android.os.Looper
+import com.parallax.selfcalling.util.Prefs
 
 /** Plays telecom-style tones using the system ToneGenerator on STREAM_MUSIC (always audible),
  *  switching audio mode so they aren't suppressed. Kotlin. */
@@ -19,6 +20,7 @@ object CallTonePlayer {
     @JvmStatic
     fun startRingback(ctx: Context) {
         stopRingback()
+        if (!Prefs.dialingTone(ctx)) return
         ringbackOn = true
         val am = ctx.getSystemService(Context.AUDIO_SERVICE) as? AudioManager
         am?.mode = AudioManager.MODE_NORMAL
@@ -49,6 +51,7 @@ object CallTonePlayer {
     @Synchronized
     @JvmStatic
     fun playConnect(ctx: Context) {
+        if (!Prefs.connectTone(ctx)) return
         val am = ctx.getSystemService(Context.AUDIO_SERVICE) as? AudioManager
         am?.mode = AudioManager.MODE_NORMAL
         try {
@@ -65,6 +68,7 @@ object CallTonePlayer {
     @Synchronized
     @JvmStatic
     fun playEnd(ctx: Context) {
+        if (!Prefs.endTone(ctx)) return
         val am = ctx.getSystemService(Context.AUDIO_SERVICE) as? AudioManager
         am?.mode = AudioManager.MODE_NORMAL
         try {
